@@ -1,0 +1,119 @@
+/* Estilo general de la página */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Cambiado de height a min-height para que funcione mejor en móviles */
+    color: #333;
+}
+
+/* Contenedor principal del cotizador */
+.cotizador-container {
+    background-color: #ffffff;
+    padding: 20px; /* Reducido para mejor adaptación en pantallas pequeñas */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 90%; /* Se adapta al ancho de la pantalla en móviles */
+    box-sizing: border-box; /* Asegura que el padding no exceda el ancho */
+    margin: 10px; /* Añadido para dar espacio en pantallas pequeñas */
+}
+
+/* Título del cotizador */
+.cotizador-container h1 {
+    font-size: 22px; /* Ligera reducción de tamaño en móviles */
+    margin-bottom: 20px;
+    color: #2c3e50;
+    text-align: center;
+}
+
+/* Estilo del formulario del cotizador */
+.cotizador-form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+/* Etiquetas del formulario */
+.cotizador-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+/* Estilo de los desplegables */
+.cotizador-form select {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+    color: #2c3e50;
+    width: 100%; /* Asegura que los selects ocupen el 100% del ancho disponible */
+}
+
+/* Estilo del botón calcular */
+button#calcular {
+    padding: 12px;
+    background-color: #27ae60; /* Verde principal */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    width: 100%; /* El botón también ocupa todo el ancho */
+}
+
+button#calcular:hover {
+    background-color: #218c53; /* Verde oscuro al pasar el mouse */
+}
+
+/* Estilo del resultado del precio */
+.resultado p {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#precio {
+    color: #27ae60; /* Verde principal para el precio */
+    font-size: 24px;
+}
+
+/* Detalle adicional para una estética más pulida */
+.cotizador-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background-color: #27ae60;
+    border-radius: 2px;
+}
+
+/* Media Queries para pantallas pequeñas */
+@media (max-width: 480px) {
+    .cotizador-container {
+        padding: 15px;
+    }
+    .cotizador-container h1 {
+        font-size: 20px;
+    }
+    button#calcular {
+        font-size: 14px;
+        padding: 10px;
+    }
+    #precio {
+        font-size: 22px;
+    }
+}
