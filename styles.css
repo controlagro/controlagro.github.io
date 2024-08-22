@@ -7,25 +7,66 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh; /* Cambiado de height a min-height para que funcione mejor en móviles */
+    min-height: 100vh;
     color: #333;
 }
 
-/* Contenedor principal del cotizador */
+/* Contenedor principal para la home */
+.home-container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+    box-sizing: border-box;
+}
+
+/* Título de la home */
+.home-container h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+/* Enlaces a los cotizadores */
+.cotizador-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.cotizador-link {
+    background-color: #27ae60;
+    color: white;
+    padding: 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cotizador-link:hover {
+    background-color: #218c53;
+}
+
+/* Estilo para las páginas de cotizadores */
 .cotizador-container {
     background-color: #ffffff;
-    padding: 20px; /* Reducido para mejor adaptación en pantallas pequeñas */
+    padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 400px;
-    width: 90%; /* Se adapta al ancho de la pantalla en móviles */
-    box-sizing: border-box; /* Asegura que el padding no exceda el ancho */
-    margin: 10px; /* Añadido para dar espacio en pantallas pequeñas */
+    width: 90%;
+    box-sizing: border-box;
+    margin: 10px;
 }
 
 /* Título del cotizador */
 .cotizador-container h1 {
-    font-size: 22px; /* Ligera reducción de tamaño en móviles */
+    font-size: 22px;
     margin-bottom: 20px;
     color: #2c3e50;
     text-align: center;
@@ -54,13 +95,13 @@ body {
     border-radius: 5px;
     background-color: #f8f8f8;
     color: #2c3e50;
-    width: 100%; /* Asegura que los selects ocupen el 100% del ancho disponible */
+    width: 100%;
 }
 
 /* Estilo del botón calcular */
 button#calcular {
     padding: 12px;
-    background-color: #27ae60; /* Verde principal */
+    background-color: #27ae60;
     color: white;
     border: none;
     border-radius: 5px;
@@ -68,11 +109,11 @@ button#calcular {
     font-size: 16px;
     font-weight: bold;
     transition: background-color 0.3s ease;
-    width: 100%; /* El botón también ocupa todo el ancho */
+    width: 100%;
 }
 
 button#calcular:hover {
-    background-color: #218c53; /* Verde oscuro al pasar el mouse */
+    background-color: #218c53;
 }
 
 /* Estilo del resultado del precio */
@@ -84,7 +125,7 @@ button#calcular:hover {
 }
 
 #precio {
-    color: #27ae60; /* Verde principal para el precio */
+    color: #27ae60;
     font-size: 24px;
 }
 

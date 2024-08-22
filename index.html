@@ -3,26 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cotizador de Equipos</title>
+    <title>Inicio - Cotizadores de Equipos</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="cotizador-container">
-        <h1>Cotizador de Equipos</h1>
-        <form class="cotizador-form">
-            <label for="modelo">Modelo:</label>
-            <select id="modelo"></select>
-
-            <label for="sensores">Cantidad de Sensores:</label>
-            <select id="sensores"></select>
-
-            <button type="button" id="calcular">Calcular Precio</button>
-        </form>
-        <div class="resultado">
-            <p>Precio: <span id="precio">USD 0.00</span></p>
+    <div class="home-container">
+        <h1>Cotizadores de Equipos</h1>
+        <p>Selecciona el cotizador que deseas utilizar:</p>
+        <div class="cotizador-links">
+            <a href="cotizador1.html" class="cotizador-link">Monitores de siembra</a>
+            <a href="cotizador2.html" class="cotizador-link">Pilotos Integra 6000</a>
+            <a href="cotizador3.html" class="cotizador-link">Cotizador 3</a>
+            <a href="cotizador4.html" class="cotizador-link">Cotizador 4</a>
         </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
-    <script src="script.js"></script>
 </body>
 </html>
