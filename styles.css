@@ -38,7 +38,7 @@ body {
 }
 
 .cotizador-link {
-    background-color: #27ae60;
+    background-color: #016533;
     color: white;
     padding: 12px;
     border-radius: 5px;
@@ -49,7 +49,7 @@ body {
 }
 
 .cotizador-link:hover {
-    background-color: #218c53;
+    background-color: #016533;
 }
 
 /* Estilo para las páginas de cotizadores */
@@ -101,7 +101,7 @@ body {
 /* Estilo del botón calcular */
 button#calcular {
     padding: 12px;
-    background-color: #27ae60;
+    background-color: #016533;
     color: white;
     border: none;
     border-radius: 5px;
@@ -113,7 +113,7 @@ button#calcular {
 }
 
 button#calcular:hover {
-    background-color: #218c53;
+    background-color: #016533;
 }
 
 /* Estilo del resultado del precio */
@@ -138,8 +138,16 @@ button#calcular:hover {
     transform: translateX(-50%);
     width: 60px;
     height: 4px;
-    background-color: #27ae60;
+    background-color: #016533;
     border-radius: 2px;
+}
+.logo-container {
+    margin-bottom: 20px;
+}
+
+.logo {
+    max-width: 100%;
+    height: auto;
 }
 
 /* Media Queries para pantallas pequeñas */
@@ -157,4 +165,5 @@ button#calcular:hover {
     #precio {
         font-size: 22px;
     }
+    
 }

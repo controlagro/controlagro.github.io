@@ -1,68 +1,51 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const modeloSelect = document.getElementById('modelo');
-    const sensoresSelect = document.getElementById('sensores');
-    const precioElement = document.getElementById('precio');
-    const calcularButton = document.getElementById('calcular');
+    const embraguesSelect = document.getElementById('embragues');
+    const precioSpan = document.getElementById('precio');
 
-    let datos = [];
+    // Cargar archivo Excel y poblar los desplegables
+    fetch('precios4.xlsx')
+        .then(response => response.arrayBuffer())
+        .then(data => {
+            const workbook = XLSX.read(data, { type: 'array' });
+            const firstSheet = workbook.Sheets[workbook.SheetNames[0]];
+            const rows = XLSX.utils.sheet_to_json(firstSheet, { header: 1 });
 
-    function cargarDatos() {
-        const url = 'precios4.xlsx'; // Cambia el nombre para cada cotizador
+            // Poblar el desplegable de modelos
+            const modelos = [...new Set(rows.slice(1).map(row => row[0]))];
+            modelos.forEach(modelo => {
+                const option = document.createElement('option');
+                option.value = modelo;
+                option.textContent = modelo;
+                modeloSelect.appendChild(option);
+            });
 
-        fetch(url)
+            // Poblar el desplegable de embragues
+            const embragues = [...new Set(rows.slice(1).map(row => row[1]))];
+            embragues.forEach(embrague => {
+                const option = document.createElement('option');
+                option.value = embrague;
+                option.textContent = embrague;
+                embraguesSelect.appendChild(option);
+            });
+        });
+
+    // Calcular precio
+    document.getElementById('calcular').addEventListener('click', function () {
+        const selectedModelo = modeloSelect.value;
+        const selectedEmbragues = embraguesSelect.value;
+
+        fetch('precios4.xlsx')
             .then(response => response.arrayBuffer())
             .then(data => {
                 const workbook = XLSX.read(data, { type: 'array' });
-                const hoja = workbook.Sheets[workbook.SheetNames[0]];
-                datos = XLSX.utils.sheet_to_json(hoja, { header: 1 });
+                const firstSheet = workbook.Sheets[workbook.SheetNames[0]];
+                const rows = XLSX.utils.sheet_to_json(firstSheet, { header: 1 });
 
-                llenarSelects(datos);
-            })
-            .catch(error => console.error("Error al cargar el archivo .xlsx:", error));
-    }
-
-    function llenarSelects(datos) {
-        datos.forEach((fila, index) => {
-            if (index > 0) {
-                const modelo = fila[0];
-                const sensores = fila[1];
-
-                if (!modeloSelect.querySelector(`option[value="${modelo}"]`)) {
-                    const option = document.createElement('option');
-                    option.value = modelo;
-                    option.textContent = modelo;
-                    modeloSelect.appendChild(option);
-                }
-
-                if (!sensoresSelect.querySelector(`option[value="${sensores}"]`)) {
-                    const option = document.createElement('option');
-                    option.value = sensores;
-                    option.textContent = sensores;
-                    sensoresSelect.appendChild(option);
-                }
-            }
-        });
-    }
-
-    function calcularPrecio() {
-        const modelo = modeloSelect.value;
-        const sensores = parseInt(sensoresSelect.value);
-
-        let precio = 0;
-        datos.forEach((fila) => {
-            if (fila[0] === modelo && parseInt(fila[1]) === sensores) {
-                precio = fila[2];
-            }
-        });
-
-        if (precio !== 0) {
-            precioElement.textContent = `USD ${parseFloat(precio).toFixed(2)}`;
-        } else {
-            precioElement.textContent = "No disponible";
-        }
-    }
-
-    calcularButton.addEventListener('click', calcularPrecio);
-
-    cargarDatos();
+                // Buscar el precio correspondiente al modelo y la cantidad de embragues
+                const matchingRow = rows.find(row => row[0] === selectedModelo && row[1].toString() === selectedEmbragues);
+                const price = matchingRow ? matchingRow[2] : 0;
+                precioSpan.textContent = `USD ${parseFloat(price).toFixed(2)}`;
+            });
+    });
 });
