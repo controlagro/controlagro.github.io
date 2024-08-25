@@ -62,7 +62,16 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
+    function resetPrecio() {
+        precioElement.textContent = "USD 0.00";
+    }
+
+    // Calcular precio cuando se hace clic en el botón
     calcularButton.addEventListener('click', calcularPrecio);
+
+    // Restablecer el precio cuando se cambian las opciones
+    modeloSelect.addEventListener('change', resetPrecio);
+    sensoresSelect.addEventListener('change', resetPrecio);
 
     cargarDatos();
 });

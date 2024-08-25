@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
 
     // Calcular precio
-    document.getElementById('calcular').addEventListener('click', function () {
+    function calcularPrecio() {
         const selectedModelo = modeloSelect.value;
         const selectedEmbragues = embraguesSelect.value;
 
@@ -47,5 +47,16 @@ document.addEventListener('DOMContentLoaded', function () {
                 const price = matchingRow ? matchingRow[2] : 0;
                 precioSpan.textContent = `USD ${parseFloat(price).toFixed(2)}`;
             });
-    });
+    }
+
+    function resetPrecio() {
+        precioSpan.textContent = "USD 0.00";
+    }
+
+    // Calcular precio cuando se hace clic en el botón
+    document.getElementById('calcular').addEventListener('click', calcularPrecio);
+
+    // Restablecer el precio cuando se cambian las opciones
+    modeloSelect.addEventListener('change', resetPrecio);
+    embraguesSelect.addEventListener('change', resetPrecio);
 });

@@ -37,6 +37,12 @@ document.addEventListener('DOMContentLoaded', function () {
     // Actualizar descripción según la opción seleccionada en el desplegable de modelos
     modeloSelect.addEventListener('change', function () {
         updateDescripcion(modeloSelect.value);
+        resetPrecio(); // Restablecer precio cuando se cambia el modelo
+    });
+
+    // Actualizar descripción según la opción seleccionada en el desplegable de embragues
+    embraguesSelect.addEventListener('change', function () {
+        resetPrecio(); // Restablecer precio cuando se cambia la cantidad de embragues
     });
 
     // Función para actualizar la descripción
@@ -68,6 +74,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Actualizar el contenido de la descripción con saltos de línea
         descripcionP.innerHTML = descripcionTexto;
+    }
+
+    function resetPrecio() {
+        precioSpan.textContent = "USD 0.00";
     }
 
     // Calcular precio
