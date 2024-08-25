@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const modeloSelect = document.getElementById('modelo');
     const embraguesSelect = document.getElementById('embragues');
     const precioSpan = document.getElementById('precio');
+    const descripcionP = document.getElementById('descripcion');
 
     // Cargar archivo Excel y poblar los desplegables
     fetch('precios4.xlsx')
@@ -28,7 +29,46 @@ document.addEventListener('DOMContentLoaded', function () {
                 option.textContent = embrague;
                 embraguesSelect.appendChild(option);
             });
+
+            // Actualizar la descripción al cargar la página con la primera opción por defecto
+            updateDescripcion(modeloSelect.value);
         });
+
+    // Actualizar descripción según la opción seleccionada en el desplegable de modelos
+    modeloSelect.addEventListener('change', function () {
+        updateDescripcion(modeloSelect.value);
+    });
+
+    // Función para actualizar la descripción
+    function updateDescripcion(selectedModelo) {
+        let descripcionTexto = '';
+
+        switch (selectedModelo) {
+            case 'INTEGRA 6000 SIN ANTENA':
+                descripcionTexto = 'Integra 6000 + equipo de corte por surco con embragues TEKMATIC Clasicc o para MaterMacc SIN ANTENA.<br><br>Instalación e IVA (10,5%) incluidos. Contado: 10% de descuento sobre el precio de lista. Financiación: en pesos hasta 120 días sin interés y en dólares ajustable.';
+                break;
+            case 'INTEGRA 6000 CON ANTENA':
+                descripcionTexto = 'Integra 6000 + equipo de corte por surco con embragues TEKMATIC Clasicc o para MaterMacc CON ANTENA.<br><br>Instalación e IVA (10,5%) incluidos. Contado: 10% de descuento sobre el precio de lista. Financiación: en pesos hasta 120 días sin interés y en dólares ajustable.';
+                break;
+            case 'PANTALLA i6000 SIN ANTENA':
+                descripcionTexto = 'PANTALLA i6000 + equipo de corte por surco a "GATILLO" para DOSIFIC. MaterMacc c/tapa EV3 SIN ANTENA.<br><br>Instalación e IVA (10,5%) incluidos. Contado: 10% de descuento sobre el precio de lista. Financiación: en pesos hasta 120 días sin interés y en dólares ajustable.';
+                break;
+            case 'PANTALLA i6000 CON ANTENA':
+                descripcionTexto = 'PANTALLA i6000 + equipo de corte por surco a "GATILLO" para DOSIFIC. MaterMacc c/tapa EV3 CON ANTENA.<br><br>Instalación e IVA (10,5%) incluidos. Contado: 10% de descuento sobre el precio de lista. Financiación: en pesos hasta 120 días sin interés y en dólares ajustable.';
+                break;
+            case 'TEKMATIC':
+                descripcionTexto = 'Equipo de corte por surco con cualquier modelo o tipos de embragues TEKMATIC.<br><br>Instalación e IVA (10,5%) incluidos. Contado: 10% de descuento sobre el precio de lista. Financiación: en pesos hasta 120 días sin interés y en dólares ajustable.';
+                break;
+            case 'GATILLO PARA DOSIFICADOR MATERMACC':
+                descripcionTexto = 'Equipo de corte por surco con "GATILLO" para DOSIFIC. MaterMacc c/ tapa EV3.<br><br>Instalación e IVA (10,5%) incluidos. Contado: 10% de descuento sobre el precio de lista. Financiación: en pesos hasta 120 días sin interés y en dólares ajustable.';
+                break;
+            default:
+                descripcionTexto = 'Instalación e IVA (10,5%) incluidos.<br>Contado: 10% de descuento sobre el precio de lista.<br>Financiación: en pesos hasta 120 días sin interés y en dólares ajustable.';
+        }
+
+        // Actualizar el contenido de la descripción con saltos de línea
+        descripcionP.innerHTML = descripcionTexto;
+    }
 
     // Calcular precio
     document.getElementById('calcular').addEventListener('click', function () {

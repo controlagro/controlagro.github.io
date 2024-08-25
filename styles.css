@@ -118,7 +118,7 @@ button#calcular:hover {
 
 /* Estilo del resultado del precio */
 .resultado p {
-    font-size: 18px;
+    font-size: 17px;
     font-weight: bold;
     text-align: center;
     margin-top: 20px;
@@ -126,7 +126,7 @@ button#calcular:hover {
 
 #precio {
     color: #27ae60;
-    font-size: 24px;
+    font-size: 22px;
 }
 
 /* Detalle adicional para una estética más pulida */
