@@ -130,17 +130,6 @@ button#calcular:hover {
 }
 
 /* Detalle adicional para una estética más pulida */
-.cotizador-container::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 60px;
-    height: 4px;
-    background-color: #016533;
-    border-radius: 2px;
-}
 .logo-container {
     margin-bottom: 20px;
 }
