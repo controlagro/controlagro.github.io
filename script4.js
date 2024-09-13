@@ -50,26 +50,26 @@ document.addEventListener('DOMContentLoaded', function () {
         let descripcionTexto = '';
 
         switch (selectedModelo) {
-            case 'INTEGRA 6000 SIN ANTENA':
-                descripcionTexto = 'Integra 6000 + equipo de corte por surco con embragues TEKMATIC Clasicc o para MaterMacc SIN ANTENA.<br><br>Instalación e IVA (10,5%) incluidos. Contado: 10% de descuento sobre el precio de lista. Financiación: en pesos hasta 120 días sin interés y en dólares ajustable.';
+            case 'INTEGRA 6000 CON TEKMATIC SIN ANTENA':
+                descripcionTexto = 'Integra 6000 + equipo de corte por surco con embragues TEKMATIC Clasicc o para MaterMacc SIN ANTENA.<br><br>Instalación e IVA (10,5%) incluidos. Contado: 10% de descuento sobre el precio de lista. FINANCIACIÓN: en pesos desde 0 hasta 120 días sin interés, y en dólares ajustables desde 0 hasta 12 meses.';
                 break;
-            case 'INTEGRA 6000 CON ANTENA':
-                descripcionTexto = 'Integra 6000 + equipo de corte por surco con embragues TEKMATIC Clasicc o para MaterMacc CON ANTENA.<br><br>Instalación e IVA (10,5%) incluidos. Contado: 10% de descuento sobre el precio de lista. Financiación: en pesos hasta 120 días sin interés y en dólares ajustable.';
+            case 'INTEGRA 6000 CON TEKMATIC CON ANTENA':
+                descripcionTexto = 'Integra 6000 + equipo de corte por surco con embragues TEKMATIC Clasicc o para MaterMacc CON ANTENA.<br><br>Instalación e IVA (10,5%) incluidos. Contado: 10% de descuento sobre el precio de lista. FINANCIACIÓN: en pesos desde 0 hasta 120 días sin interés, y en dólares ajustables desde 0 hasta 12 meses.';
                 break;
-            case 'PANTALLA i6000 SIN ANTENA':
-                descripcionTexto = 'PANTALLA i6000 + equipo de corte por surco a "GATILLO" para DOSIFIC. MaterMacc c/tapa EV3 SIN ANTENA.<br><br>Instalación e IVA (10,5%) incluidos. Contado: 10% de descuento sobre el precio de lista. Financiación: en pesos hasta 120 días sin interés y en dólares ajustable.';
+            case 'INTEGRA 6000 CON GATILLO SIN ANTENA':
+                descripcionTexto = 'PANTALLA i6000 + equipo de corte por surco a "GATILLO" para DOSIFIC. MaterMacc c/tapa EV3 SIN ANTENA.<br><br>Instalación e IVA (10,5%) incluidos. Contado: 10% de descuento sobre el precio de lista. FINANCIACIÓN: en pesos desde 0 hasta 120 días sin interés, y en dólares ajustables desde 0 hasta 12 meses.';
                 break;
-            case 'PANTALLA i6000 CON ANTENA':
-                descripcionTexto = 'PANTALLA i6000 + equipo de corte por surco a "GATILLO" para DOSIFIC. MaterMacc c/tapa EV3 CON ANTENA.<br><br>Instalación e IVA (10,5%) incluidos. Contado: 10% de descuento sobre el precio de lista. Financiación: en pesos hasta 120 días sin interés y en dólares ajustable.';
+            case 'INTEGRA 6000 CON GATILLO CON ANTENA':
+                descripcionTexto = 'PANTALLA i6000 + equipo de corte por surco a "GATILLO" para DOSIFIC. MaterMacc c/tapa EV3 CON ANTENA.<br><br>Instalación e IVA (10,5%) incluidos. Contado: 10% de descuento sobre el precio de lista. FINANCIACIÓN: en pesos desde 0 hasta 120 días sin interés, y en dólares ajustables desde 0 hasta 12 meses.';
                 break;
-            case 'TEKMATIC':
-                descripcionTexto = 'Equipo de corte por surco con cualquier modelo o tipos de embragues TEKMATIC.<br><br>Instalación e IVA (10,5%) incluidos. Contado: 10% de descuento sobre el precio de lista. Financiación: en pesos hasta 120 días sin interés y en dólares ajustable.';
+            case 'SOLO SEMBRADORA con CORTE TEKMATIC':
+                descripcionTexto = 'EQUIPOS SOLO SEMBRADORA con CORTE POR SURCO con EMBRAGUES TEKMATIC.<br><br>Instalación e IVA (10,5%) incluidos. Contado: 10% de descuento sobre el precio de lista. FINANCIACIÓN: en pesos desde 0 hasta 120 días sin interés, y en dólares ajustables desde 0 hasta 12 meses.';
                 break;
-            case 'GATILLO PARA DOSIFICADOR MATERMACC':
-                descripcionTexto = 'Equipo de corte por surco con "GATILLO" para DOSIFIC. MaterMacc c/ tapa EV3.<br><br>Instalación e IVA (10,5%) incluidos. Contado: 10% de descuento sobre el precio de lista. Financiación: en pesos hasta 120 días sin interés y en dólares ajustable.';
+            case 'SOLO SEMBRADORA con CORTE a GATILLO':
+                descripcionTexto = 'EQUIPOS SOLO SEMBRADORA con CORTE POR SURCO con EMBRAGUES a GATILLO para DOSIF. MATERMACC c/tapa EV3.<br><br>Instalación e IVA (10,5%) incluidos. Contado: 10% de descuento sobre el precio de lista. FINANCIACIÓN: en pesos desde 0 hasta 120 días sin interés, y en dólares ajustables desde 0 hasta 12 meses.';
                 break;
             default:
-                descripcionTexto = 'Instalación e IVA (10,5%) incluidos.<br>Contado: 10% de descuento sobre el precio de lista.<br>Financiación: en pesos hasta 120 días sin interés y en dólares ajustable.';
+                descripcionTexto = 'Instalación e IVA (10,5%) incluidos.<br>Contado: 10% de descuento sobre el precio de lista.<br>FINANCIACIÓN: en pesos desde 0 hasta 120 días sin interés, y en dólares ajustables desde 0 hasta 12 meses.';
         }
 
         // Actualizar el contenido de la descripción con saltos de línea
