@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 if (navigator.share) {
                     navigator.share({
                         title: "Cotización Equipo INTEGRA 6000",
-                        text: "Aquí está la cotización que solicitaste:",
+                        text: "",
                         files: [archivo]
                     }).then(() => {
                         console.log("¡Cotización compartida exitosamente!");

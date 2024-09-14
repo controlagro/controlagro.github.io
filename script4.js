@@ -110,7 +110,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     navigator.share({
                         files: [archivo],
                         title: 'Cotización de equipos',
-                        text: 'Aquí tienes la cotización solicitada.',
+                        text: '',
                     });
                 } else {
                     const link = document.createElement('a');

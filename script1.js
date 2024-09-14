@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 if (navigator.share) {
                     navigator.share({
                         title: "Cotización de Monitores de Siembra",
-                        text: "Aquí está la cotización que solicitaste:",
+                        text: "",
                         files: [archivo]
                     }).then(() => {
                         console.log("¡Cotización compartida exitosamente!");

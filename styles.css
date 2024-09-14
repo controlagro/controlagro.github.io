@@ -151,6 +151,7 @@ button#shareBtn:hover {
 /* Detalle adicional para una estética más pulida */
 .logo-container {
     margin-bottom: 20px;
+    text-align: center; /* Asegura que el logo esté centrado */
 }
 
 .logo {
@@ -176,5 +177,8 @@ button#shareBtn:hover {
     }
     #precio {
         font-size: 22px;
+    }
+    .logo {
+        max-width: 80%; /* Ajuste para dispositivos móviles */
     }
 }
