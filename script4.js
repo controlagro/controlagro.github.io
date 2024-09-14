@@ -3,6 +3,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const embraguesSelect = document.getElementById('embragues');
     const precioSpan = document.getElementById('precio');
     const descripcionP = document.getElementById('descripcion');
+    const shareBtn = document.getElementById('shareBtn');
+    const cotizadorContainer = document.getElementById('cotizador-container');
 
     // Cargar archivo Excel y poblar los desplegables
     fetch('precios4.xlsx')
@@ -97,5 +99,31 @@ document.addEventListener('DOMContentLoaded', function () {
                 const price = matchingRow ? matchingRow[2] : 0;
                 precioSpan.textContent = `USD ${parseFloat(price).toFixed(2)}`;
             });
+    });
+
+    // Función para capturar y compartir
+    function capturarPantallaYCompartir() {
+        html2canvas(cotizadorContainer).then(canvas => {
+            canvas.toBlob(blob => {
+                const archivo = new File([blob], "cotizacion.png", { type: "image/png" });
+                if (navigator.share) {
+                    navigator.share({
+                        files: [archivo],
+                        title: 'Cotización de equipos',
+                        text: 'Aquí tienes la cotización solicitada.',
+                    });
+                } else {
+                    const link = document.createElement('a');
+                    link.href = URL.createObjectURL(blob);
+                    link.download = 'cotizacion.png';
+                    link.click();
+                }
+            });
+        });
+    }
+
+    // Evento para capturar y compartir en WhatsApp
+    shareBtn.addEventListener('click', function () {
+        capturarPantallaYCompartir();
     });
 });

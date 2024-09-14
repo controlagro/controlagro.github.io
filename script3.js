@@ -2,6 +2,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const modeloSelect = document.getElementById('modelo');
     const embraguesSelect = document.getElementById('embragues');
     const precioSpan = document.getElementById('precio');
+    const shareBtn = document.getElementById('shareBtn');
+    const cotizadorContainer = document.getElementById('cotizador-container');
 
     // Cargar archivo Excel y poblar los desplegables
     fetch('precios3.xlsx')
@@ -59,4 +61,29 @@ document.addEventListener('DOMContentLoaded', function () {
     // Restablecer el precio cuando se cambian las opciones
     modeloSelect.addEventListener('change', resetPrecio);
     embraguesSelect.addEventListener('change', resetPrecio);
+
+    // Función para capturar y compartir
+    function capturarPantallaYCompartir() {
+        html2canvas(cotizadorContainer).then(canvas => {
+            canvas.toBlob(blob => {
+                const archivo = new File([blob], "cotizacion.png", { type: "image/png" });
+                if (navigator.share) {
+                    navigator.share({
+                        title: "Cotización Cortes por Sección",
+                        text: "Aquí está la cotización que solicitaste:",
+                        files: [archivo]
+                    }).then(() => {
+                        console.log("¡Cotización compartida exitosamente!");
+                    }).catch(error => {
+                        console.error("Error al compartir:", error);
+                    });
+                } else {
+                    alert("La funcionalidad de compartir no está disponible en este dispositivo.");
+                }
+            });
+        });
+    }
+
+    // Capturar y compartir al hacer clic en el botón
+    shareBtn.addEventListener('click', capturarPantallaYCompartir);
 });

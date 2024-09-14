@@ -2,6 +2,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const tipoSelect = document.getElementById('tipo');
     const precioSpan = document.getElementById('precio');
     const descripcionP = document.querySelector('.descripcion-principal');
+    const shareBtn = document.getElementById('shareBtn');
+    const cotizadorContainer = document.getElementById('cotizador-container');
 
     // Cargar archivo Excel y poblar el desplegable
     fetch('precios2.xlsx')
@@ -40,8 +42,8 @@ document.addEventListener('DOMContentLoaded', function () {
             case 'Antena NOVATEL L1-L2 ACTIVACIÓN SIN abono 15 CM':
                 descripcionTexto = 'Equipo piloto automático INTEGRA 6000, pantalla 10 pulg. táctil, con giro en cabecera, volante con motor eléctrico y antena NOVATEL L1-L2 con ACTIVACIÓN, SIN abono, con 15 CM de PRECISIÓN.';
                 break;
-            case 'Antena NOVATEL L1-L2 ACTIVACIÓN y  ABONO TRIMESTRAL 2,5 CM':
-                descripcionTexto = 'Equipo piloto automático INTEGRA 6000, pantalla 10 pulg. táctil, con giro en cabecera, volante con motor eléctrico y Antena NOVATEL L1-L2 con ACTIVACIÓN y abono trimestral con 2,5 CM de PRECISIÓN.';
+            case 'Antena NOVATEL L1-L2 ACTIVACIÓN y ABONO TRIMESTRAL 2,5 CM':
+                descripcionTexto = 'Equipo piloto automático INTEGRA 6000, pantalla 10 pulg. táctil, con giro en cabecera, volante con motor eléctrico y antena NOVATEL L1-L2 con ACTIVACIÓN y abono trimestral con 2,5 CM de PRECISIÓN.';
                 break;
             case 'Antena NOVATEL L1-L2 ACTIVACIÓN y ABONO ANUAL 2,5 CM':
                 descripcionTexto = 'Equipo piloto automático INTEGRA 6000, pantalla 10 pulg. táctil, con giro en cabecera, volante con motor eléctrico y antena NOVATEL L1-L2 con ACTIVACIÓN y abono anual con 2,5 CM de PRECISIÓN.';
@@ -65,4 +67,29 @@ document.addEventListener('DOMContentLoaded', function () {
         const selectedPrice = tipoSelect.value;
         precioSpan.textContent = `USD ${parseFloat(selectedPrice).toFixed(2)}`;
     });
+
+    // Función para capturar y compartir
+    function capturarPantallaYCompartir() {
+        html2canvas(cotizadorContainer).then(canvas => {
+            canvas.toBlob(blob => {
+                const archivo = new File([blob], "cotizacion.png", { type: "image/png" });
+                if (navigator.share) {
+                    navigator.share({
+                        title: "Cotización Equipo INTEGRA 6000",
+                        text: "Aquí está la cotización que solicitaste:",
+                        files: [archivo]
+                    }).then(() => {
+                        console.log("¡Cotización compartida exitosamente!");
+                    }).catch(error => {
+                        console.error("Error al compartir:", error);
+                    });
+                } else {
+                    alert("La funcionalidad de compartir no está disponible en este dispositivo.");
+                }
+            });
+        });
+    }
+
+    // Capturar y compartir al hacer clic en el botón
+    shareBtn.addEventListener('click', capturarPantallaYCompartir);
 });

@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="cotizador-container">
-        <h1>Cortes por sección </h1>
+    <div class="cotizador-container" id="cotizador-container">
+        <h1>Cortes por sección</h1>
         <form class="cotizador-form">
             <label for="modelo">Modelo:</label>
             <select id="modelo"></select>
@@ -23,9 +23,12 @@
             <p class="descripcion">EQUIPOS con CORTE POR SECCION con EMBRAGUES TEKMATIC EPS-15</p>
             <p class="descripcion">Instalación e IVA (10,5%) incluidos. Contado: 10% de descuento sobre el precio de lista. FINANCIACIÓN: en pesos desde 0 hasta 120 días sin interés, y en dólares ajustables desde 0 hasta 12 meses.</p>
         </div>
+        <!-- Botón para capturar la pantalla y compartir en WhatsApp -->
+        <button id="shareBtn">Capturar y Compartir en WhatsApp</button>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
     <script src="script3.js"></script>
 </body>
 </html>
