@@ -113,7 +113,7 @@ button#calcular {
 }
 
 button#calcular:hover {
-    background-color: #016533;
+    background-color: #014d2a;
 }
 
 /* Estilo del resultado del precio */
@@ -127,6 +127,25 @@ button#calcular:hover {
 #precio {
     color: #27ae60;
     font-size: 22px;
+}
+
+/* Botón de compartir en WhatsApp */
+button#shareBtn {
+    margin-top: 15px;
+    padding: 12px;
+    background-color: #25d366;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+button#shareBtn:hover {
+    background-color: #1ebc5a;
 }
 
 /* Detalle adicional para una estética más pulida */
@@ -151,8 +170,11 @@ button#calcular:hover {
         font-size: 14px;
         padding: 10px;
     }
+    button#shareBtn {
+        font-size: 14px;
+        padding: 10px;
+    }
     #precio {
         font-size: 22px;
     }
-    
 }

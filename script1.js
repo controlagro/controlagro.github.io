@@ -73,5 +73,23 @@ document.addEventListener('DOMContentLoaded', function() {
     modeloSelect.addEventListener('change', resetPrecio);
     sensoresSelect.addEventListener('change', resetPrecio);
 
+    // Cargar los datos desde el archivo .xlsx al iniciar
     cargarDatos();
+
+    // Función para capturar la pantalla y compartir por WhatsApp
+    document.getElementById('shareBtn').addEventListener('click', function() {
+        html2canvas(document.getElementById('cotizador-container')).then(canvas => {
+            const imgData = canvas.toDataURL('image/png');
+
+            // Crear un enlace temporal para descargar la imagen
+            const link = document.createElement('a');
+            link.href = imgData;
+            link.download = 'cotizacion.png';
+            link.click();
+
+            // Compartir por WhatsApp (nota: WhatsApp no soporta enviar imágenes directamente desde el navegador)
+            const whatsappURL = `https://wa.me/?text=Te envío la captura de la cotización.`;
+            window.open(whatsappURL, '_blank');
+        });
+    });
 });
