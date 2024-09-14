@@ -3,6 +3,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const sensoresSelect = document.getElementById('sensores');
     const precioElement = document.getElementById('precio');
     const calcularButton = document.getElementById('calcular');
+    const shareBtn = document.getElementById('shareBtn');
+    const cotizadorContainer = document.getElementById('cotizador-container');
 
     let datos = [];
 
@@ -66,6 +68,28 @@ document.addEventListener('DOMContentLoaded', function() {
         precioElement.textContent = "USD 0.00";
     }
 
+    // Función para capturar y compartir
+    function capturarPantallaYCompartir() {
+        html2canvas(cotizadorContainer).then(canvas => {
+            canvas.toBlob(blob => {
+                const archivo = new File([blob], "cotizacion.png", { type: "image/png" });
+                if (navigator.share) {
+                    navigator.share({
+                        title: "Cotización de Monitores de Siembra",
+                        text: "Aquí está la cotización que solicitaste:",
+                        files: [archivo]
+                    }).then(() => {
+                        console.log("¡Cotización compartida exitosamente!");
+                    }).catch(error => {
+                        console.error("Error al compartir:", error);
+                    });
+                } else {
+                    alert("La funcionalidad de compartir no está disponible en este dispositivo.");
+                }
+            });
+        });
+    }
+
     // Calcular precio cuando se hace clic en el botón
     calcularButton.addEventListener('click', calcularPrecio);
 
@@ -73,23 +97,8 @@ document.addEventListener('DOMContentLoaded', function() {
     modeloSelect.addEventListener('change', resetPrecio);
     sensoresSelect.addEventListener('change', resetPrecio);
 
-    // Cargar los datos desde el archivo .xlsx al iniciar
+    // Capturar y compartir al hacer clic en el botón
+    shareBtn.addEventListener('click', capturarPantallaYCompartir);
+
     cargarDatos();
-
-    // Función para capturar la pantalla y compartir por WhatsApp
-    document.getElementById('shareBtn').addEventListener('click', function() {
-        html2canvas(document.getElementById('cotizador-container')).then(canvas => {
-            const imgData = canvas.toDataURL('image/png');
-
-            // Crear un enlace temporal para descargar la imagen
-            const link = document.createElement('a');
-            link.href = imgData;
-            link.download = 'cotizacion.png';
-            link.click();
-
-            // Compartir por WhatsApp (nota: WhatsApp no soporta enviar imágenes directamente desde el navegador)
-            const whatsappURL = `https://wa.me/?text=Te envío la captura de la cotización.`;
-            window.open(whatsappURL, '_blank');
-        });
-    });
 });
