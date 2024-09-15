@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 descripcionTexto = 'El equipo está compuesto por una pantalla táctil de 10 pulgadas, con giro en cabecera, volante con motor eléctrico y antena NOVATEL L1-L2.';
         }
 
-        // Actualizar el contenido de la descripción con saltos de línea
+        // Actualizar el contenido de la descripción
         descripcionP.innerHTML = descripcionTexto;
     }
 
@@ -73,10 +73,22 @@ document.addEventListener('DOMContentLoaded', function () {
         html2canvas(cotizadorContainer).then(canvas => {
             canvas.toBlob(blob => {
                 const archivo = new File([blob], "cotizacion.png", { type: "image/png" });
-                if (navigator.share) {
+
+                // Obtener fecha y hora actuales
+                const fechaActual = new Date();
+                const opcionesFecha = { year: 'numeric', month: 'long', day: 'numeric' };
+                const opcionesHora = { hour: '2-digit', minute: '2-digit', second: '2-digit' };
+                const fechaFormateada = fechaActual.toLocaleDateString('es-ES', opcionesFecha);
+                const horaFormateada = fechaActual.toLocaleTimeString('es-ES', opcionesHora);
+
+                // Crear el texto con fecha y hora
+                const textoCompartir = `Cotización generada el ${fechaFormateada} a las ${horaFormateada}`;
+
+                if (navigator.share && navigator.canShare && navigator.canShare({ files: [archivo] })) {
+                    // Compartir en dispositivos móviles
                     navigator.share({
                         title: "Cotización Equipo INTEGRA 6000",
-                        text: "",
+                        text: textoCompartir,
                         files: [archivo]
                     }).then(() => {
                         console.log("¡Cotización compartida exitosamente!");
@@ -84,7 +96,24 @@ document.addEventListener('DOMContentLoaded', function () {
                         console.error("Error al compartir:", error);
                     });
                 } else {
-                    alert("La funcionalidad de compartir no está disponible en este dispositivo.");
+                    // Descargar la imagen en computadoras de escritorio
+                    const urlImagen = URL.createObjectURL(blob);
+
+                    // Crear un enlace temporal para descargar la imagen
+                    const enlaceDescarga = document.createElement('a');
+                    enlaceDescarga.href = urlImagen;
+                    enlaceDescarga.download = 'cotizacion.png';
+                    document.body.appendChild(enlaceDescarga);
+                    enlaceDescarga.click();
+                    document.body.removeChild(enlaceDescarga);
+
+                    // Abrir WhatsApp Web con mensaje predefinido
+                    const mensajeWhatsApp = encodeURIComponent(textoCompartir + "\nAdjunto la cotización.");
+                    const urlWhatsApp = `https://web.whatsapp.com/send?text=${mensajeWhatsApp}`;
+                    window.open(urlWhatsApp, '_blank');
+
+                    // Mostrar una alerta al usuario
+                    alert('La imagen de la cotización se ha descargado. Por favor, adjunta la imagen manualmente en WhatsApp Web.');
                 }
             });
         });
