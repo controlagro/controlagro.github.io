@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let datos = [];
 
     function cargarDatos() {
-        const url = 'precios1.xlsx'; // Cambia el nombre para cada cotizador
+        const url = '0824 PARA MONITOR de SIEMBRA.xlsx'; // Cambia el nombre para cada cotizador
 
         fetch(url)
             .then(response => response.arrayBuffer())

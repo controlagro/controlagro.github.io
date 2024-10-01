@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const cotizadorContainer = document.getElementById('cotizador-container');
 
     // Cargar archivo Excel y poblar los desplegables
-    fetch('precios4.xlsx')
+    fetch('0824 Cortes SURCO x SURCO INTEGRA 6000.xlsx')
         .then(response => response.arrayBuffer())
         .then(data => {
             const workbook = XLSX.read(data, { type: 'array' });
@@ -87,7 +87,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const selectedModelo = modeloSelect.value;
         const selectedEmbragues = embraguesSelect.value;
 
-        fetch('precios4.xlsx')
+        fetch('0824 Cortes SURCO x SURCO INTEGRA 6000.xlsx')
             .then(response => response.arrayBuffer())
             .then(data => {
                 const workbook = XLSX.read(data, { type: 'array' });

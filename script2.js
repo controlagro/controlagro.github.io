@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const cotizadorContainer = document.getElementById('cotizador-container');
 
     // Cargar archivo Excel y poblar el desplegable
-    fetch('precios2.xlsx')
+    fetch('0824 PILOTOS INTEGRA 6000.xlsx')
         .then(response => response.arrayBuffer())
         .then(data => {
             const workbook = XLSX.read(data, { type: 'array' });
