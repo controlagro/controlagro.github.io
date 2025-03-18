@@ -3,17 +3,17 @@ document.addEventListener("DOMContentLoaded", function () {
     const embraguesSelect = document.getElementById("embragues");
     const calcularBtn = document.getElementById("calcular");
     const precioDisplay = document.getElementById("precio");
+    const shareBtn = document.getElementById("shareBtn");
+    const cotizadorContainer = document.getElementById("cotizador-container");
 
     let precios = {};
 
-    // Modelos que NO llevan embragues
     const modelosSinEmbragues = [
         "ABONO SEÑAL TERRASTAR C PRO 2,5 CM POR 1 AÑO",
         "ABONO SEÑAL TERRASTAR C PRO 2,5 CM POR 3 MESES",
-        "ACTIVACION ANTENA PARA TERRASTAR C PRO (por única vez)" // ✅ Corrección aplicada
+        "ACTIVACION ANTENA PARA TERRASTAR C PRO (por única vez)"
     ];
 
-    // Cargar archivo de precios
     fetch("LP 0225 Cortes x SURCO INTEGRA 6000.xlsx")
         .then(response => response.arrayBuffer())
         .then(data => {
@@ -21,7 +21,6 @@ document.addEventListener("DOMContentLoaded", function () {
             const sheet = workbook.Sheets[workbook.SheetNames[0]];
             const jsonData = XLSX.utils.sheet_to_json(sheet);
 
-            // Procesar datos del Excel
             jsonData.forEach(row => {
                 const modelo = row["Modelo"];
                 const cantidadEmbragues = row["Cantidad de Embragues"];
@@ -29,22 +28,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 if (!precios[modelo]) {
                     precios[modelo] = {
-                        preciosPorEmbrague: {}, // Objeto para guardar precios por cantidad de embragues
-                        precioBase: null, // Precio base para modelos sin embragues
+                        preciosPorEmbrague: {},
+                        precioBase: null,
                         embragues: []
                     };
                 }
 
-                // Guardar precios asociados a la cantidad de embragues
                 if (cantidadEmbragues) {
                     precios[modelo].preciosPorEmbrague[cantidadEmbragues] = precio;
                     precios[modelo].embragues.push(cantidadEmbragues);
                 } else {
-                    precios[modelo].precioBase = precio; // Guardar precio base para modelos sin embragues
+                    precios[modelo].precioBase = precio;
                 }
             });
 
-            // Llenar el select de modelos
             Object.keys(precios).forEach(modelo => {
                 let option = document.createElement("option");
                 option.value = modelo;
@@ -52,27 +49,19 @@ document.addEventListener("DOMContentLoaded", function () {
                 modeloSelect.appendChild(option);
             });
 
-            // Disparar el evento de cambio para cargar el primer modelo
             modeloSelect.dispatchEvent(new Event("change"));
         });
 
-    // Manejo del cambio de modelo
     modeloSelect.addEventListener("change", function () {
         const modeloSeleccionado = modeloSelect.value;
-
-        // Reiniciar la cotización
         precioDisplay.textContent = "USD 0.00";
-
-        // Reiniciar y habilitar el campo de embragues
         embraguesSelect.innerHTML = "";
         embraguesSelect.disabled = false;
 
-        // Verificar si el modelo NO lleva embragues
         if (modelosSinEmbragues.includes(modeloSeleccionado)) {
             embraguesSelect.disabled = true;
-            embraguesSelect.innerHTML = "<option value=''>N/A</option>"; // Opción vacía
+            embraguesSelect.innerHTML = "<option value=''>N/A</option>";
         } else {
-            // Llenar el select de embragues con opciones disponibles
             if (precios[modeloSeleccionado] && precios[modeloSeleccionado].embragues.length > 0) {
                 let optionDefault = document.createElement("option");
                 optionDefault.value = "";
@@ -89,40 +78,61 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    // **Nueva corrección: Resetear precio al cambiar de cantidad de embragues**
     embraguesSelect.addEventListener("change", function () {
         precioDisplay.textContent = "USD 0.00";
     });
 
-    // Calcular precio
     calcularBtn.addEventListener("click", function () {
         const modeloSeleccionado = modeloSelect.value;
         const embragueSeleccionado = embraguesSelect.value;
 
-        // Reiniciar el precio antes de calcular
         precioDisplay.textContent = "USD 0.00";
 
         if (!modeloSeleccionado || !precios[modeloSeleccionado]) {
             return;
         }
 
-        // Si el modelo NO requiere embragues, usar su precio base
         if (modelosSinEmbragues.includes(modeloSeleccionado)) {
             const precioBase = precios[modeloSeleccionado].precioBase || 0;
             precioDisplay.textContent = `USD ${precioBase.toFixed(2)}`;
             return;
         }
 
-        // Si el modelo requiere embragues pero no se seleccionó ninguno
         if (!embragueSeleccionado) {
             precioDisplay.textContent = "Seleccione la cantidad de embragues";
             return;
         }
 
-        // Obtener el precio correcto según la cantidad de embragues elegida
         let precioFinal = precios[modeloSeleccionado].preciosPorEmbrague[embragueSeleccionado] || 0;
-
-        // Mostrar el precio final
         precioDisplay.textContent = `USD ${precioFinal.toFixed(2)}`;
     });
+
+    function capturarPantallaYCompartir() {
+        html2canvas(cotizadorContainer).then(canvas => {
+            canvas.toBlob(blob => {
+                const archivo = new File([blob], "cotizacion.png", { type: "image/png" });
+                const mensajeWhatsApp = encodeURIComponent("Adjunto la cotización generada.");
+                const urlWhatsApp = `https://web.whatsapp.com/send?text=${mensajeWhatsApp}`;
+
+                if (navigator.share && navigator.canShare({ files: [archivo] })) {
+                    navigator.share({
+                        title: "Cotización de Equipos",
+                        text: "Adjunto la cotización generada.",
+                        files: [archivo]
+                    });
+                } else {
+                    const urlImagen = URL.createObjectURL(blob);
+                    const enlaceDescarga = document.createElement('a');
+                    enlaceDescarga.href = urlImagen;
+                    enlaceDescarga.download = 'cotizacion.png';
+                    document.body.appendChild(enlaceDescarga);
+                    enlaceDescarga.click();
+                    document.body.removeChild(enlaceDescarga);
+                    window.open(urlWhatsApp, '_blank');
+                }
+            });
+        });
+    }
+
+    shareBtn.addEventListener('click', capturarPantallaYCompartir);
 });
