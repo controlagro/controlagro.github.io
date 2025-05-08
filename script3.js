@@ -8,14 +8,21 @@ document.addEventListener("DOMContentLoaded", function () {
 
     let precios = {};
 
-    // Modelos que NO llevan embragues
+    const descripcionesPorModelo = {
+        "PANTALLA I-6000 con EPS 15 SIN ANTENA": "EQUIPOS con CORTE POR SECCIÓN con EMBRAGUES TEKMATIC EPS-15. Instalación e IVA (10,5%) incluidos. Contado: 10% de descuento sobre el precio de lista. FINANCIACIÓN: en pesos desde 0 hasta 120 días sin interés, y en dólares ajustables desde 0 hasta 12 meses.",
+        "PANTALLA I-6000 con EPS 15 CON ANTENA": "EQUIPOS con CORTE POR SECCIÓN con EMBRAGUES TEKMATIC EPS-15. Instalación e IVA (10,5%) incluidos. Contado: 10% de descuento sobre el precio de lista. FINANCIACIÓN: en pesos desde 0 hasta 120 días sin interés, y en dólares ajustables desde 0 hasta 12 meses.",
+        "SOLO en SEMBRADORA con EPS-15": "EQUIPOS con CORTE POR SECCIÓN con EMBRAGUES TEKMATIC EPS-15. Instalación e IVA (10,5%) incluidos. Contado: 10% de descuento sobre el precio de lista. FINANCIACIÓN: en pesos desde 0 hasta 120 días sin interés, y en dólares ajustables desde 0 hasta 12 meses.",
+        "ABONO SEÑAL TERRASTAR C PRO 2,5 CM POR 1 AÑO": "Instalación e IVA (21%) incluidos. CONTADO.",
+        "ABONO SEÑAL TERRASTAR C PRO 2,5 CM POR 3 MESES": "Instalación e IVA (21%) incluidos. CONTADO.",
+        "ACTIVACION ANTENA PARA TERRASTAR C PRO (única vez)": "Instalación e IVA (21%) incluidos. CONTADO."
+    };
+
     const modelosSinEmbragues = [
         "ABONO SEÑAL TERRASTAR C PRO 2,5 CM POR 1 AÑO",
         "ABONO SEÑAL TERRASTAR C PRO 2,5 CM POR 3 MESES",
         "ACTIVACION ANTENA PARA TERRASTAR C PRO (única vez)"
     ];
 
-    // Cargar archivo de precios
     fetch("LP 0225 CORTES x SECCION INTEGRA 6000.xlsx")
         .then(response => response.arrayBuffer())
         .then(data => {
@@ -67,7 +74,7 @@ document.addEventListener("DOMContentLoaded", function () {
             if (precios[modeloSeleccionado] && precios[modeloSeleccionado].embragues.length > 0) {
                 let optionDefault = document.createElement("option");
                 optionDefault.value = "";
-                optionDefault.textContent = "Seleccione cantidad";
+                optionDefault.textContent = "Seleccionar cantidad";
                 embraguesSelect.appendChild(optionDefault);
 
                 precios[modeloSeleccionado].embragues.forEach(embrague => {
@@ -78,6 +85,10 @@ document.addEventListener("DOMContentLoaded", function () {
                 });
             }
         }
+
+        // Reiniciar descripción al cambiar modelo
+        const descripcionElemento = document.getElementById("descripcion-modelo");
+        descripcionElemento.textContent = "";
     });
 
     embraguesSelect.addEventListener("change", function () {
@@ -87,12 +98,16 @@ document.addEventListener("DOMContentLoaded", function () {
     calcularBtn.addEventListener("click", function () {
         const modeloSeleccionado = modeloSelect.value;
         const embragueSeleccionado = embraguesSelect.value;
+        const descripcionElemento = document.getElementById("descripcion-modelo");
 
         precioDisplay.textContent = "USD 0.00";
 
         if (!modeloSeleccionado || !precios[modeloSeleccionado]) {
             return;
         }
+
+        descripcionElemento.textContent = descripcionesPorModelo[modeloSeleccionado] ||
+            "EQUIPOS con CORTE POR SECCIÓN con EMBRAGUES TEKMATIC EPS-15. Instalación e IVA (10,5%) incluidos. Contado: 10% de descuento sobre el precio de lista. FINANCIACIÓN: en pesos desde 0 hasta 120 días sin interés, y en dólares ajustables desde 0 hasta 12 meses.";
 
         if (modelosSinEmbragues.includes(modeloSeleccionado)) {
             const precioBase = precios[modeloSeleccionado].precioBase || 0;
@@ -101,7 +116,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         if (!embragueSeleccionado) {
-            precioDisplay.textContent = "Seleccione la cantidad de embragues";
+            precioDisplay.textContent = "";
             return;
         }
 

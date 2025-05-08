@@ -8,6 +8,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
     let precios = {};
 
+    const descripcionesPorModelo = {
+        "ABONO SEÑAL TERRASTAR C PRO 2,5 CM POR 1 AÑO": "Instalación e IVA (21%) incluidos. CONTADO.",
+        "ABONO SEÑAL TERRASTAR C PRO 2,5 CM POR 3 MESES": "Instalación e IVA (21%) incluidos. CONTADO.",
+        "ACTIVACION ANTENA PARA TERRASTAR C PRO (por única vez)": "Instalación e IVA (21%) incluidos. CONTADO."
+    };
+
     const modelosSinEmbragues = [
         "ABONO SEÑAL TERRASTAR C PRO 2,5 CM POR 1 AÑO",
         "ABONO SEÑAL TERRASTAR C PRO 2,5 CM POR 3 MESES",
@@ -76,6 +82,9 @@ document.addEventListener("DOMContentLoaded", function () {
                 });
             }
         }
+
+        const descripcionElemento = document.getElementById("descripcion-modelo");
+        descripcionElemento.textContent = "";
     });
 
     embraguesSelect.addEventListener("change", function () {
@@ -85,8 +94,12 @@ document.addEventListener("DOMContentLoaded", function () {
     calcularBtn.addEventListener("click", function () {
         const modeloSeleccionado = modeloSelect.value;
         const embragueSeleccionado = embraguesSelect.value;
+        const descripcionElemento = document.getElementById("descripcion-modelo");
 
         precioDisplay.textContent = "USD 0.00";
+
+        descripcionElemento.textContent = descripcionesPorModelo[modeloSeleccionado] ||
+            "EQUIPOS con CORTE SURCO POR SURCO con EMBRAGUES TEKMATIC EPS-15. Instalación e IVA (10,5%) incluidos. Contado: 10% de descuento sobre el precio de lista. FINANCIACIÓN: en pesos desde 0 hasta 120 días sin interés, y en dólares ajustables desde 0 hasta 12 meses.";
 
         if (!modeloSeleccionado || !precios[modeloSeleccionado]) {
             return;
@@ -99,7 +112,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         if (!embragueSeleccionado) {
-            precioDisplay.textContent = "Seleccione la cantidad de embragues";
+            precioDisplay.textContent = "";
             return;
         }
 

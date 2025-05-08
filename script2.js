@@ -36,26 +36,26 @@ document.addEventListener('DOMContentLoaded', function () {
         let descripcionTexto = '';
 
         switch (selectedTipo) {
-            case 'Antena NOVATEL L1-L2 Señal libre de 35 cm':
-                descripcionTexto = 'Equipo piloto automático INTEGRA 6000, pantalla 10 pulg. táctil, con giro en cabecera, volante con motor eléctrico y antena NOVATEL L1-L2 con señal libre de 35 cm.';
+            case 'Antena NOVATEL L1-L2 Señal libre de 15 cm':
+                descripcionTexto = 'Equipo piloto automático INTEGRA 6000, pantalla 10 pulg. táctil, con giro en cabecera, volante con motor eléctrico y antena NOVATEL L1-L2. Instalación e IVA (10,5%) incluidos. Contado: 10% de descuento sobre el precio de lista. FINANCIACIÓN: en pesos desde 0 hasta 120 días sin interés, y en dólares ajustables desde 0 hasta 12 meses.';
                 break;
             case 'Antena NOVATEL L1-L2 ACTIVACIÓN SIN abono 15 CM':
-                descripcionTexto = 'Equipo piloto automático INTEGRA 6000, pantalla 10 pulg. táctil, con giro en cabecera, volante con motor eléctrico y antena NOVATEL L1-L2 con ACTIVACIÓN, SIN abono, con 15 CM de PRECISIÓN.';
+                descripcionTexto = 'Equipo piloto automático INTEGRA 6000, pantalla 10 pulg. táctil, con giro en cabecera, volante con motor eléctrico y antena NOVATEL L1-L2 con ACTIVACIÓN, SIN abono, con 15 CM de PRECISIÓN. Instalación e IVA (10,5%) incluidos. Contado: 10% de descuento sobre el precio de lista. FINANCIACIÓN: en pesos desde 0 hasta 120 días sin interés, y en dólares ajustables desde 0 hasta 12 meses.';
                 break;
             case 'Antena NOVATEL L1-L2 ACTIVACIÓN y ABONO TRIMESTRAL 2,5 CM':
-                descripcionTexto = 'Equipo piloto automático INTEGRA 6000, pantalla 10 pulg. táctil, con giro en cabecera, volante con motor eléctrico y antena NOVATEL L1-L2 con ACTIVACIÓN y abono trimestral con 2,5 CM de PRECISIÓN.';
+                descripcionTexto = 'Equipo piloto automático INTEGRA 6000, pantalla 10 pulg. táctil, con giro en cabecera, volante con motor eléctrico y antena NOVATEL L1-L2 con ACTIVACIÓN y abono trimestral con 2,5 CM de PRECISIÓN. Instalación e IVA (10,5%) incluidos. Contado: 10% de descuento sobre el precio de lista. FINANCIACIÓN: en pesos desde 0 hasta 120 días sin interés, y en dólares ajustables desde 0 hasta 12 meses.';
                 break;
             case 'Antena NOVATEL L1-L2 ACTIVACIÓN y ABONO ANUAL 2,5 CM':
-                descripcionTexto = 'Equipo piloto automático INTEGRA 6000, pantalla 10 pulg. táctil, con giro en cabecera, volante con motor eléctrico y antena NOVATEL L1-L2 con ACTIVACIÓN y abono anual con 2,5 CM de PRECISIÓN.';
+                descripcionTexto = 'Equipo piloto automático INTEGRA 6000, pantalla 10 pulg. táctil, con giro en cabecera, volante con motor eléctrico y antena NOVATEL L1-L2 con ACTIVACIÓN y abono anual con 2,5 CM de PRECISIÓN. Instalación e IVA (10,5%) incluidos. Contado: 10% de descuento sobre el precio de lista. FINANCIACIÓN: en pesos desde 0 hasta 120 días sin interés, y en dólares ajustables desde 0 hasta 12 meses.';
                 break;
             case 'SURVEY L1 CON base portátil RTK':
-                descripcionTexto = 'Equipo piloto automático INTEGRA 6000, pantalla 10 pulg. táctil, con giro en cabecera, volante con motor eléctrico, y antena con base portátil RTK, con precisión de 2,5 cm.';
+                descripcionTexto = 'Equipo piloto automático INTEGRA 6000, pantalla 10 pulg. táctil, con giro en cabecera, volante con motor eléctrico, y antena con base portátil RTK, con precisión de 2,5 cm. Instalación e IVA (10,5%) incluidos. Contado: 10% de descuento sobre el precio de lista. FINANCIACIÓN: en pesos desde 0 hasta 120 días sin interés, y en dólares ajustables desde 0 hasta 12 meses.';
                 break;
             case 'SURVEY L1 SIN base portátil RTK':
-                descripcionTexto = 'Equipo piloto automático INTEGRA 6000, pantalla 10 pulg., con giro en cabecera, Antena SURVEY L1 (compatible pero sin base RTK, SIN abonos), volante con motor eléc., con señal libre con precisión de 15 cm.';
+                descripcionTexto = 'Equipo piloto automático INTEGRA 6000, pantalla 10 pulg., con giro en cabecera, Antena SURVEY L1 (compatible pero sin base RTK, SIN abonos), volante con motor eléc., con señal libre con precisión de 15 cm. Instalación e IVA (10,5%) incluidos. Contado: 10% de descuento sobre el precio de lista. FINANCIACIÓN: en pesos desde 0 hasta 120 días sin interés, y en dólares ajustables desde 0 hasta 12 meses.';
                 break;
             default:
-                descripcionTexto = 'El equipo está compuesto por una pantalla táctil de 10 pulgadas, con giro en cabecera, volante con motor eléctrico y antena NOVATEL L1-L2.';
+                descripcionTexto = 'El equipo está compuesto por una pantalla táctil de 10 pulgadas, con giro en cabecera, volante con motor eléctrico y antena NOVATEL L1-L2. Instalación e IVA (21%) incluidos. CONTADO.';
         }
 
         // Actualizar el contenido de la descripción
