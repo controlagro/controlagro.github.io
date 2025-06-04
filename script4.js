@@ -9,6 +9,12 @@ document.addEventListener("DOMContentLoaded", function () {
     let precios = {};
 
     const descripcionesPorModelo = {
+        "INTEGRA 6000 CON TEKMATIC SIN ANTENA": "EQUIPOS con CORTE SURCO POR SURCO con EMBRAGUES TEKMATIC EPS-5. Instalación e IVA (10,5%) incluidos. Contado: 10% de descuento sobre el precio de lista. FINANCIACIÓN: en pesos desde 0 hasta 120 días sin interés, y en dólares ajustables desde 0 hasta 12 meses.",
+        "INTEGRA 6000 CON TEKMATIC CON ANTENA": "EQUIPOS con CORTE SURCO POR SURCO con EMBRAGUES TEKMATIC EPS-5. Instalación e IVA (10,5%) incluidos. Contado: 10% de descuento sobre el precio de lista. FINANCIACIÓN: en pesos desde 0 hasta 120 días sin interés, y en dólares ajustables desde 0 hasta 12 meses.",
+        "INTEGRA 6000 CON GATILLO SIN ANTENA": "EQUIPOS con CORTE SURCO POR SURCO con EMBRAGUES A GATILLO. Instalación e IVA (10,5%) incluidos. Contado: 10% de descuento sobre el precio de lista. FINANCIACIÓN: en pesos desde 0 hasta 120 días sin interés, y en dólares ajustables desde 0 hasta 12 meses.",
+        "INTEGRA 6000 CON GATILLO CON ANTENA": "EQUIPOS con CORTE SURCO POR SURCO con EMBRAGUES A GATILLO. Instalación e IVA (10,5%) incluidos. Contado: 10% de descuento sobre el precio de lista. FINANCIACIÓN: en pesos desde 0 hasta 120 días sin interés, y en dólares ajustables desde 0 hasta 12 meses.",
+        "SOLO SEMBRADORA con CORTE TEKMATIC": "EQUIPOS con CORTE SURCO POR SURCO con EMBRAGUES TEKMATIC EPS-5. Instalación e IVA (10,5%) incluidos. Contado: 10% de descuento sobre el precio de lista. FINANCIACIÓN: en pesos desde 0 hasta 120 días sin interés, y en dólares ajustables desde 0 hasta 12 meses.",
+        "SOLO SEMBRADORA con CORTE a GATILLO": "EQUIPOS con CORTE SURCO POR SURCO con EMBRAGUES A GATILLO. Instalación e IVA (10,5%) incluidos. Contado: 10% de descuento sobre el precio de lista. FINANCIACIÓN: en pesos desde 0 hasta 120 días sin interés, y en dólares ajustables desde 0 hasta 12 meses.",
         "ABONO SEÑAL TERRASTAR C PRO 2,5 CM POR 1 AÑO": "Instalación e IVA (21%) incluidos. CONTADO.",
         "ABONO SEÑAL TERRASTAR C PRO 2,5 CM POR 3 MESES": "Instalación e IVA (21%) incluidos. CONTADO.",
         "ACTIVACION ANTENA PARA TERRASTAR C PRO (por única vez)": "Instalación e IVA (21%) incluidos. CONTADO."
@@ -99,7 +105,7 @@ document.addEventListener("DOMContentLoaded", function () {
         precioDisplay.textContent = "USD 0.00";
 
         descripcionElemento.textContent = descripcionesPorModelo[modeloSeleccionado] ||
-            "EQUIPOS con CORTE SURCO POR SURCO con EMBRAGUES TEKMATIC EPS-15. Instalación e IVA (10,5%) incluidos. Contado: 10% de descuento sobre el precio de lista. FINANCIACIÓN: en pesos desde 0 hasta 120 días sin interés, y en dólares ajustables desde 0 hasta 12 meses.";
+            "";
 
         if (!modeloSeleccionado || !precios[modeloSeleccionado]) {
             return;
