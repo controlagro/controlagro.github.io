@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const cotizadorContainer = document.getElementById('cotizador-container');
 
     // Cargar archivo Excel y poblar el desplegable
-    fetch('LP 0225 PILOTOS INTEGRA 6000.xlsx')
+    fetch('LP 0126 PILOTOS INTEGRA 6000 con agregados.xlsx')
         .then(response => response.arrayBuffer())
         .then(data => {
             const workbook = XLSX.read(data, { type: 'array' });
@@ -36,6 +36,12 @@ document.addEventListener('DOMContentLoaded', function () {
         let descripcionTexto = '';
 
         switch (selectedTipo) {
+            case 'ANTENA ControlAgro PRECISIO-ULTRA con abono ANUAL de 2,5 cm de PRECISION':
+                descripcionTexto = 'Equipo piloto automático INTEGRA 6000, pantalla 10 pulg. táctil, con Giro en Cabecera,  VOLANTE con motor eléctrico y ANTENA ControlAgro PRECISIO-ULTRA con abono ANUAL, de 2,5 cm de PRECISION. Instalación e IVA (10,5%) incluidos.';
+                break;
+            case 'Abono ANUAL: con corr. ControlAgro Precisio-Ultra de 2,5 cm.':
+                descripcionTexto = 'Abono ANUAL: con corr. ControlAgro Precisio-Ultra de 2,5 cm.';
+                break;
             case 'Antena NOVATEL L1-L2 Señal libre de 15 cm':
                 descripcionTexto = 'Equipo piloto automático INTEGRA 6000, pantalla 10 pulg. táctil, con giro en cabecera, volante con motor eléctrico y antena NOVATEL L1-L2. Instalación e IVA (10,5%) incluidos. Contado: 10% de descuento sobre el precio de lista. FINANCIACIÓN: en pesos desde 0 hasta 120 días sin interés, y en dólares ajustables desde 0 hasta 12 meses.';
                 break;
