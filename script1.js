@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
 
         if (precio !== 0) {
-            precioElement.textContent = `USD ${new Intl.NumberFormat('es-AR', { minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(parseFloat(precio))}`;
+            precioElement.textContent = formatearUSD(parseFloat(precio));
         } else {
             precioElement.textContent = "No disponible";
         }

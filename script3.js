@@ -5,9 +5,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const precioDisplay = document.getElementById("precio");
     const descripcionElemento = document.getElementById("descripcion-modelo");
 
-    const formatearPrecio = (valor) =>
-        new Intl.NumberFormat("es-AR", { minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(valor);
-
     let precios = {};
 
     const descripcionesPorModelo = {
@@ -31,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function mostrarPrecio(valor) {
-        precioDisplay.textContent = `USD ${formatearPrecio(valor)}`;
+        precioDisplay.textContent = formatearUSD(valor);
         precioDisplay.classList.remove("precio-pendiente");
     }
 

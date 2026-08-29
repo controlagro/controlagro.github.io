@@ -13,9 +13,6 @@ document.addEventListener("DOMContentLoaded", function () {
         dias360: { etiqueta: "Financiación 0 a 360 días", nota: "Anticipo 30% + saldo sin interés" },
     };
 
-    const formatearUSD = (valor) =>
-        `USD ${new Intl.NumberFormat("es-AR", { minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(valor)}`;
-
     let itemsPorClave = {};
 
     function ocultarResultado() {
