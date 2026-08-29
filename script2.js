@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
     const tipoSelect = document.getElementById("tipo");
-    const calcularBtn = document.getElementById("calcular");
     const badgeLista = document.getElementById("badge-lista");
     const resultado = document.getElementById("resultado");
     const precioEl = document.getElementById("precio");
@@ -57,7 +56,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function calcularPrecio() {
         const item = itemsPorClave[tipoSelect.value];
-        if (!item) return;
+        if (!item) {
+            ocultarResultado();
+            return;
+        }
 
         precioEl.textContent = formatearUSD(item.precios.contado);
         descripcionEl.textContent = item.descripcion;
@@ -81,12 +83,7 @@ document.addEventListener("DOMContentLoaded", function () {
         resultado.classList.remove("oculto");
     }
 
-    tipoSelect.addEventListener("change", () => {
-        ocultarResultado();
-        calcularBtn.disabled = !tipoSelect.value;
-    });
-
-    calcularBtn.addEventListener("click", calcularPrecio);
+    tipoSelect.addEventListener("change", calcularPrecio);
 
     fetch("data/pilotos-integra-6000.json")
         .then((response) => {

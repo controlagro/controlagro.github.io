@@ -1,8 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
     const modeloSelect = document.getElementById("modelo");
     const embraguesSelect = document.getElementById("embragues");
-    const calcularBtn = document.getElementById("calcular");
+    const campoEmbragues = document.getElementById("campo-embragues");
     const precioDisplay = document.getElementById("precio");
+    const descripcionElemento = document.getElementById("descripcion-modelo");
 
     const formatearPrecio = (valor) =>
         new Intl.NumberFormat("es-AR", { minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(valor);
@@ -26,6 +27,16 @@ document.addEventListener("DOMContentLoaded", function () {
         "ABONO SEÑAL TERRASTAR C PRO 2,5 CM POR 3 MESES",
         "ACTIVACION ANTENA PARA TERRASTAR C PRO (por única vez)"
     ];
+
+    function mostrarPendiente(mensaje) {
+        precioDisplay.textContent = mensaje;
+        precioDisplay.classList.add("precio-pendiente");
+    }
+
+    function mostrarPrecio(valor) {
+        precioDisplay.textContent = `USD ${formatearPrecio(valor)}`;
+        precioDisplay.classList.remove("precio-pendiente");
+    }
 
     fetch("LP 0225 Cortes x SURCO INTEGRA 6000.xlsx")
         .then(response => response.arrayBuffer())
@@ -67,64 +78,47 @@ document.addEventListener("DOMContentLoaded", function () {
 
     modeloSelect.addEventListener("change", function () {
         const modeloSeleccionado = modeloSelect.value;
-        precioDisplay.textContent = "USD 0.00";
         embraguesSelect.innerHTML = "";
-        embraguesSelect.disabled = false;
+
+        descripcionElemento.textContent = descripcionesPorModelo[modeloSeleccionado] || "";
 
         if (modelosSinEmbragues.includes(modeloSeleccionado)) {
-            embraguesSelect.disabled = true;
-            embraguesSelect.innerHTML = "<option value=''>N/A</option>";
-        } else {
-            if (precios[modeloSeleccionado] && precios[modeloSeleccionado].embragues.length > 0) {
-                let optionDefault = document.createElement("option");
-                optionDefault.value = "";
-                optionDefault.textContent = "Seleccione cantidad";
-                embraguesSelect.appendChild(optionDefault);
-
-                precios[modeloSeleccionado].embragues.forEach(embrague => {
-                    let option = document.createElement("option");
-                    option.value = embrague;
-                    option.textContent = embrague;
-                    embraguesSelect.appendChild(option);
-                });
-            }
+            campoEmbragues.classList.add("oculto");
+            const precioBase = (precios[modeloSeleccionado] && precios[modeloSeleccionado].precioBase) || 0;
+            mostrarPrecio(precioBase);
+            return;
         }
 
-        const descripcionElemento = document.getElementById("descripcion-modelo");
-        descripcionElemento.textContent = "";
+        campoEmbragues.classList.remove("oculto");
+
+        let optionDefault = document.createElement("option");
+        optionDefault.value = "";
+        optionDefault.textContent = "Seleccione cantidad";
+        embraguesSelect.appendChild(optionDefault);
+
+        if (precios[modeloSeleccionado] && precios[modeloSeleccionado].embragues.length > 0) {
+            precios[modeloSeleccionado].embragues.forEach(embrague => {
+                let option = document.createElement("option");
+                option.value = embrague;
+                option.textContent = embrague;
+                embraguesSelect.appendChild(option);
+            });
+        }
+
+        mostrarPendiente("Elegí la cantidad de embragues");
     });
 
     embraguesSelect.addEventListener("change", function () {
-        precioDisplay.textContent = "USD 0.00";
-    });
-
-    calcularBtn.addEventListener("click", function () {
         const modeloSeleccionado = modeloSelect.value;
         const embragueSeleccionado = embraguesSelect.value;
-        const descripcionElemento = document.getElementById("descripcion-modelo");
-
-        precioDisplay.textContent = "USD 0.00";
-
-        descripcionElemento.textContent = descripcionesPorModelo[modeloSeleccionado] ||
-            "";
-
-        if (!modeloSeleccionado || !precios[modeloSeleccionado]) {
-            return;
-        }
-
-        if (modelosSinEmbragues.includes(modeloSeleccionado)) {
-            const precioBase = precios[modeloSeleccionado].precioBase || 0;
-            precioDisplay.textContent = `USD ${formatearPrecio(precioBase)}`;
-            return;
-        }
 
         if (!embragueSeleccionado) {
-            precioDisplay.textContent = "";
+            mostrarPendiente("Elegí la cantidad de embragues");
             return;
         }
 
-        let precioFinal = precios[modeloSeleccionado].preciosPorEmbrague[embragueSeleccionado] || 0;
-        precioDisplay.textContent = `USD ${formatearPrecio(precioFinal)}`;
+        const precioFinal = (precios[modeloSeleccionado] && precios[modeloSeleccionado].preciosPorEmbrague[embragueSeleccionado]) || 0;
+        mostrarPrecio(precioFinal);
     });
 
     initCompartir({ titulo: "Cotización de Equipos" });

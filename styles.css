@@ -150,23 +150,6 @@ body {
   transition: transform 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
 }
 
-.inicio-link .icono {
-  flex: none;
-  width: 42px;
-  height: 42px;
-  border-radius: 12px;
-  background: var(--verde-100);
-  color: var(--verde-700);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.inicio-link .icono svg {
-  width: 22px;
-  height: 22px;
-}
-
 .inicio-link .texto {
   display: flex;
   flex-direction: column;
@@ -246,35 +229,6 @@ select:disabled {
   pointer-events: none;
 }
 
-button#calcular {
-  width: 100%;
-  border: none;
-  border-radius: var(--radio-sm);
-  padding: 14px;
-  margin-top: 4px;
-  background: linear-gradient(135deg, var(--verde-600), var(--verde-800));
-  color: #fff;
-  font-family: inherit;
-  font-size: 15.5px;
-  font-weight: 700;
-  letter-spacing: 0.01em;
-  cursor: pointer;
-  box-shadow: var(--sombra-btn);
-  transition: transform 0.12s ease, box-shadow 0.12s ease, filter 0.12s ease;
-}
-
-button#calcular:active {
-  transform: translateY(0);
-}
-
-button#calcular:disabled {
-  background: var(--tinta-300);
-  box-shadow: none;
-  cursor: not-allowed;
-  transform: none;
-  filter: none;
-}
-
 /* ---------- Resultado ---------- */
 
 .resultado {
@@ -294,6 +248,14 @@ button#calcular:disabled {
   font-weight: 800;
   color: var(--verde-700);
   letter-spacing: -0.01em;
+  transition: color 0.15s ease;
+}
+
+#precio.precio-pendiente {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--tinta-500);
+  letter-spacing: normal;
 }
 
 .descripcion,
@@ -431,11 +393,6 @@ button#shareBtn svg {
 
   select:hover {
     border-color: var(--verde-500);
-  }
-
-  button#calcular:hover:not(:disabled) {
-    filter: brightness(1.06);
-    transform: translateY(-1px);
   }
 
   button#shareBtn:hover {

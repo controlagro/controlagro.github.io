@@ -2,7 +2,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const modeloSelect = document.getElementById('modelo');
     const sensoresSelect = document.getElementById('sensores');
     const precioElement = document.getElementById('precio');
-    const calcularButton = document.getElementById('calcular');
 
     let datos = [];
 
@@ -17,6 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 datos = XLSX.utils.sheet_to_json(hoja, { header: 1 });
 
                 llenarSelects(datos);
+                calcularPrecio();
             })
             .catch(error => console.error("Error al cargar el archivo .xlsx:", error));
     }
@@ -62,16 +62,9 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    function resetPrecio() {
-        precioElement.textContent = "USD 0.00";
-    }
-
-    // Calcular precio cuando se hace clic en el botón
-    calcularButton.addEventListener('click', calcularPrecio);
-
-    // Restablecer el precio cuando se cambian las opciones
-    modeloSelect.addEventListener('change', resetPrecio);
-    sensoresSelect.addEventListener('change', resetPrecio);
+    // Recalcular apenas se cambia cualquiera de las dos opciones
+    modeloSelect.addEventListener('change', calcularPrecio);
+    sensoresSelect.addEventListener('change', calcularPrecio);
 
     initCompartir({ titulo: "Cotización de Monitores de Siembra" });
 
