@@ -1,0 +1,3222 @@
+[
+  {
+    "Modelo": "CAS-1500",
+    "Sensores": 1,
+    "Precio": 892.84
+  },
+  {
+    "Modelo": "CAS-1500",
+    "Sensores": 2,
+    "Precio": 1007.7599999999999
+  },
+  {
+    "Modelo": "CAS-1500",
+    "Sensores": 3,
+    "Precio": 1122.68
+  },
+  {
+    "Modelo": "CAS-1500",
+    "Sensores": 4,
+    "Precio": 1237.6
+  },
+  {
+    "Modelo": "CAS-1500",
+    "Sensores": 5,
+    "Precio": 1352.52
+  },
+  {
+    "Modelo": "CAS-1500",
+    "Sensores": 6,
+    "Precio": 1467.4399999999998
+  },
+  {
+    "Modelo": "CAS-1500",
+    "Sensores": 7,
+    "Precio": 1582.36
+  },
+  {
+    "Modelo": "CAS-1500",
+    "Sensores": 8,
+    "Precio": 1697.28
+  },
+  {
+    "Modelo": "CAS-1500",
+    "Sensores": 9,
+    "Precio": 1812.2
+  },
+  {
+    "Modelo": "CAS-1500",
+    "Sensores": 10,
+    "Precio": 1927.12
+  },
+  {
+    "Modelo": "CAS-1500",
+    "Sensores": 11,
+    "Precio": 2042.0400000000002
+  },
+  {
+    "Modelo": "CAS-1500",
+    "Sensores": 12,
+    "Precio": 2156.96
+  },
+  {
+    "Modelo": "CAS-1500",
+    "Sensores": 13,
+    "Precio": 2271.88
+  },
+  {
+    "Modelo": "CAS-1500",
+    "Sensores": 14,
+    "Precio": 2386.8
+  },
+  {
+    "Modelo": "CAS-1500",
+    "Sensores": 15,
+    "Precio": 2501.72
+  },
+  {
+    "Modelo": "CAS-1500",
+    "Sensores": 16,
+    "Precio": 2616.64
+  },
+  {
+    "Modelo": "CAS-1500",
+    "Sensores": 17,
+    "Precio": 2731.56
+  },
+  {
+    "Modelo": "CAS-1500",
+    "Sensores": 18,
+    "Precio": 2846.48
+  },
+  {
+    "Modelo": "CAS-1500",
+    "Sensores": 19,
+    "Precio": 2961.3999999999996
+  },
+  {
+    "Modelo": "CAS-1500",
+    "Sensores": 20,
+    "Precio": 3076.32
+  },
+  {
+    "Modelo": "CAS-1500",
+    "Sensores": 21,
+    "Precio": 3191.24
+  },
+  {
+    "Modelo": "CAS-1500",
+    "Sensores": 22,
+    "Precio": 3306.16
+  },
+  {
+    "Modelo": "CAS-1500",
+    "Sensores": 23,
+    "Precio": 3421.08
+  },
+  {
+    "Modelo": "CAS-1500",
+    "Sensores": 24,
+    "Precio": 3536.0000000000005
+  },
+  {
+    "Modelo": "CAS-1500",
+    "Sensores": 25,
+    "Precio": 3650.92
+  },
+  {
+    "Modelo": "CAS-1500",
+    "Sensores": 26,
+    "Precio": 3765.84
+  },
+  {
+    "Modelo": "CAS-1500",
+    "Sensores": 27,
+    "Precio": 3880.7599999999998
+  },
+  {
+    "Modelo": "CAS-1500",
+    "Sensores": 28,
+    "Precio": 3995.68
+  },
+  {
+    "Modelo": "CAS-1500",
+    "Sensores": 29,
+    "Precio": 4110.6
+  },
+  {
+    "Modelo": "CAS-1500",
+    "Sensores": 30,
+    "Precio": 4225.5199999999995
+  },
+  {
+    "Modelo": "CAS-1500",
+    "Sensores": 31,
+    "Precio": 4340.44
+  },
+  {
+    "Modelo": "CAS-1500",
+    "Sensores": 32,
+    "Precio": 4455.360000000001
+  },
+  {
+    "Modelo": "CAS-1500",
+    "Sensores": 33,
+    "Precio": 4570.28
+  },
+  {
+    "Modelo": "CAS-1500",
+    "Sensores": 34,
+    "Precio": 4685.2
+  },
+  {
+    "Modelo": "CAS-1500",
+    "Sensores": 35,
+    "Precio": 4800.12
+  },
+  {
+    "Modelo": "CAS-1500",
+    "Sensores": 36,
+    "Precio": 4915.04
+  },
+  {
+    "Modelo": "CAS-1500",
+    "Sensores": 37,
+    "Precio": 5029.96
+  },
+  {
+    "Modelo": "CAS-1500",
+    "Sensores": 38,
+    "Precio": 5144.88
+  },
+  {
+    "Modelo": "CAS-1500",
+    "Sensores": 39,
+    "Precio": 5259.8
+  },
+  {
+    "Modelo": "CAS-1500",
+    "Sensores": 40,
+    "Precio": 5374.72
+  },
+  {
+    "Modelo": "CAS-1500",
+    "Sensores": 41,
+    "Precio": 5489.64
+  },
+  {
+    "Modelo": "CAS-1500",
+    "Sensores": 42,
+    "Precio": 5604.5599999999995
+  },
+  {
+    "Modelo": "CAS-1500",
+    "Sensores": 43,
+    "Precio": 5719.48
+  },
+  {
+    "Modelo": "CAS-1500",
+    "Sensores": 44,
+    "Precio": 5834.4
+  },
+  {
+    "Modelo": "CAS-1500",
+    "Sensores": 45,
+    "Precio": 5949.32
+  },
+  {
+    "Modelo": "CAS-1500",
+    "Sensores": 46,
+    "Precio": 6064.24
+  },
+  {
+    "Modelo": "CAS-1500",
+    "Sensores": 47,
+    "Precio": 6179.16
+  },
+  {
+    "Modelo": "CAS-1500",
+    "Sensores": 48,
+    "Precio": 6294.08
+  },
+  {
+    "Modelo": "CAS-1500",
+    "Sensores": 49,
+    "Precio": 6409.0
+  },
+  {
+    "Modelo": "CAS-1500",
+    "Sensores": 50,
+    "Precio": 6523.92
+  },
+  {
+    "Modelo": "CAS-1500",
+    "Sensores": 51,
+    "Precio": 6638.840000000001
+  },
+  {
+    "Modelo": "CAS-1500",
+    "Sensores": 52,
+    "Precio": 6753.76
+  },
+  {
+    "Modelo": "CAS-1500",
+    "Sensores": 53,
+    "Precio": 6868.68
+  },
+  {
+    "Modelo": "CAS-1500",
+    "Sensores": 54,
+    "Precio": 6983.599999999999
+  },
+  {
+    "Modelo": "CAS-1500",
+    "Sensores": 55,
+    "Precio": 7098.5199999999995
+  },
+  {
+    "Modelo": "CAS-1500",
+    "Sensores": 56,
+    "Precio": 7213.44
+  },
+  {
+    "Modelo": "CAS-1500",
+    "Sensores": 57,
+    "Precio": 7328.36
+  },
+  {
+    "Modelo": "CAS-1500",
+    "Sensores": 58,
+    "Precio": 7443.28
+  },
+  {
+    "Modelo": "CAS-1500",
+    "Sensores": 59,
+    "Precio": 7558.2
+  },
+  {
+    "Modelo": "CAS-1500",
+    "Sensores": 60,
+    "Precio": 7673.12
+  },
+  {
+    "Modelo": "CAS-1500",
+    "Sensores": 61,
+    "Precio": 7788.04
+  },
+  {
+    "Modelo": "CAS-1500",
+    "Sensores": 62,
+    "Precio": 7902.96
+  },
+  {
+    "Modelo": "CAS-1500",
+    "Sensores": 63,
+    "Precio": 8017.88
+  },
+  {
+    "Modelo": "CAS-1500",
+    "Sensores": 64,
+    "Precio": 8132.8
+  },
+  {
+    "Modelo": "CAS-2700 c/GPS",
+    "Sensores": 1,
+    "Precio": 1099.475
+  },
+  {
+    "Modelo": "CAS-2700 c/GPS",
+    "Sensores": 2,
+    "Precio": 1214.3950000000002
+  },
+  {
+    "Modelo": "CAS-2700 c/GPS",
+    "Sensores": 3,
+    "Precio": 1329.315
+  },
+  {
+    "Modelo": "CAS-2700 c/GPS",
+    "Sensores": 4,
+    "Precio": 1444.235
+  },
+  {
+    "Modelo": "CAS-2700 c/GPS",
+    "Sensores": 5,
+    "Precio": 1559.155
+  },
+  {
+    "Modelo": "CAS-2700 c/GPS",
+    "Sensores": 6,
+    "Precio": 1674.075
+  },
+  {
+    "Modelo": "CAS-2700 c/GPS",
+    "Sensores": 7,
+    "Precio": 1788.995
+  },
+  {
+    "Modelo": "CAS-2700 c/GPS",
+    "Sensores": 8,
+    "Precio": 1903.915
+  },
+  {
+    "Modelo": "CAS-2700 c/GPS",
+    "Sensores": 9,
+    "Precio": 2018.835
+  },
+  {
+    "Modelo": "CAS-2700 c/GPS",
+    "Sensores": 10,
+    "Precio": 2133.755
+  },
+  {
+    "Modelo": "CAS-2700 c/GPS",
+    "Sensores": 11,
+    "Precio": 2248.675
+  },
+  {
+    "Modelo": "CAS-2700 c/GPS",
+    "Sensores": 12,
+    "Precio": 2363.595
+  },
+  {
+    "Modelo": "CAS-2700 c/GPS",
+    "Sensores": 13,
+    "Precio": 2478.515
+  },
+  {
+    "Modelo": "CAS-2700 c/GPS",
+    "Sensores": 14,
+    "Precio": 2593.435
+  },
+  {
+    "Modelo": "CAS-2700 c/GPS",
+    "Sensores": 15,
+    "Precio": 2708.355
+  },
+  {
+    "Modelo": "CAS-2700 c/GPS",
+    "Sensores": 16,
+    "Precio": 2823.275
+  },
+  {
+    "Modelo": "CAS-2700 c/GPS",
+    "Sensores": 17,
+    "Precio": 2938.195
+  },
+  {
+    "Modelo": "CAS-2700 c/GPS",
+    "Sensores": 18,
+    "Precio": 3053.115
+  },
+  {
+    "Modelo": "CAS-2700 c/GPS",
+    "Sensores": 19,
+    "Precio": 3168.035
+  },
+  {
+    "Modelo": "CAS-2700 c/GPS",
+    "Sensores": 20,
+    "Precio": 3282.955
+  },
+  {
+    "Modelo": "CAS-2700 c/GPS",
+    "Sensores": 21,
+    "Precio": 3397.8749999999995
+  },
+  {
+    "Modelo": "CAS-2700 c/GPS",
+    "Sensores": 22,
+    "Precio": 3512.795
+  },
+  {
+    "Modelo": "CAS-2700 c/GPS",
+    "Sensores": 23,
+    "Precio": 3627.715
+  },
+  {
+    "Modelo": "CAS-2700 c/GPS",
+    "Sensores": 24,
+    "Precio": 3742.6349999999998
+  },
+  {
+    "Modelo": "CAS-2700 c/GPS",
+    "Sensores": 25,
+    "Precio": 3857.555
+  },
+  {
+    "Modelo": "CAS-2700 c/GPS",
+    "Sensores": 26,
+    "Precio": 3972.4749999999995
+  },
+  {
+    "Modelo": "CAS-2700 c/GPS",
+    "Sensores": 27,
+    "Precio": 4087.3950000000004
+  },
+  {
+    "Modelo": "CAS-2700 c/GPS",
+    "Sensores": 28,
+    "Precio": 4202.315
+  },
+  {
+    "Modelo": "CAS-2700 c/GPS",
+    "Sensores": 29,
+    "Precio": 4317.235
+  },
+  {
+    "Modelo": "CAS-2700 c/GPS",
+    "Sensores": 30,
+    "Precio": 4432.155
+  },
+  {
+    "Modelo": "CAS-2700 c/GPS",
+    "Sensores": 31,
+    "Precio": 4547.075
+  },
+  {
+    "Modelo": "CAS-2700 c/GPS",
+    "Sensores": 32,
+    "Precio": 4661.995
+  },
+  {
+    "Modelo": "CAS-2700 c/GPS",
+    "Sensores": 33,
+    "Precio": 4776.915
+  },
+  {
+    "Modelo": "CAS-2700 c/GPS",
+    "Sensores": 34,
+    "Precio": 4891.835
+  },
+  {
+    "Modelo": "CAS-2700 c/GPS",
+    "Sensores": 35,
+    "Precio": 5006.755
+  },
+  {
+    "Modelo": "CAS-2700 c/GPS",
+    "Sensores": 36,
+    "Precio": 5121.675
+  },
+  {
+    "Modelo": "CAS-2700 c/GPS",
+    "Sensores": 37,
+    "Precio": 5236.595
+  },
+  {
+    "Modelo": "CAS-2700 c/GPS",
+    "Sensores": 38,
+    "Precio": 5351.515
+  },
+  {
+    "Modelo": "CAS-2700 c/GPS",
+    "Sensores": 39,
+    "Precio": 5466.435000000001
+  },
+  {
+    "Modelo": "CAS-2700 c/GPS",
+    "Sensores": 40,
+    "Precio": 5581.355
+  },
+  {
+    "Modelo": "CAS-2700 c/GPS",
+    "Sensores": 41,
+    "Precio": 5696.275
+  },
+  {
+    "Modelo": "CAS-2700 c/GPS",
+    "Sensores": 42,
+    "Precio": 5811.194999999999
+  },
+  {
+    "Modelo": "CAS-2700 c/GPS",
+    "Sensores": 43,
+    "Precio": 5926.115
+  },
+  {
+    "Modelo": "CAS-2700 c/GPS",
+    "Sensores": 44,
+    "Precio": 6041.035
+  },
+  {
+    "Modelo": "CAS-2700 c/GPS",
+    "Sensores": 45,
+    "Precio": 6155.955
+  },
+  {
+    "Modelo": "CAS-2700 c/GPS",
+    "Sensores": 46,
+    "Precio": 6270.875
+  },
+  {
+    "Modelo": "CAS-2700 c/GPS",
+    "Sensores": 47,
+    "Precio": 6385.794999999999
+  },
+  {
+    "Modelo": "CAS-2700 c/GPS",
+    "Sensores": 48,
+    "Precio": 6500.715
+  },
+  {
+    "Modelo": "CAS-2700 c/GPS",
+    "Sensores": 49,
+    "Precio": 6615.635
+  },
+  {
+    "Modelo": "CAS-2700 c/GPS",
+    "Sensores": 50,
+    "Precio": 6730.555
+  },
+  {
+    "Modelo": "CAS-2700 c/GPS",
+    "Sensores": 51,
+    "Precio": 6845.474999999999
+  },
+  {
+    "Modelo": "CAS-2700 c/GPS",
+    "Sensores": 52,
+    "Precio": 6960.395000000001
+  },
+  {
+    "Modelo": "CAS-2700 c/GPS",
+    "Sensores": 53,
+    "Precio": 7075.3150000000005
+  },
+  {
+    "Modelo": "CAS-2700 c/GPS",
+    "Sensores": 54,
+    "Precio": 7190.235
+  },
+  {
+    "Modelo": "CAS-2700 c/GPS",
+    "Sensores": 55,
+    "Precio": 7305.155
+  },
+  {
+    "Modelo": "CAS-2700 c/GPS",
+    "Sensores": 56,
+    "Precio": 7420.075
+  },
+  {
+    "Modelo": "CAS-2700 c/GPS",
+    "Sensores": 57,
+    "Precio": 7534.995000000001
+  },
+  {
+    "Modelo": "CAS-2700 c/GPS",
+    "Sensores": 58,
+    "Precio": 7649.915
+  },
+  {
+    "Modelo": "CAS-2700 c/GPS",
+    "Sensores": 59,
+    "Precio": 7764.835
+  },
+  {
+    "Modelo": "CAS-2700 c/GPS",
+    "Sensores": 60,
+    "Precio": 7879.755
+  },
+  {
+    "Modelo": "CAS-2700 c/GPS",
+    "Sensores": 61,
+    "Precio": 7994.675
+  },
+  {
+    "Modelo": "CAS-2700 c/GPS",
+    "Sensores": 62,
+    "Precio": 8109.595000000001
+  },
+  {
+    "Modelo": "CAS-2700 c/GPS",
+    "Sensores": 63,
+    "Precio": 8224.515
+  },
+  {
+    "Modelo": "CAS-2700 c/GPS",
+    "Sensores": 64,
+    "Precio": 8339.435
+  },
+  {
+    "Modelo": "CAS-4800 c/GPS",
+    "Sensores": 1,
+    "Precio": 3675.23
+  },
+  {
+    "Modelo": "CAS-4800 c/GPS",
+    "Sensores": 2,
+    "Precio": 3790.15
+  },
+  {
+    "Modelo": "CAS-4800 c/GPS",
+    "Sensores": 3,
+    "Precio": 3905.07
+  },
+  {
+    "Modelo": "CAS-4800 c/GPS",
+    "Sensores": 4,
+    "Precio": 4019.99
+  },
+  {
+    "Modelo": "CAS-4800 c/GPS",
+    "Sensores": 5,
+    "Precio": 4134.91
+  },
+  {
+    "Modelo": "CAS-4800 c/GPS",
+    "Sensores": 6,
+    "Precio": 4249.83
+  },
+  {
+    "Modelo": "CAS-4800 c/GPS",
+    "Sensores": 7,
+    "Precio": 4364.75
+  },
+  {
+    "Modelo": "CAS-4800 c/GPS",
+    "Sensores": 8,
+    "Precio": 4479.67
+  },
+  {
+    "Modelo": "CAS-4800 c/GPS",
+    "Sensores": 9,
+    "Precio": 4594.59
+  },
+  {
+    "Modelo": "CAS-4800 c/GPS",
+    "Sensores": 10,
+    "Precio": 4709.51
+  },
+  {
+    "Modelo": "CAS-4800 c/GPS",
+    "Sensores": 11,
+    "Precio": 4824.43
+  },
+  {
+    "Modelo": "CAS-4800 c/GPS",
+    "Sensores": 12,
+    "Precio": 4939.350000000001
+  },
+  {
+    "Modelo": "CAS-4800 c/GPS",
+    "Sensores": 13,
+    "Precio": 5054.2699999999995
+  },
+  {
+    "Modelo": "CAS-4800 c/GPS",
+    "Sensores": 14,
+    "Precio": 5169.19
+  },
+  {
+    "Modelo": "CAS-4800 c/GPS",
+    "Sensores": 15,
+    "Precio": 5284.1100000000015
+  },
+  {
+    "Modelo": "CAS-4800 c/GPS",
+    "Sensores": 16,
+    "Precio": 5399.03
+  },
+  {
+    "Modelo": "CAS-4800 c/GPS",
+    "Sensores": 17,
+    "Precio": 5513.95
+  },
+  {
+    "Modelo": "CAS-4800 c/GPS",
+    "Sensores": 18,
+    "Precio": 5628.87
+  },
+  {
+    "Modelo": "CAS-4800 c/GPS",
+    "Sensores": 19,
+    "Precio": 5743.79
+  },
+  {
+    "Modelo": "CAS-4800 c/GPS",
+    "Sensores": 20,
+    "Precio": 5858.710000000001
+  },
+  {
+    "Modelo": "CAS-4800 c/GPS",
+    "Sensores": 21,
+    "Precio": 5973.63
+  },
+  {
+    "Modelo": "CAS-4800 c/GPS",
+    "Sensores": 22,
+    "Precio": 6088.55
+  },
+  {
+    "Modelo": "CAS-4800 c/GPS",
+    "Sensores": 23,
+    "Precio": 6203.47
+  },
+  {
+    "Modelo": "CAS-4800 c/GPS",
+    "Sensores": 24,
+    "Precio": 6318.39
+  },
+  {
+    "Modelo": "CAS-4800 c/GPS",
+    "Sensores": 25,
+    "Precio": 6433.310000000001
+  },
+  {
+    "Modelo": "CAS-4800 c/GPS",
+    "Sensores": 26,
+    "Precio": 6548.2300000000005
+  },
+  {
+    "Modelo": "CAS-4800 c/GPS",
+    "Sensores": 27,
+    "Precio": 6663.15
+  },
+  {
+    "Modelo": "CAS-4800 c/GPS",
+    "Sensores": 28,
+    "Precio": 6778.07
+  },
+  {
+    "Modelo": "CAS-4800 c/GPS",
+    "Sensores": 29,
+    "Precio": 6892.99
+  },
+  {
+    "Modelo": "CAS-4800 c/GPS",
+    "Sensores": 30,
+    "Precio": 7007.91
+  },
+  {
+    "Modelo": "CAS-4800 c/GPS",
+    "Sensores": 31,
+    "Precio": 7122.83
+  },
+  {
+    "Modelo": "CAS-4800 c/GPS",
+    "Sensores": 32,
+    "Precio": 7237.75
+  },
+  {
+    "Modelo": "CAS-4800 c/GPS",
+    "Sensores": 33,
+    "Precio": 7352.67
+  },
+  {
+    "Modelo": "CAS-4800 c/GPS",
+    "Sensores": 34,
+    "Precio": 7467.59
+  },
+  {
+    "Modelo": "CAS-4800 c/GPS",
+    "Sensores": 35,
+    "Precio": 7582.51
+  },
+  {
+    "Modelo": "CAS-4800 c/GPS",
+    "Sensores": 36,
+    "Precio": 7697.43
+  },
+  {
+    "Modelo": "CAS-4800 c/GPS",
+    "Sensores": 37,
+    "Precio": 7812.349999999999
+  },
+  {
+    "Modelo": "CAS-4800 c/GPS",
+    "Sensores": 38,
+    "Precio": 7927.2699999999995
+  },
+  {
+    "Modelo": "CAS-4800 c/GPS",
+    "Sensores": 39,
+    "Precio": 8042.19
+  },
+  {
+    "Modelo": "CAS-4800 c/GPS",
+    "Sensores": 40,
+    "Precio": 8157.11
+  },
+  {
+    "Modelo": "CAS-4800 c/GPS",
+    "Sensores": 41,
+    "Precio": 8272.03
+  },
+  {
+    "Modelo": "CAS-4800 c/GPS",
+    "Sensores": 42,
+    "Precio": 8386.95
+  },
+  {
+    "Modelo": "CAS-4800 c/GPS",
+    "Sensores": 43,
+    "Precio": 8501.87
+  },
+  {
+    "Modelo": "CAS-4800 c/GPS",
+    "Sensores": 44,
+    "Precio": 8616.789999999999
+  },
+  {
+    "Modelo": "CAS-4800 c/GPS",
+    "Sensores": 45,
+    "Precio": 8731.71
+  },
+  {
+    "Modelo": "CAS-4800 c/GPS",
+    "Sensores": 46,
+    "Precio": 8846.63
+  },
+  {
+    "Modelo": "CAS-4800 c/GPS",
+    "Sensores": 47,
+    "Precio": 8961.55
+  },
+  {
+    "Modelo": "CAS-4800 c/GPS",
+    "Sensores": 48,
+    "Precio": 9076.47
+  },
+  {
+    "Modelo": "CAS-4800 c/GPS",
+    "Sensores": 49,
+    "Precio": 9191.39
+  },
+  {
+    "Modelo": "CAS-4800 c/GPS",
+    "Sensores": 50,
+    "Precio": 9306.31
+  },
+  {
+    "Modelo": "CAS-4800 c/GPS",
+    "Sensores": 51,
+    "Precio": 9421.23
+  },
+  {
+    "Modelo": "CAS-4800 c/GPS",
+    "Sensores": 52,
+    "Precio": 9536.15
+  },
+  {
+    "Modelo": "CAS-4800 c/GPS",
+    "Sensores": 53,
+    "Precio": 9651.07
+  },
+  {
+    "Modelo": "CAS-4800 c/GPS",
+    "Sensores": 54,
+    "Precio": 9765.99
+  },
+  {
+    "Modelo": "CAS-4800 c/GPS",
+    "Sensores": 55,
+    "Precio": 9880.91
+  },
+  {
+    "Modelo": "CAS-4800 c/GPS",
+    "Sensores": 56,
+    "Precio": 9995.83
+  },
+  {
+    "Modelo": "CAS-4800 c/GPS",
+    "Sensores": 57,
+    "Precio": 10110.749999999998
+  },
+  {
+    "Modelo": "CAS-4800 c/GPS",
+    "Sensores": 58,
+    "Precio": 10225.67
+  },
+  {
+    "Modelo": "CAS-4800 c/GPS",
+    "Sensores": 59,
+    "Precio": 10340.59
+  },
+  {
+    "Modelo": "CAS-4800 c/GPS",
+    "Sensores": 60,
+    "Precio": 10455.51
+  },
+  {
+    "Modelo": "CAS-4800 c/GPS",
+    "Sensores": 61,
+    "Precio": 10570.43
+  },
+  {
+    "Modelo": "CAS-4800 c/GPS",
+    "Sensores": 62,
+    "Precio": 10685.350000000002
+  },
+  {
+    "Modelo": "CAS-4800 c/GPS",
+    "Sensores": 63,
+    "Precio": 10800.27
+  },
+  {
+    "Modelo": "CAS-4800 c/GPS",
+    "Sensores": 64,
+    "Precio": 10915.190000000002
+  },
+  {
+    "Modelo": "CAS-4800 c/GPS",
+    "Sensores": 65,
+    "Precio": 11030.110000000002
+  },
+  {
+    "Modelo": "CAS-4800 c/GPS",
+    "Sensores": 66,
+    "Precio": 11145.030000000002
+  },
+  {
+    "Modelo": "CAS-4800 c/GPS",
+    "Sensores": 67,
+    "Precio": 11259.950000000004
+  },
+  {
+    "Modelo": "CAS-4800 c/GPS",
+    "Sensores": 68,
+    "Precio": 11374.870000000004
+  },
+  {
+    "Modelo": "CAS-4800 c/GPS",
+    "Sensores": 69,
+    "Precio": 11489.790000000005
+  },
+  {
+    "Modelo": "CAS-4800 c/GPS",
+    "Sensores": 70,
+    "Precio": 11604.710000000006
+  },
+  {
+    "Modelo": "CAS-4800 c/GPS",
+    "Sensores": 71,
+    "Precio": 11719.630000000006
+  },
+  {
+    "Modelo": "CAS-4800 c/GPS",
+    "Sensores": 72,
+    "Precio": 11834.550000000008
+  },
+  {
+    "Modelo": "CAS-4800 c/GPS",
+    "Sensores": 73,
+    "Precio": 11949.470000000008
+  },
+  {
+    "Modelo": "CAS-4800 c/GPS",
+    "Sensores": 74,
+    "Precio": 12064.39000000001
+  },
+  {
+    "Modelo": "CAS-4800 c/GPS",
+    "Sensores": 75,
+    "Precio": 12179.31000000001
+  },
+  {
+    "Modelo": "CAS-4800 c/GPS",
+    "Sensores": 76,
+    "Precio": 12294.23000000001
+  },
+  {
+    "Modelo": "CAS-4800 c/GPS",
+    "Sensores": 77,
+    "Precio": 12409.150000000012
+  },
+  {
+    "Modelo": "CAS-4800 c/GPS",
+    "Sensores": 78,
+    "Precio": 12524.070000000012
+  },
+  {
+    "Modelo": "CAS-5100 c/GPS",
+    "Sensores": 1,
+    "Precio": 4026.62
+  },
+  {
+    "Modelo": "CAS-5100 c/GPS",
+    "Sensores": 2,
+    "Precio": 4141.54
+  },
+  {
+    "Modelo": "CAS-5100 c/GPS",
+    "Sensores": 3,
+    "Precio": 4256.46
+  },
+  {
+    "Modelo": "CAS-5100 c/GPS",
+    "Sensores": 4,
+    "Precio": 4371.38
+  },
+  {
+    "Modelo": "CAS-5100 c/GPS",
+    "Sensores": 5,
+    "Precio": 4486.3
+  },
+  {
+    "Modelo": "CAS-5100 c/GPS",
+    "Sensores": 6,
+    "Precio": 4601.22
+  },
+  {
+    "Modelo": "CAS-5100 c/GPS",
+    "Sensores": 7,
+    "Precio": 4716.14
+  },
+  {
+    "Modelo": "CAS-5100 c/GPS",
+    "Sensores": 8,
+    "Precio": 4831.0599999999995
+  },
+  {
+    "Modelo": "CAS-5100 c/GPS",
+    "Sensores": 9,
+    "Precio": 4945.98
+  },
+  {
+    "Modelo": "CAS-5100 c/GPS",
+    "Sensores": 10,
+    "Precio": 5060.899999999999
+  },
+  {
+    "Modelo": "CAS-5100 c/GPS",
+    "Sensores": 11,
+    "Precio": 5175.820000000001
+  },
+  {
+    "Modelo": "CAS-5100 c/GPS",
+    "Sensores": 12,
+    "Precio": 5290.74
+  },
+  {
+    "Modelo": "CAS-5100 c/GPS",
+    "Sensores": 13,
+    "Precio": 5405.66
+  },
+  {
+    "Modelo": "CAS-5100 c/GPS",
+    "Sensores": 14,
+    "Precio": 5520.58
+  },
+  {
+    "Modelo": "CAS-5100 c/GPS",
+    "Sensores": 15,
+    "Precio": 5635.499999999999
+  },
+  {
+    "Modelo": "CAS-5100 c/GPS",
+    "Sensores": 16,
+    "Precio": 5750.42
+  },
+  {
+    "Modelo": "CAS-5100 c/GPS",
+    "Sensores": 17,
+    "Precio": 5865.34
+  },
+  {
+    "Modelo": "CAS-5100 c/GPS",
+    "Sensores": 18,
+    "Precio": 5980.26
+  },
+  {
+    "Modelo": "CAS-5100 c/GPS",
+    "Sensores": 19,
+    "Precio": 6095.18
+  },
+  {
+    "Modelo": "CAS-5100 c/GPS",
+    "Sensores": 20,
+    "Precio": 6210.0999999999985
+  },
+  {
+    "Modelo": "CAS-5100 c/GPS",
+    "Sensores": 21,
+    "Precio": 6325.0199999999995
+  },
+  {
+    "Modelo": "CAS-5100 c/GPS",
+    "Sensores": 22,
+    "Precio": 6439.94
+  },
+  {
+    "Modelo": "CAS-5100 c/GPS",
+    "Sensores": 23,
+    "Precio": 6554.86
+  },
+  {
+    "Modelo": "CAS-5100 c/GPS",
+    "Sensores": 24,
+    "Precio": 6669.78
+  },
+  {
+    "Modelo": "CAS-5100 c/GPS",
+    "Sensores": 25,
+    "Precio": 6784.700000000001
+  },
+  {
+    "Modelo": "CAS-5100 c/GPS",
+    "Sensores": 26,
+    "Precio": 6899.62
+  },
+  {
+    "Modelo": "CAS-5100 c/GPS",
+    "Sensores": 27,
+    "Precio": 7014.54
+  },
+  {
+    "Modelo": "CAS-5100 c/GPS",
+    "Sensores": 28,
+    "Precio": 7129.460000000001
+  },
+  {
+    "Modelo": "CAS-5100 c/GPS",
+    "Sensores": 29,
+    "Precio": 7244.38
+  },
+  {
+    "Modelo": "CAS-5100 c/GPS",
+    "Sensores": 30,
+    "Precio": 7359.300000000001
+  },
+  {
+    "Modelo": "CAS-5100 c/GPS",
+    "Sensores": 31,
+    "Precio": 7474.22
+  },
+  {
+    "Modelo": "CAS-5100 c/GPS",
+    "Sensores": 32,
+    "Precio": 7589.14
+  },
+  {
+    "Modelo": "CAS-5100 c/GPS",
+    "Sensores": 33,
+    "Precio": 7704.0599999999995
+  },
+  {
+    "Modelo": "CAS-5100 c/GPS",
+    "Sensores": 34,
+    "Precio": 7818.98
+  },
+  {
+    "Modelo": "CAS-5100 c/GPS",
+    "Sensores": 35,
+    "Precio": 7933.9
+  },
+  {
+    "Modelo": "CAS-5100 c/GPS",
+    "Sensores": 36,
+    "Precio": 8048.82
+  },
+  {
+    "Modelo": "CAS-5100 c/GPS",
+    "Sensores": 37,
+    "Precio": 8163.74
+  },
+  {
+    "Modelo": "CAS-5100 c/GPS",
+    "Sensores": 38,
+    "Precio": 8278.66
+  },
+  {
+    "Modelo": "CAS-5100 c/GPS",
+    "Sensores": 39,
+    "Precio": 8393.58
+  },
+  {
+    "Modelo": "CAS-5100 c/GPS",
+    "Sensores": 40,
+    "Precio": 8508.5
+  },
+  {
+    "Modelo": "CAS-5100 c/GPS",
+    "Sensores": 41,
+    "Precio": 8623.42
+  },
+  {
+    "Modelo": "CAS-5100 c/GPS",
+    "Sensores": 42,
+    "Precio": 8738.34
+  },
+  {
+    "Modelo": "CAS-5100 c/GPS",
+    "Sensores": 43,
+    "Precio": 8853.26
+  },
+  {
+    "Modelo": "CAS-5100 c/GPS",
+    "Sensores": 44,
+    "Precio": 8968.18
+  },
+  {
+    "Modelo": "CAS-5100 c/GPS",
+    "Sensores": 45,
+    "Precio": 9083.1
+  },
+  {
+    "Modelo": "CAS-5100 c/GPS",
+    "Sensores": 46,
+    "Precio": 9198.02
+  },
+  {
+    "Modelo": "CAS-5100 c/GPS",
+    "Sensores": 47,
+    "Precio": 9312.94
+  },
+  {
+    "Modelo": "CAS-5100 c/GPS",
+    "Sensores": 48,
+    "Precio": 9427.86
+  },
+  {
+    "Modelo": "CAS-5100 c/GPS",
+    "Sensores": 49,
+    "Precio": 9542.78
+  },
+  {
+    "Modelo": "CAS-5100 c/GPS",
+    "Sensores": 50,
+    "Precio": 9657.7
+  },
+  {
+    "Modelo": "CAS-5100 c/GPS",
+    "Sensores": 51,
+    "Precio": 9772.619999999999
+  },
+  {
+    "Modelo": "CAS-5100 c/GPS",
+    "Sensores": 52,
+    "Precio": 9887.539999999997
+  },
+  {
+    "Modelo": "CAS-5100 c/GPS",
+    "Sensores": 53,
+    "Precio": 10002.46
+  },
+  {
+    "Modelo": "CAS-5100 c/GPS",
+    "Sensores": 54,
+    "Precio": 10117.38
+  },
+  {
+    "Modelo": "CAS-5100 c/GPS",
+    "Sensores": 55,
+    "Precio": 10232.3
+  },
+  {
+    "Modelo": "CAS-5100 c/GPS",
+    "Sensores": 56,
+    "Precio": 10347.22
+  },
+  {
+    "Modelo": "CAS-5100 c/GPS",
+    "Sensores": 57,
+    "Precio": 10462.139999999998
+  },
+  {
+    "Modelo": "CAS-5100 c/GPS",
+    "Sensores": 58,
+    "Precio": 10577.06
+  },
+  {
+    "Modelo": "CAS-5100 c/GPS",
+    "Sensores": 59,
+    "Precio": 10691.98
+  },
+  {
+    "Modelo": "CAS-5100 c/GPS",
+    "Sensores": 60,
+    "Precio": 10806.9
+  },
+  {
+    "Modelo": "CAS-5100 c/GPS",
+    "Sensores": 61,
+    "Precio": 10921.82
+  },
+  {
+    "Modelo": "CAS-5100 c/GPS",
+    "Sensores": 62,
+    "Precio": 11036.739999999998
+  },
+  {
+    "Modelo": "CAS-5100 c/GPS",
+    "Sensores": 63,
+    "Precio": 11151.66
+  },
+  {
+    "Modelo": "CAS-5100 c/GPS",
+    "Sensores": 64,
+    "Precio": 11266.58
+  },
+  {
+    "Modelo": "CAS-5100 c/GPS",
+    "Sensores": 65,
+    "Precio": 11381.500000000002
+  },
+  {
+    "Modelo": "CAS-5100 c/GPS",
+    "Sensores": 66,
+    "Precio": 11496.420000000002
+  },
+  {
+    "Modelo": "CAS-5100 c/GPS",
+    "Sensores": 67,
+    "Precio": 11611.340000000004
+  },
+  {
+    "Modelo": "CAS-5100 c/GPS",
+    "Sensores": 68,
+    "Precio": 11726.260000000004
+  },
+  {
+    "Modelo": "CAS-5100 c/GPS",
+    "Sensores": 69,
+    "Precio": 11841.180000000004
+  },
+  {
+    "Modelo": "CAS-5100 c/GPS",
+    "Sensores": 70,
+    "Precio": 11956.100000000006
+  },
+  {
+    "Modelo": "CAS-5100 c/GPS",
+    "Sensores": 71,
+    "Precio": 12071.020000000006
+  },
+  {
+    "Modelo": "CAS-5100 c/GPS",
+    "Sensores": 72,
+    "Precio": 12185.940000000008
+  },
+  {
+    "Modelo": "CAS-5100 c/GPS",
+    "Sensores": 73,
+    "Precio": 12300.860000000008
+  },
+  {
+    "Modelo": "CAS-5100 c/GPS",
+    "Sensores": 74,
+    "Precio": 12415.78000000001
+  },
+  {
+    "Modelo": "CAS-5100 c/GPS",
+    "Sensores": 75,
+    "Precio": 12530.70000000001
+  },
+  {
+    "Modelo": "CAS-5100 c/GPS",
+    "Sensores": 76,
+    "Precio": 12645.62000000001
+  },
+  {
+    "Modelo": "CAS-5100 c/GPS",
+    "Sensores": 77,
+    "Precio": 12760.540000000012
+  },
+  {
+    "Modelo": "CAS-5100 c/GPS",
+    "Sensores": 78,
+    "Precio": 12875.460000000012
+  },
+  {
+    "Modelo": "CAS0000 para TRACTOR con 1500/2500/2700/4800",
+    "Sensores": 1,
+    "Precio": 489.515
+  },
+  {
+    "Modelo": "CAS0000 para TRACTOR con 1500/2500/2700/4800",
+    "Sensores": 2,
+    "Precio": 604.435
+  },
+  {
+    "Modelo": "CAS0000 para TRACTOR con 1500/2500/2700/4800",
+    "Sensores": 3,
+    "Precio": 719.355
+  },
+  {
+    "Modelo": "CAS0000 para TRACTOR con 1500/2500/2700/4800",
+    "Sensores": 4,
+    "Precio": 834.275
+  },
+  {
+    "Modelo": "CAS0000 para TRACTOR con 1500/2500/2700/4800",
+    "Sensores": 5,
+    "Precio": 949.1949999999999
+  },
+  {
+    "Modelo": "CAS0000 para TRACTOR con 1500/2500/2700/4800",
+    "Sensores": 6,
+    "Precio": 1064.115
+  },
+  {
+    "Modelo": "CAS0000 para TRACTOR con 1500/2500/2700/4800",
+    "Sensores": 7,
+    "Precio": 1179.035
+  },
+  {
+    "Modelo": "CAS0000 para TRACTOR con 1500/2500/2700/4800",
+    "Sensores": 8,
+    "Precio": 1293.955
+  },
+  {
+    "Modelo": "CAS0000 para TRACTOR con 1500/2500/2700/4800",
+    "Sensores": 9,
+    "Precio": 1408.875
+  },
+  {
+    "Modelo": "CAS0000 para TRACTOR con 1500/2500/2700/4800",
+    "Sensores": 10,
+    "Precio": 1523.795
+  },
+  {
+    "Modelo": "CAS0000 para TRACTOR con 1500/2500/2700/4800",
+    "Sensores": 11,
+    "Precio": 1638.715
+  },
+  {
+    "Modelo": "CAS0000 para TRACTOR con 1500/2500/2700/4800",
+    "Sensores": 12,
+    "Precio": 1753.635
+  },
+  {
+    "Modelo": "CAS0000 para TRACTOR con 1500/2500/2700/4800",
+    "Sensores": 13,
+    "Precio": 1868.555
+  },
+  {
+    "Modelo": "CAS0000 para TRACTOR con 1500/2500/2700/4800",
+    "Sensores": 14,
+    "Precio": 1983.475
+  },
+  {
+    "Modelo": "CAS0000 para TRACTOR con 1500/2500/2700/4800",
+    "Sensores": 15,
+    "Precio": 2098.395
+  },
+  {
+    "Modelo": "CAS0000 para TRACTOR con 1500/2500/2700/4800",
+    "Sensores": 16,
+    "Precio": 2213.315
+  },
+  {
+    "Modelo": "CAS0000 para TRACTOR con 1500/2500/2700/4800",
+    "Sensores": 17,
+    "Precio": 2328.235
+  },
+  {
+    "Modelo": "CAS0000 para TRACTOR con 1500/2500/2700/4800",
+    "Sensores": 18,
+    "Precio": 2443.1549999999997
+  },
+  {
+    "Modelo": "CAS0000 para TRACTOR con 1500/2500/2700/4800",
+    "Sensores": 19,
+    "Precio": 2558.075
+  },
+  {
+    "Modelo": "CAS0000 para TRACTOR con 1500/2500/2700/4800",
+    "Sensores": 20,
+    "Precio": 2672.995
+  },
+  {
+    "Modelo": "CAS0000 para TRACTOR con 1500/2500/2700/4800",
+    "Sensores": 21,
+    "Precio": 2787.915
+  },
+  {
+    "Modelo": "CAS0000 para TRACTOR con 1500/2500/2700/4800",
+    "Sensores": 22,
+    "Precio": 2902.835
+  },
+  {
+    "Modelo": "CAS0000 para TRACTOR con 1500/2500/2700/4800",
+    "Sensores": 23,
+    "Precio": 3017.755
+  },
+  {
+    "Modelo": "CAS0000 para TRACTOR con 1500/2500/2700/4800",
+    "Sensores": 24,
+    "Precio": 3132.6749999999997
+  },
+  {
+    "Modelo": "CAS0000 para TRACTOR con 1500/2500/2700/4800",
+    "Sensores": 25,
+    "Precio": 3247.595
+  },
+  {
+    "Modelo": "CAS0000 para TRACTOR con 1500/2500/2700/4800",
+    "Sensores": 26,
+    "Precio": 3362.515
+  },
+  {
+    "Modelo": "CAS0000 para TRACTOR con 1500/2500/2700/4800",
+    "Sensores": 27,
+    "Precio": 3477.435
+  },
+  {
+    "Modelo": "CAS0000 para TRACTOR con 1500/2500/2700/4800",
+    "Sensores": 28,
+    "Precio": 3592.355
+  },
+  {
+    "Modelo": "CAS0000 para TRACTOR con 1500/2500/2700/4800",
+    "Sensores": 29,
+    "Precio": 3707.275
+  },
+  {
+    "Modelo": "CAS0000 para TRACTOR con 1500/2500/2700/4800",
+    "Sensores": 30,
+    "Precio": 3822.195
+  },
+  {
+    "Modelo": "CAS0000 para TRACTOR con 1500/2500/2700/4800",
+    "Sensores": 31,
+    "Precio": 3937.115
+  },
+  {
+    "Modelo": "CAS0000 para TRACTOR con 1500/2500/2700/4800",
+    "Sensores": 32,
+    "Precio": 4052.035
+  },
+  {
+    "Modelo": "CAS0000 para TRACTOR con 1500/2500/2700/4800",
+    "Sensores": 33,
+    "Precio": 4166.955
+  },
+  {
+    "Modelo": "CAS0000 para TRACTOR con 1500/2500/2700/4800",
+    "Sensores": 34,
+    "Precio": 4281.875
+  },
+  {
+    "Modelo": "CAS0000 para TRACTOR con 1500/2500/2700/4800",
+    "Sensores": 35,
+    "Precio": 4396.795
+  },
+  {
+    "Modelo": "CAS0000 para TRACTOR con 1500/2500/2700/4800",
+    "Sensores": 36,
+    "Precio": 4511.715
+  },
+  {
+    "Modelo": "CAS0000 para TRACTOR con 1500/2500/2700/4800",
+    "Sensores": 37,
+    "Precio": 4626.635
+  },
+  {
+    "Modelo": "CAS0000 para TRACTOR con 1500/2500/2700/4800",
+    "Sensores": 38,
+    "Precio": 4741.555
+  },
+  {
+    "Modelo": "CAS0000 para TRACTOR con 1500/2500/2700/4800",
+    "Sensores": 39,
+    "Precio": 4856.475
+  },
+  {
+    "Modelo": "CAS0000 para TRACTOR con 1500/2500/2700/4800",
+    "Sensores": 40,
+    "Precio": 4971.3949999999995
+  },
+  {
+    "Modelo": "CAS0000 para TRACTOR con 1500/2500/2700/4800",
+    "Sensores": 41,
+    "Precio": 5086.315
+  },
+  {
+    "Modelo": "CAS0000 para TRACTOR con 1500/2500/2700/4800",
+    "Sensores": 42,
+    "Precio": 5201.235
+  },
+  {
+    "Modelo": "CAS0000 para TRACTOR con 1500/2500/2700/4800",
+    "Sensores": 43,
+    "Precio": 5316.155
+  },
+  {
+    "Modelo": "CAS0000 para TRACTOR con 1500/2500/2700/4800",
+    "Sensores": 44,
+    "Precio": 5431.075
+  },
+  {
+    "Modelo": "CAS0000 para TRACTOR con 1500/2500/2700/4800",
+    "Sensores": 45,
+    "Precio": 5545.995
+  },
+  {
+    "Modelo": "CAS0000 para TRACTOR con 1500/2500/2700/4800",
+    "Sensores": 46,
+    "Precio": 5660.915
+  },
+  {
+    "Modelo": "CAS0000 para TRACTOR con 1500/2500/2700/4800",
+    "Sensores": 47,
+    "Precio": 5775.835
+  },
+  {
+    "Modelo": "CAS0000 para TRACTOR con 1500/2500/2700/4800",
+    "Sensores": 48,
+    "Precio": 5890.755
+  },
+  {
+    "Modelo": "CAS0000 para TRACTOR con 1500/2500/2700/4800",
+    "Sensores": 49,
+    "Precio": 6005.675
+  },
+  {
+    "Modelo": "CAS0000 para TRACTOR con 1500/2500/2700/4800",
+    "Sensores": 50,
+    "Precio": 6120.595
+  },
+  {
+    "Modelo": "CAS0000 para TRACTOR con 1500/2500/2700/4800",
+    "Sensores": 51,
+    "Precio": 6235.515
+  },
+  {
+    "Modelo": "CAS0000 para TRACTOR con 1500/2500/2700/4800",
+    "Sensores": 52,
+    "Precio": 6350.4349999999995
+  },
+  {
+    "Modelo": "CAS0000 para TRACTOR con 1500/2500/2700/4800",
+    "Sensores": 53,
+    "Precio": 6465.355
+  },
+  {
+    "Modelo": "CAS0000 para TRACTOR con 1500/2500/2700/4800",
+    "Sensores": 54,
+    "Precio": 6580.275
+  },
+  {
+    "Modelo": "CAS0000 para TRACTOR con 1500/2500/2700/4800",
+    "Sensores": 55,
+    "Precio": 6695.195
+  },
+  {
+    "Modelo": "CAS0000 para TRACTOR con 1500/2500/2700/4800",
+    "Sensores": 56,
+    "Precio": 6810.115
+  },
+  {
+    "Modelo": "CAS0000 para TRACTOR con 1500/2500/2700/4800",
+    "Sensores": 57,
+    "Precio": 6925.035
+  },
+  {
+    "Modelo": "CAS0000 para TRACTOR con 1500/2500/2700/4800",
+    "Sensores": 58,
+    "Precio": 7039.955
+  },
+  {
+    "Modelo": "CAS0000 para TRACTOR con 1500/2500/2700/4800",
+    "Sensores": 59,
+    "Precio": 7154.875
+  },
+  {
+    "Modelo": "CAS0000 para TRACTOR con 1500/2500/2700/4800",
+    "Sensores": 60,
+    "Precio": 7269.795
+  },
+  {
+    "Modelo": "CAS0000 para TRACTOR con 1500/2500/2700/4800",
+    "Sensores": 61,
+    "Precio": 7384.715
+  },
+  {
+    "Modelo": "CAS0000 para TRACTOR con 1500/2500/2700/4800",
+    "Sensores": 62,
+    "Precio": 7499.635
+  },
+  {
+    "Modelo": "CAS0000 para TRACTOR con 1500/2500/2700/4800",
+    "Sensores": 63,
+    "Precio": 7614.555
+  },
+  {
+    "Modelo": "CAS0000 para TRACTOR con 1500/2500/2700/4800",
+    "Sensores": 64,
+    "Precio": 7729.474999999999
+  },
+  {
+    "Modelo": "CAS0000 p/TRACTOR con CAS4500 + SENS. de VEL. O MOD. TREN ID",
+    "Sensores": 1,
+    "Precio": 506.09
+  },
+  {
+    "Modelo": "CAS0000 p/TRACTOR con CAS4500 + SENS. de VEL. O MOD. TREN ID",
+    "Sensores": 2,
+    "Precio": 621.01
+  },
+  {
+    "Modelo": "CAS0000 p/TRACTOR con CAS4500 + SENS. de VEL. O MOD. TREN ID",
+    "Sensores": 3,
+    "Precio": 735.93
+  },
+  {
+    "Modelo": "CAS0000 p/TRACTOR con CAS4500 + SENS. de VEL. O MOD. TREN ID",
+    "Sensores": 4,
+    "Precio": 850.85
+  },
+  {
+    "Modelo": "CAS0000 p/TRACTOR con CAS4500 + SENS. de VEL. O MOD. TREN ID",
+    "Sensores": 5,
+    "Precio": 965.77
+  },
+  {
+    "Modelo": "CAS0000 p/TRACTOR con CAS4500 + SENS. de VEL. O MOD. TREN ID",
+    "Sensores": 6,
+    "Precio": 1080.69
+  },
+  {
+    "Modelo": "CAS0000 p/TRACTOR con CAS4500 + SENS. de VEL. O MOD. TREN ID",
+    "Sensores": 7,
+    "Precio": 1195.61
+  },
+  {
+    "Modelo": "CAS0000 p/TRACTOR con CAS4500 + SENS. de VEL. O MOD. TREN ID",
+    "Sensores": 8,
+    "Precio": 1310.53
+  },
+  {
+    "Modelo": "CAS0000 p/TRACTOR con CAS4500 + SENS. de VEL. O MOD. TREN ID",
+    "Sensores": 9,
+    "Precio": 1425.45
+  },
+  {
+    "Modelo": "CAS0000 p/TRACTOR con CAS4500 + SENS. de VEL. O MOD. TREN ID",
+    "Sensores": 10,
+    "Precio": 1540.37
+  },
+  {
+    "Modelo": "CAS0000 p/TRACTOR con CAS4500 + SENS. de VEL. O MOD. TREN ID",
+    "Sensores": 11,
+    "Precio": 1655.29
+  },
+  {
+    "Modelo": "CAS0000 p/TRACTOR con CAS4500 + SENS. de VEL. O MOD. TREN ID",
+    "Sensores": 12,
+    "Precio": 1770.21
+  },
+  {
+    "Modelo": "CAS0000 p/TRACTOR con CAS4500 + SENS. de VEL. O MOD. TREN ID",
+    "Sensores": 13,
+    "Precio": 1885.1299999999999
+  },
+  {
+    "Modelo": "CAS0000 p/TRACTOR con CAS4500 + SENS. de VEL. O MOD. TREN ID",
+    "Sensores": 14,
+    "Precio": 2000.05
+  },
+  {
+    "Modelo": "CAS0000 p/TRACTOR con CAS4500 + SENS. de VEL. O MOD. TREN ID",
+    "Sensores": 15,
+    "Precio": 2114.97
+  },
+  {
+    "Modelo": "CAS0000 p/TRACTOR con CAS4500 + SENS. de VEL. O MOD. TREN ID",
+    "Sensores": 16,
+    "Precio": 2229.89
+  },
+  {
+    "Modelo": "CAS0000 p/TRACTOR con CAS4500 + SENS. de VEL. O MOD. TREN ID",
+    "Sensores": 17,
+    "Precio": 2344.81
+  },
+  {
+    "Modelo": "CAS0000 p/TRACTOR con CAS4500 + SENS. de VEL. O MOD. TREN ID",
+    "Sensores": 18,
+    "Precio": 2459.73
+  },
+  {
+    "Modelo": "CAS0000 p/TRACTOR con CAS4500 + SENS. de VEL. O MOD. TREN ID",
+    "Sensores": 19,
+    "Precio": 2574.65
+  },
+  {
+    "Modelo": "CAS0000 p/TRACTOR con CAS4500 + SENS. de VEL. O MOD. TREN ID",
+    "Sensores": 20,
+    "Precio": 2689.57
+  },
+  {
+    "Modelo": "CAS0000 p/TRACTOR con CAS4500 + SENS. de VEL. O MOD. TREN ID",
+    "Sensores": 21,
+    "Precio": 2804.49
+  },
+  {
+    "Modelo": "CAS0000 p/TRACTOR con CAS4500 + SENS. de VEL. O MOD. TREN ID",
+    "Sensores": 22,
+    "Precio": 2919.41
+  },
+  {
+    "Modelo": "CAS0000 p/TRACTOR con CAS4500 + SENS. de VEL. O MOD. TREN ID",
+    "Sensores": 23,
+    "Precio": 3034.33
+  },
+  {
+    "Modelo": "CAS0000 p/TRACTOR con CAS4500 + SENS. de VEL. O MOD. TREN ID",
+    "Sensores": 24,
+    "Precio": 3149.25
+  },
+  {
+    "Modelo": "CAS0000 p/TRACTOR con CAS4500 + SENS. de VEL. O MOD. TREN ID",
+    "Sensores": 25,
+    "Precio": 3264.17
+  },
+  {
+    "Modelo": "CAS0000 p/TRACTOR con CAS4500 + SENS. de VEL. O MOD. TREN ID",
+    "Sensores": 26,
+    "Precio": 3379.09
+  },
+  {
+    "Modelo": "CAS0000 p/TRACTOR con CAS4500 + SENS. de VEL. O MOD. TREN ID",
+    "Sensores": 27,
+    "Precio": 3494.0099999999998
+  },
+  {
+    "Modelo": "CAS0000 p/TRACTOR con CAS4500 + SENS. de VEL. O MOD. TREN ID",
+    "Sensores": 28,
+    "Precio": 3608.93
+  },
+  {
+    "Modelo": "CAS0000 p/TRACTOR con CAS4500 + SENS. de VEL. O MOD. TREN ID",
+    "Sensores": 29,
+    "Precio": 3723.85
+  },
+  {
+    "Modelo": "CAS0000 p/TRACTOR con CAS4500 + SENS. de VEL. O MOD. TREN ID",
+    "Sensores": 30,
+    "Precio": 3838.77
+  },
+  {
+    "Modelo": "CAS0000 p/TRACTOR con CAS4500 + SENS. de VEL. O MOD. TREN ID",
+    "Sensores": 31,
+    "Precio": 3953.69
+  },
+  {
+    "Modelo": "CAS0000 p/TRACTOR con CAS4500 + SENS. de VEL. O MOD. TREN ID",
+    "Sensores": 32,
+    "Precio": 4068.61
+  },
+  {
+    "Modelo": "CAS0000 p/TRACTOR con CAS4500 + SENS. de VEL. O MOD. TREN ID",
+    "Sensores": 33,
+    "Precio": 4183.53
+  },
+  {
+    "Modelo": "CAS0000 p/TRACTOR con CAS4500 + SENS. de VEL. O MOD. TREN ID",
+    "Sensores": 34,
+    "Precio": 4298.45
+  },
+  {
+    "Modelo": "CAS0000 p/TRACTOR con CAS4500 + SENS. de VEL. O MOD. TREN ID",
+    "Sensores": 35,
+    "Precio": 4413.37
+  },
+  {
+    "Modelo": "CAS0000 p/TRACTOR con CAS4500 + SENS. de VEL. O MOD. TREN ID",
+    "Sensores": 36,
+    "Precio": 4528.29
+  },
+  {
+    "Modelo": "CAS0000 p/TRACTOR con CAS4500 + SENS. de VEL. O MOD. TREN ID",
+    "Sensores": 37,
+    "Precio": 4643.21
+  },
+  {
+    "Modelo": "CAS0000 p/TRACTOR con CAS4500 + SENS. de VEL. O MOD. TREN ID",
+    "Sensores": 38,
+    "Precio": 4758.13
+  },
+  {
+    "Modelo": "CAS0000 p/TRACTOR con CAS4500 + SENS. de VEL. O MOD. TREN ID",
+    "Sensores": 39,
+    "Precio": 4873.05
+  },
+  {
+    "Modelo": "CAS0000 p/TRACTOR con CAS4500 + SENS. de VEL. O MOD. TREN ID",
+    "Sensores": 40,
+    "Precio": 4987.97
+  },
+  {
+    "Modelo": "CAS0000 p/TRACTOR con CAS4500 + SENS. de VEL. O MOD. TREN ID",
+    "Sensores": 41,
+    "Precio": 5102.89
+  },
+  {
+    "Modelo": "CAS0000 p/TRACTOR con CAS4500 + SENS. de VEL. O MOD. TREN ID",
+    "Sensores": 42,
+    "Precio": 5217.8099999999995
+  },
+  {
+    "Modelo": "CAS0000 p/TRACTOR con CAS4500 + SENS. de VEL. O MOD. TREN ID",
+    "Sensores": 43,
+    "Precio": 5332.73
+  },
+  {
+    "Modelo": "CAS0000 p/TRACTOR con CAS4500 + SENS. de VEL. O MOD. TREN ID",
+    "Sensores": 44,
+    "Precio": 5447.65
+  },
+  {
+    "Modelo": "CAS0000 p/TRACTOR con CAS4500 + SENS. de VEL. O MOD. TREN ID",
+    "Sensores": 45,
+    "Precio": 5562.57
+  },
+  {
+    "Modelo": "CAS0000 p/TRACTOR con CAS4500 + SENS. de VEL. O MOD. TREN ID",
+    "Sensores": 46,
+    "Precio": 5677.49
+  },
+  {
+    "Modelo": "CAS0000 p/TRACTOR con CAS4500 + SENS. de VEL. O MOD. TREN ID",
+    "Sensores": 47,
+    "Precio": 5792.41
+  },
+  {
+    "Modelo": "CAS0000 p/TRACTOR con CAS4500 + SENS. de VEL. O MOD. TREN ID",
+    "Sensores": 48,
+    "Precio": 5907.33
+  },
+  {
+    "Modelo": "CAS0000 p/TRACTOR con CAS4500 + SENS. de VEL. O MOD. TREN ID",
+    "Sensores": 49,
+    "Precio": 6022.25
+  },
+  {
+    "Modelo": "CAS0000 p/TRACTOR con CAS4500 + SENS. de VEL. O MOD. TREN ID",
+    "Sensores": 50,
+    "Precio": 6137.17
+  },
+  {
+    "Modelo": "CAS0000 p/TRACTOR con CAS4500 + SENS. de VEL. O MOD. TREN ID",
+    "Sensores": 51,
+    "Precio": 6252.09
+  },
+  {
+    "Modelo": "CAS0000 p/TRACTOR con CAS4500 + SENS. de VEL. O MOD. TREN ID",
+    "Sensores": 52,
+    "Precio": 6367.01
+  },
+  {
+    "Modelo": "CAS0000 p/TRACTOR con CAS4500 + SENS. de VEL. O MOD. TREN ID",
+    "Sensores": 53,
+    "Precio": 6481.93
+  },
+  {
+    "Modelo": "CAS0000 p/TRACTOR con CAS4500 + SENS. de VEL. O MOD. TREN ID",
+    "Sensores": 54,
+    "Precio": 6596.849999999999
+  },
+  {
+    "Modelo": "CAS0000 p/TRACTOR con CAS4500 + SENS. de VEL. O MOD. TREN ID",
+    "Sensores": 55,
+    "Precio": 6711.7699999999995
+  },
+  {
+    "Modelo": "CAS0000 p/TRACTOR con CAS4500 + SENS. de VEL. O MOD. TREN ID",
+    "Sensores": 56,
+    "Precio": 6826.69
+  },
+  {
+    "Modelo": "CAS0000 p/TRACTOR con CAS4500 + SENS. de VEL. O MOD. TREN ID",
+    "Sensores": 57,
+    "Precio": 6941.61
+  },
+  {
+    "Modelo": "CAS0000 p/TRACTOR con CAS4500 + SENS. de VEL. O MOD. TREN ID",
+    "Sensores": 58,
+    "Precio": 7056.53
+  },
+  {
+    "Modelo": "CAS0000 p/TRACTOR con CAS4500 + SENS. de VEL. O MOD. TREN ID",
+    "Sensores": 59,
+    "Precio": 7171.45
+  },
+  {
+    "Modelo": "CAS0000 p/TRACTOR con CAS4500 + SENS. de VEL. O MOD. TREN ID",
+    "Sensores": 60,
+    "Precio": 7286.37
+  },
+  {
+    "Modelo": "CAS0000 p/TRACTOR con CAS4500 + SENS. de VEL. O MOD. TREN ID",
+    "Sensores": 61,
+    "Precio": 7401.29
+  },
+  {
+    "Modelo": "CAS0000 p/TRACTOR con CAS4500 + SENS. de VEL. O MOD. TREN ID",
+    "Sensores": 62,
+    "Precio": 7516.21
+  },
+  {
+    "Modelo": "CAS0000 p/TRACTOR con CAS4500 + SENS. de VEL. O MOD. TREN ID",
+    "Sensores": 63,
+    "Precio": 7631.13
+  },
+  {
+    "Modelo": "CAS0000 p/TRACTOR con CAS4500 + SENS. de VEL. O MOD. TREN ID",
+    "Sensores": 64,
+    "Precio": 7746.05
+  },
+  {
+    "Modelo": "CAS0000 p/TRACTOR con CAS4500 + SENS. de VEL. O MOD. TREN ID",
+    "Sensores": 65,
+    "Precio": 7860.97
+  },
+  {
+    "Modelo": "CAS0000 p/TRACTOR con CAS4500 + SENS. de VEL. O MOD. TREN ID",
+    "Sensores": 66,
+    "Precio": 7975.889999999999
+  },
+  {
+    "Modelo": "CAS0000 p/TRACTOR con CAS4500 + SENS. de VEL. O MOD. TREN ID",
+    "Sensores": 67,
+    "Precio": 8090.8099999999995
+  },
+  {
+    "Modelo": "CAS0000 p/TRACTOR con CAS4500 + SENS. de VEL. O MOD. TREN ID",
+    "Sensores": 68,
+    "Precio": 8205.73
+  },
+  {
+    "Modelo": "CAS0000 p/TRACTOR con CAS4500 + SENS. de VEL. O MOD. TREN ID",
+    "Sensores": 69,
+    "Precio": 8320.65
+  },
+  {
+    "Modelo": "CAS0000 p/TRACTOR con CAS4500 + SENS. de VEL. O MOD. TREN ID",
+    "Sensores": 70,
+    "Precio": 8435.57
+  },
+  {
+    "Modelo": "CAS0000 p/TRACTOR con CAS4500 + SENS. de VEL. O MOD. TREN ID",
+    "Sensores": 71,
+    "Precio": 8550.49
+  },
+  {
+    "Modelo": "CAS0000 p/TRACTOR con CAS4500 + SENS. de VEL. O MOD. TREN ID",
+    "Sensores": 72,
+    "Precio": 8665.41
+  },
+  {
+    "Modelo": "CAS0000 p/TRACTOR con CAS4500 + SENS. de VEL. O MOD. TREN ID",
+    "Sensores": 73,
+    "Precio": 8780.33
+  },
+  {
+    "Modelo": "CAS0000 p/TRACTOR con CAS4500 + SENS. de VEL. O MOD. TREN ID",
+    "Sensores": 74,
+    "Precio": 8895.25
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS4500    + GPS  + MOD. TREN ID",
+    "Sensores": 1,
+    "Precio": 728.1949999999999
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS4500    + GPS  + MOD. TREN ID",
+    "Sensores": 2,
+    "Precio": 843.115
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS4500    + GPS  + MOD. TREN ID",
+    "Sensores": 3,
+    "Precio": 958.035
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS4500    + GPS  + MOD. TREN ID",
+    "Sensores": 4,
+    "Precio": 1072.955
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS4500    + GPS  + MOD. TREN ID",
+    "Sensores": 5,
+    "Precio": 1187.875
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS4500    + GPS  + MOD. TREN ID",
+    "Sensores": 6,
+    "Precio": 1302.795
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS4500    + GPS  + MOD. TREN ID",
+    "Sensores": 7,
+    "Precio": 1417.715
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS4500    + GPS  + MOD. TREN ID",
+    "Sensores": 8,
+    "Precio": 1532.635
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS4500    + GPS  + MOD. TREN ID",
+    "Sensores": 9,
+    "Precio": 1647.555
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS4500    + GPS  + MOD. TREN ID",
+    "Sensores": 10,
+    "Precio": 1762.475
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS4500    + GPS  + MOD. TREN ID",
+    "Sensores": 11,
+    "Precio": 1877.395
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS4500    + GPS  + MOD. TREN ID",
+    "Sensores": 12,
+    "Precio": 1992.315
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS4500    + GPS  + MOD. TREN ID",
+    "Sensores": 13,
+    "Precio": 2107.235
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS4500    + GPS  + MOD. TREN ID",
+    "Sensores": 14,
+    "Precio": 2222.1549999999997
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS4500    + GPS  + MOD. TREN ID",
+    "Sensores": 15,
+    "Precio": 2337.075
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS4500    + GPS  + MOD. TREN ID",
+    "Sensores": 16,
+    "Precio": 2451.995
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS4500    + GPS  + MOD. TREN ID",
+    "Sensores": 17,
+    "Precio": 2566.915
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS4500    + GPS  + MOD. TREN ID",
+    "Sensores": 18,
+    "Precio": 2681.835
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS4500    + GPS  + MOD. TREN ID",
+    "Sensores": 19,
+    "Precio": 2796.755
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS4500    + GPS  + MOD. TREN ID",
+    "Sensores": 20,
+    "Precio": 2911.6749999999997
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS4500    + GPS  + MOD. TREN ID",
+    "Sensores": 21,
+    "Precio": 3026.595
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS4500    + GPS  + MOD. TREN ID",
+    "Sensores": 22,
+    "Precio": 3141.515
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS4500    + GPS  + MOD. TREN ID",
+    "Sensores": 23,
+    "Precio": 3256.435
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS4500    + GPS  + MOD. TREN ID",
+    "Sensores": 24,
+    "Precio": 3371.355
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS4500    + GPS  + MOD. TREN ID",
+    "Sensores": 25,
+    "Precio": 3486.275
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS4500    + GPS  + MOD. TREN ID",
+    "Sensores": 26,
+    "Precio": 3601.195
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS4500    + GPS  + MOD. TREN ID",
+    "Sensores": 27,
+    "Precio": 3716.115
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS4500    + GPS  + MOD. TREN ID",
+    "Sensores": 28,
+    "Precio": 3831.035
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS4500    + GPS  + MOD. TREN ID",
+    "Sensores": 29,
+    "Precio": 3945.955
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS4500    + GPS  + MOD. TREN ID",
+    "Sensores": 30,
+    "Precio": 4060.875
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS4500    + GPS  + MOD. TREN ID",
+    "Sensores": 31,
+    "Precio": 4175.795
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS4500    + GPS  + MOD. TREN ID",
+    "Sensores": 32,
+    "Precio": 4290.715
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS4500    + GPS  + MOD. TREN ID",
+    "Sensores": 33,
+    "Precio": 4405.635
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS4500    + GPS  + MOD. TREN ID",
+    "Sensores": 34,
+    "Precio": 4520.555
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS4500    + GPS  + MOD. TREN ID",
+    "Sensores": 35,
+    "Precio": 4635.475
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS4500    + GPS  + MOD. TREN ID",
+    "Sensores": 36,
+    "Precio": 4750.3949999999995
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS4500    + GPS  + MOD. TREN ID",
+    "Sensores": 37,
+    "Precio": 4865.315
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS4500    + GPS  + MOD. TREN ID",
+    "Sensores": 38,
+    "Precio": 4980.235
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS4500    + GPS  + MOD. TREN ID",
+    "Sensores": 39,
+    "Precio": 5095.155
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS4500    + GPS  + MOD. TREN ID",
+    "Sensores": 40,
+    "Precio": 5210.075
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS4500    + GPS  + MOD. TREN ID",
+    "Sensores": 41,
+    "Precio": 5324.995
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS4500    + GPS  + MOD. TREN ID",
+    "Sensores": 42,
+    "Precio": 5439.915
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS4500    + GPS  + MOD. TREN ID",
+    "Sensores": 43,
+    "Precio": 5554.835
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS4500    + GPS  + MOD. TREN ID",
+    "Sensores": 44,
+    "Precio": 5669.755
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS4500    + GPS  + MOD. TREN ID",
+    "Sensores": 45,
+    "Precio": 5784.675
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS4500    + GPS  + MOD. TREN ID",
+    "Sensores": 46,
+    "Precio": 5899.595
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS4500    + GPS  + MOD. TREN ID",
+    "Sensores": 47,
+    "Precio": 6014.515
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS4500    + GPS  + MOD. TREN ID",
+    "Sensores": 48,
+    "Precio": 6129.4349999999995
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS4500    + GPS  + MOD. TREN ID",
+    "Sensores": 49,
+    "Precio": 6244.355
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS4500    + GPS  + MOD. TREN ID",
+    "Sensores": 50,
+    "Precio": 6359.275
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS4500    + GPS  + MOD. TREN ID",
+    "Sensores": 51,
+    "Precio": 6474.195
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS4500    + GPS  + MOD. TREN ID",
+    "Sensores": 52,
+    "Precio": 6589.115
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS4500    + GPS  + MOD. TREN ID",
+    "Sensores": 53,
+    "Precio": 6704.035
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS4500    + GPS  + MOD. TREN ID",
+    "Sensores": 54,
+    "Precio": 6818.955
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS4500    + GPS  + MOD. TREN ID",
+    "Sensores": 55,
+    "Precio": 6933.875
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS4500    + GPS  + MOD. TREN ID",
+    "Sensores": 56,
+    "Precio": 7048.795
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS4500    + GPS  + MOD. TREN ID",
+    "Sensores": 57,
+    "Precio": 7163.715
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS4500    + GPS  + MOD. TREN ID",
+    "Sensores": 58,
+    "Precio": 7278.635
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS4500    + GPS  + MOD. TREN ID",
+    "Sensores": 59,
+    "Precio": 7393.555
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS4500    + GPS  + MOD. TREN ID",
+    "Sensores": 60,
+    "Precio": 7508.474999999999
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS4500    + GPS  + MOD. TREN ID",
+    "Sensores": 61,
+    "Precio": 7623.3949999999995
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS4500    + GPS  + MOD. TREN ID",
+    "Sensores": 62,
+    "Precio": 7738.315
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS4500    + GPS  + MOD. TREN ID",
+    "Sensores": 63,
+    "Precio": 7853.235
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS4500    + GPS  + MOD. TREN ID",
+    "Sensores": 64,
+    "Precio": 7968.155
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS4500    + GPS  + MOD. TREN ID",
+    "Sensores": 65,
+    "Precio": 8083.075
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS4500    + GPS  + MOD. TREN ID",
+    "Sensores": 66,
+    "Precio": 8197.994999999999
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS4500    + GPS  + MOD. TREN ID",
+    "Sensores": 67,
+    "Precio": 8312.914999999999
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS4500    + GPS  + MOD. TREN ID",
+    "Sensores": 68,
+    "Precio": 8427.835
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS4500    + GPS  + MOD. TREN ID",
+    "Sensores": 69,
+    "Precio": 8542.755
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS4500    + GPS  + MOD. TREN ID",
+    "Sensores": 70,
+    "Precio": 8657.675
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS4500    + GPS  + MOD. TREN ID",
+    "Sensores": 71,
+    "Precio": 8772.595
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS4500    + GPS  + MOD. TREN ID",
+    "Sensores": 72,
+    "Precio": 8887.515
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS4500    + GPS  + MOD. TREN ID",
+    "Sensores": 73,
+    "Precio": 9002.435
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS4500    + GPS  + MOD. TREN ID",
+    "Sensores": 74,
+    "Precio": 9117.355
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS5100 o INTEGRA + ECU",
+    "Sensores": 1,
+    "Precio": 1344.785
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS5100 o INTEGRA + ECU",
+    "Sensores": 2,
+    "Precio": 1459.705
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS5100 o INTEGRA + ECU",
+    "Sensores": 3,
+    "Precio": 1574.625
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS5100 o INTEGRA + ECU",
+    "Sensores": 4,
+    "Precio": 1689.545
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS5100 o INTEGRA + ECU",
+    "Sensores": 5,
+    "Precio": 1804.465
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS5100 o INTEGRA + ECU",
+    "Sensores": 6,
+    "Precio": 1919.385
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS5100 o INTEGRA + ECU",
+    "Sensores": 7,
+    "Precio": 2034.305
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS5100 o INTEGRA + ECU",
+    "Sensores": 8,
+    "Precio": 2149.225
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS5100 o INTEGRA + ECU",
+    "Sensores": 9,
+    "Precio": 2264.145
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS5100 o INTEGRA + ECU",
+    "Sensores": 10,
+    "Precio": 2379.065
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS5100 o INTEGRA + ECU",
+    "Sensores": 11,
+    "Precio": 2493.985
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS5100 o INTEGRA + ECU",
+    "Sensores": 12,
+    "Precio": 2608.9049999999997
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS5100 o INTEGRA + ECU",
+    "Sensores": 13,
+    "Precio": 2723.825
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS5100 o INTEGRA + ECU",
+    "Sensores": 14,
+    "Precio": 2838.745
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS5100 o INTEGRA + ECU",
+    "Sensores": 15,
+    "Precio": 2953.665
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS5100 o INTEGRA + ECU",
+    "Sensores": 16,
+    "Precio": 3068.585
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS5100 o INTEGRA + ECU",
+    "Sensores": 17,
+    "Precio": 3183.505
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS5100 o INTEGRA + ECU",
+    "Sensores": 18,
+    "Precio": 3298.4249999999997
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS5100 o INTEGRA + ECU",
+    "Sensores": 19,
+    "Precio": 3413.345
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS5100 o INTEGRA + ECU",
+    "Sensores": 20,
+    "Precio": 3528.265
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS5100 o INTEGRA + ECU",
+    "Sensores": 21,
+    "Precio": 3643.185
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS5100 o INTEGRA + ECU",
+    "Sensores": 22,
+    "Precio": 3758.105
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS5100 o INTEGRA + ECU",
+    "Sensores": 23,
+    "Precio": 3873.025
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS5100 o INTEGRA + ECU",
+    "Sensores": 24,
+    "Precio": 3987.9449999999997
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS5100 o INTEGRA + ECU",
+    "Sensores": 25,
+    "Precio": 4102.865
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS5100 o INTEGRA + ECU",
+    "Sensores": 26,
+    "Precio": 4217.785
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS5100 o INTEGRA + ECU",
+    "Sensores": 27,
+    "Precio": 4332.705
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS5100 o INTEGRA + ECU",
+    "Sensores": 28,
+    "Precio": 4447.625
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS5100 o INTEGRA + ECU",
+    "Sensores": 29,
+    "Precio": 4562.545
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS5100 o INTEGRA + ECU",
+    "Sensores": 30,
+    "Precio": 4677.465
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS5100 o INTEGRA + ECU",
+    "Sensores": 31,
+    "Precio": 4792.385
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS5100 o INTEGRA + ECU",
+    "Sensores": 32,
+    "Precio": 4907.305
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS5100 o INTEGRA + ECU",
+    "Sensores": 33,
+    "Precio": 5022.225
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS5100 o INTEGRA + ECU",
+    "Sensores": 34,
+    "Precio": 5137.1449999999995
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS5100 o INTEGRA + ECU",
+    "Sensores": 35,
+    "Precio": 5252.065
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS5100 o INTEGRA + ECU",
+    "Sensores": 36,
+    "Precio": 5366.985
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS5100 o INTEGRA + ECU",
+    "Sensores": 37,
+    "Precio": 5481.905
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS5100 o INTEGRA + ECU",
+    "Sensores": 38,
+    "Precio": 5596.825
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS5100 o INTEGRA + ECU",
+    "Sensores": 39,
+    "Precio": 5711.745
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS5100 o INTEGRA + ECU",
+    "Sensores": 40,
+    "Precio": 5826.665
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS5100 o INTEGRA + ECU",
+    "Sensores": 41,
+    "Precio": 5941.585
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS5100 o INTEGRA + ECU",
+    "Sensores": 42,
+    "Precio": 6056.505
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS5100 o INTEGRA + ECU",
+    "Sensores": 43,
+    "Precio": 6171.425
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS5100 o INTEGRA + ECU",
+    "Sensores": 44,
+    "Precio": 6286.345
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS5100 o INTEGRA + ECU",
+    "Sensores": 45,
+    "Precio": 6401.265
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS5100 o INTEGRA + ECU",
+    "Sensores": 46,
+    "Precio": 6516.1849999999995
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS5100 o INTEGRA + ECU",
+    "Sensores": 47,
+    "Precio": 6631.105
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS5100 o INTEGRA + ECU",
+    "Sensores": 48,
+    "Precio": 6746.025
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS5100 o INTEGRA + ECU",
+    "Sensores": 49,
+    "Precio": 6860.945
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS5100 o INTEGRA + ECU",
+    "Sensores": 50,
+    "Precio": 6975.865
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS5100 o INTEGRA + ECU",
+    "Sensores": 51,
+    "Precio": 7090.785
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS5100 o INTEGRA + ECU",
+    "Sensores": 52,
+    "Precio": 7205.705
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS5100 o INTEGRA + ECU",
+    "Sensores": 53,
+    "Precio": 7320.625
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS5100 o INTEGRA + ECU",
+    "Sensores": 54,
+    "Precio": 7435.545
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS5100 o INTEGRA + ECU",
+    "Sensores": 55,
+    "Precio": 7550.465
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS5100 o INTEGRA + ECU",
+    "Sensores": 56,
+    "Precio": 7665.385
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS5100 o INTEGRA + ECU",
+    "Sensores": 57,
+    "Precio": 7780.305
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS5100 o INTEGRA + ECU",
+    "Sensores": 58,
+    "Precio": 7895.224999999999
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS5100 o INTEGRA + ECU",
+    "Sensores": 59,
+    "Precio": 8010.1449999999995
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS5100 o INTEGRA + ECU",
+    "Sensores": 60,
+    "Precio": 8125.065
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS5100 o INTEGRA + ECU",
+    "Sensores": 61,
+    "Precio": 8239.985
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS5100 o INTEGRA + ECU",
+    "Sensores": 62,
+    "Precio": 8354.905
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS5100 o INTEGRA + ECU",
+    "Sensores": 63,
+    "Precio": 8469.825
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS5100 o INTEGRA + ECU",
+    "Sensores": 64,
+    "Precio": 8584.744999999999
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS5100 o INTEGRA + ECU",
+    "Sensores": 65,
+    "Precio": 8699.664999999999
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS5100 o INTEGRA + ECU",
+    "Sensores": 66,
+    "Precio": 8814.585
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS5100 o INTEGRA + ECU",
+    "Sensores": 67,
+    "Precio": 8929.505
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS5100 o INTEGRA + ECU",
+    "Sensores": 68,
+    "Precio": 9044.425
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS5100 o INTEGRA + ECU",
+    "Sensores": 69,
+    "Precio": 9159.345
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS5100 o INTEGRA + ECU",
+    "Sensores": 70,
+    "Precio": 9274.265
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS5100 o INTEGRA + ECU",
+    "Sensores": 71,
+    "Precio": 9389.185
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS5100 o INTEGRA + ECU",
+    "Sensores": 72,
+    "Precio": 9504.105
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS5100 o INTEGRA + ECU",
+    "Sensores": 73,
+    "Precio": 9619.025
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con CAS5100 o INTEGRA + ECU",
+    "Sensores": 74,
+    "Precio": 9733.945
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con HEXAGON + DRIVER Hex",
+    "Sensores": 1,
+    "Precio": 3449.589
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con HEXAGON + DRIVER Hex",
+    "Sensores": 2,
+    "Precio": 3574.0341
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con HEXAGON + DRIVER Hex",
+    "Sensores": 3,
+    "Precio": 3698.46815
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con HEXAGON + DRIVER Hex",
+    "Sensores": 4,
+    "Precio": 3822.91325
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con HEXAGON + DRIVER Hex",
+    "Sensores": 5,
+    "Precio": 3947.35835
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con HEXAGON + DRIVER Hex",
+    "Sensores": 6,
+    "Precio": 4071.80345
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con HEXAGON + DRIVER Hex",
+    "Sensores": 7,
+    "Precio": 4196.2375
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con HEXAGON + DRIVER Hex",
+    "Sensores": 8,
+    "Precio": 4320.6826
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con HEXAGON + DRIVER Hex",
+    "Sensores": 9,
+    "Precio": 4445.1277
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con HEXAGON + DRIVER Hex",
+    "Sensores": 10,
+    "Precio": 4569.561750000001
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con HEXAGON + DRIVER Hex",
+    "Sensores": 11,
+    "Precio": 4694.00685
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con HEXAGON + DRIVER Hex",
+    "Sensores": 12,
+    "Precio": 4818.45195
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con HEXAGON + DRIVER Hex",
+    "Sensores": 13,
+    "Precio": 4942.89705
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con HEXAGON + DRIVER Hex",
+    "Sensores": 14,
+    "Precio": 5067.331099999999
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con HEXAGON + DRIVER Hex",
+    "Sensores": 15,
+    "Precio": 5191.776199999999
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con HEXAGON + DRIVER Hex",
+    "Sensores": 16,
+    "Precio": 5316.2213
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con HEXAGON + DRIVER Hex",
+    "Sensores": 17,
+    "Precio": 5440.65535
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con HEXAGON + DRIVER Hex",
+    "Sensores": 18,
+    "Precio": 5565.10045
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con HEXAGON + DRIVER Hex",
+    "Sensores": 19,
+    "Precio": 5689.54555
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con HEXAGON + DRIVER Hex",
+    "Sensores": 20,
+    "Precio": 5813.99065
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con HEXAGON + DRIVER Hex",
+    "Sensores": 21,
+    "Precio": 5938.4247000000005
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con HEXAGON + DRIVER Hex",
+    "Sensores": 22,
+    "Precio": 6062.8698
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con HEXAGON + DRIVER Hex",
+    "Sensores": 23,
+    "Precio": 6187.3149
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con HEXAGON + DRIVER Hex",
+    "Sensores": 24,
+    "Precio": 6311.748949999999
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con HEXAGON + DRIVER Hex",
+    "Sensores": 25,
+    "Precio": 6436.194049999999
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con HEXAGON + DRIVER Hex",
+    "Sensores": 26,
+    "Precio": 6560.639149999999
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con HEXAGON + DRIVER Hex",
+    "Sensores": 27,
+    "Precio": 6685.08425
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con HEXAGON + DRIVER Hex",
+    "Sensores": 28,
+    "Precio": 6809.5183
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con HEXAGON + DRIVER Hex",
+    "Sensores": 29,
+    "Precio": 6933.9634
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con HEXAGON + DRIVER Hex",
+    "Sensores": 30,
+    "Precio": 7058.4085
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con HEXAGON + DRIVER Hex",
+    "Sensores": 31,
+    "Precio": 7182.84255
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con HEXAGON + DRIVER Hex",
+    "Sensores": 32,
+    "Precio": 7307.28765
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con HEXAGON + DRIVER Hex",
+    "Sensores": 33,
+    "Precio": 7431.73275
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con HEXAGON + DRIVER Hex",
+    "Sensores": 34,
+    "Precio": 7556.1668
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con HEXAGON + DRIVER Hex",
+    "Sensores": 35,
+    "Precio": 7680.6119
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con HEXAGON + DRIVER Hex",
+    "Sensores": 36,
+    "Precio": 7805.057
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con HEXAGON + DRIVER Hex",
+    "Sensores": 37,
+    "Precio": 7929.502100000001
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con HEXAGON + DRIVER Hex",
+    "Sensores": 38,
+    "Precio": 8053.9361499999995
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con HEXAGON + DRIVER Hex",
+    "Sensores": 39,
+    "Precio": 8178.381249999999
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con HEXAGON + DRIVER Hex",
+    "Sensores": 40,
+    "Precio": 8302.82635
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con HEXAGON + DRIVER Hex",
+    "Sensores": 41,
+    "Precio": 8427.2604
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con HEXAGON + DRIVER Hex",
+    "Sensores": 42,
+    "Precio": 8551.7055
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con HEXAGON + DRIVER Hex",
+    "Sensores": 43,
+    "Precio": 8676.1506
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con HEXAGON + DRIVER Hex",
+    "Sensores": 44,
+    "Precio": 8800.5957
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con HEXAGON + DRIVER Hex",
+    "Sensores": 45,
+    "Precio": 8925.02975
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con HEXAGON + DRIVER Hex",
+    "Sensores": 46,
+    "Precio": 9049.474849999999
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con HEXAGON + DRIVER Hex",
+    "Sensores": 47,
+    "Precio": 9173.91995
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con HEXAGON + DRIVER Hex",
+    "Sensores": 48,
+    "Precio": 9298.354
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con HEXAGON + DRIVER Hex",
+    "Sensores": 49,
+    "Precio": 9422.7991
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con HEXAGON + DRIVER Hex",
+    "Sensores": 50,
+    "Precio": 9547.244200000001
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con HEXAGON + DRIVER Hex",
+    "Sensores": 51,
+    "Precio": 9671.6893
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con HEXAGON + DRIVER Hex",
+    "Sensores": 52,
+    "Precio": 9796.12335
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con HEXAGON + DRIVER Hex",
+    "Sensores": 53,
+    "Precio": 9920.568449999999
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con HEXAGON + DRIVER Hex",
+    "Sensores": 54,
+    "Precio": 10045.01355
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con HEXAGON + DRIVER Hex",
+    "Sensores": 55,
+    "Precio": 10169.447600000001
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con HEXAGON + DRIVER Hex",
+    "Sensores": 56,
+    "Precio": 10293.8927
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con HEXAGON + DRIVER Hex",
+    "Sensores": 57,
+    "Precio": 10418.337800000001
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con HEXAGON + DRIVER Hex",
+    "Sensores": 58,
+    "Precio": 10542.7829
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con HEXAGON + DRIVER Hex",
+    "Sensores": 59,
+    "Precio": 10667.21695
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con HEXAGON + DRIVER Hex",
+    "Sensores": 60,
+    "Precio": 10791.662049999999
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con HEXAGON + DRIVER Hex",
+    "Sensores": 61,
+    "Precio": 10916.10715
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con HEXAGON + DRIVER Hex",
+    "Sensores": 62,
+    "Precio": 11040.5412
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con HEXAGON + DRIVER Hex",
+    "Sensores": 63,
+    "Precio": 11164.986299999999
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con HEXAGON + DRIVER Hex",
+    "Sensores": 64,
+    "Precio": 11289.4314
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con HEXAGON + DRIVER Hex",
+    "Sensores": 65,
+    "Precio": 11413.871726400024
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con HEXAGON + DRIVER Hex",
+    "Sensores": 66,
+    "Precio": 11538.313644000025
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con HEXAGON + DRIVER Hex",
+    "Sensores": 67,
+    "Precio": 11662.755561600026
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con HEXAGON + DRIVER Hex",
+    "Sensores": 68,
+    "Precio": 11787.19747920003
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con HEXAGON + DRIVER Hex",
+    "Sensores": 69,
+    "Precio": 11911.63939680003
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con HEXAGON + DRIVER Hex",
+    "Sensores": 70,
+    "Precio": 12036.081314400031
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con HEXAGON + DRIVER Hex",
+    "Sensores": 71,
+    "Precio": 12160.523232000034
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con HEXAGON + DRIVER Hex",
+    "Sensores": 72,
+    "Precio": 12284.965149600035
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con HEXAGON + DRIVER Hex",
+    "Sensores": 73,
+    "Precio": 12409.407067200036
+  },
+  {
+    "Modelo": "CAS0000 p/ TRACTOR con HEXAGON + DRIVER Hex",
+    "Sensores": 74,
+    "Precio": 12533.848984800039
+  }
+]

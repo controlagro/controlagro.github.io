@@ -7,49 +7,71 @@ Sitio estático (sin backend) con 4 cotizadores, pensado para publicarse en GitH
 - `index.html` — página de inicio con acceso a los 4 cotizadores.
 - `styles.css` — diseño compartido por todas las páginas.
 - `compartir.js` — lógica común de "Compartir por WhatsApp" (captura de pantalla + descarga).
-- `cotizador1.html` / `script1.js` — **Monitores de siembra**. Lee `LP 0225 MONITOR DE SIEMBRA ControlAgro.xlsx` en el navegador.
-- `cotizador2.html` / `script2.js` — **Pilotos INTEGRA 6000**. Lee `data/pilotos-integra-6000.json` (ver abajo cómo se genera).
-- `cotizador3.html` / `script3.js` — **Cortes por sección**. Lee `LP 0225 CORTES x SECCION INTEGRA 6000.xlsx`.
-- `cotizador4.html` / `script4.js` — **Cortes surco por surco**. Lee `LP 0225 Cortes x SURCO INTEGRA 6000.xlsx`.
+- `cotizador1.html` / `script1.js` — **Monitores de siembra**. Lee `data/monitores-siembra.json`.
+- `cotizador2.html` / `script2.js` — **Pilotos INTEGRA 6000**. Lee `data/pilotos-integra-6000.json`.
+- `cotizador3.html` / `script3.js` — **Cortes por sección**. Lee `data/cortes-por-seccion.json`.
+- `cotizador4.html` / `script4.js` — **Cortes surco por surco**. Lee `data/cortes-surco.json`.
 
-## Actualizar los precios de Pilotos INTEGRA 6000 (sin tocar Excel)
+Ningún cotizador lee Excel ni PDF directamente en el navegador: todos leen un
+`.json` propio dentro de `data/`. Esos `.json` se generan con los scripts de
+`scripts/` a partir del documento fuente (Excel o PDF) que te vaya llegando
+de cada lista de precios. Así, si el día de mañana cambia el formato del
+documento fuente, sólo hay que tocar el script de conversión — el resto del
+sitio no cambia.
 
-Este cotizador ya **no** depende de un Excel armado a mano: los precios salen de
-`data/pilotos-integra-6000.json`, que se genera automáticamente a partir del PDF
-de lista de precios oficial ("PILOTOS ControlAgro INTEGRA 6000").
+## Actualizar precios
 
-Cada vez que llegue una lista de precios nueva:
+### Pilotos INTEGRA 6000 (fuente: PDF)
 
-1. La primera vez únicamente, instalá la dependencia (Python 3 ya viene en macOS):
+Los precios salen de `data/pilotos-integra-6000.json`, generado a partir del
+PDF oficial de lista de precios ("PILOTOS ControlAgro INTEGRA 6000").
 
-   ```bash
-   pip3 install -r scripts/requirements.txt
-   ```
+```bash
+python3 scripts/generar_precios_pilotos.py "/ruta/al/LP XXXX PILOTOS INTEGRA 6000.pdf"
+```
 
-2. Corré el script apuntando al PDF nuevo:
+El script imprime en pantalla un resumen de todos los ítems y precios que
+detectó. **Revisalo contra el PDF** antes de subir el cambio (por si algún
+ítem nuevo no fue reconocido — en ese caso aparece igual, con un nombre
+genérico, para que no se pierda ningún precio silenciosamente).
 
-   ```bash
-   python3 scripts/generar_precios_pilotos.py "/ruta/al/LP XXXX PILOTOS INTEGRA 6000.pdf"
-   ```
+### Monitores de siembra / Cortes por sección / Cortes surco por surco (fuente: Excel, por ahora)
 
-3. El script imprime en pantalla un resumen de todos los ítems y precios que
-   detectó. **Revisalo contra el PDF** antes de subir el cambio (por si algún
-   ítem nuevo no fue reconocido — en ese caso aparece igual, con un nombre
-   genérico, para que no se pierda ningún precio silenciosamente).
+Estos tres todavía se actualizan desde un Excel (no tenemos el PDF de lista
+de precios para ellos todavía). El Excel debe tener las mismas columnas que
+ya usa cada cotizador (`Modelo`, `Sensores` o `Cantidad de Embragues`,
+`Precio`) en la primera hoja.
 
-4. Si todo está bien, subí a GitHub el archivo `data/pilotos-integra-6000.json`
-   actualizado junto con el resto del sitio. No hace falta editar ningún otro
-   archivo — GitHub Pages lo sirve como un archivo estático más.
+```bash
+python3 scripts/generar_precios_excel.py "LP XXXX MONITOR DE SIEMBRA ControlAgro.xlsx" data/monitores-siembra.json
+python3 scripts/generar_precios_excel.py "LP XXXX CORTES x SECCION INTEGRA 6000.xlsx" data/cortes-por-seccion.json
+python3 scripts/generar_precios_excel.py "LP XXXX Cortes x SURCO INTEGRA 6000.xlsx" data/cortes-surco.json
+```
 
-Los otros tres cotizadores (Monitores, Cortes por sección, Cortes surco por
-surco) siguen funcionando igual que antes: para actualizarlos hay que
-reemplazar el `.xlsx` correspondiente manteniendo el mismo nombre de archivo.
+El script imprime cuántas filas leyó y las columnas detectadas — revisalo
+contra el Excel antes de subir el `.json` generado. El día que consigas el
+PDF de lista de precios para alguno de estos tres, se puede migrar ese
+cotizador al mismo esquema que Pilotos (script de conversión desde PDF en
+vez de Excel), sin tocar el HTML/JS del cotizador.
+
+### En los tres casos
+
+Una vez generado el `.json`, subilo a GitHub junto con el resto del sitio
+(no hace falta editar ningún otro archivo — GitHub Pages lo sirve como un
+archivo estático más). El Excel o PDF de origen no necesita subirse al
+repositorio; solo el `.json` resultante.
+
+### La primera vez, instalá las dependencias de los scripts
+
+```bash
+pip3 install -r scripts/requirements.txt
+```
 
 ## Probar en local
 
-Como los cotizadores leen archivos (`.xlsx` / `.json`) con `fetch()`, hace
-falta un servidor HTTP — abrir los `.html` directo desde el Finder no
-funciona (por CORS). Desde la carpeta del proyecto:
+Como los cotizadores leen los `.json` con `fetch()`, hace falta un servidor
+HTTP — abrir los `.html` directo desde el Finder no funciona (por CORS).
+Desde la carpeta del proyecto:
 
 ```bash
 python3 -m http.server 8811

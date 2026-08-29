@@ -35,13 +35,9 @@ document.addEventListener("DOMContentLoaded", function () {
         precioDisplay.classList.remove("precio-pendiente");
     }
 
-    fetch("LP 0225 CORTES x SECCION INTEGRA 6000.xlsx")
-        .then(response => response.arrayBuffer())
-        .then(data => {
-            const workbook = XLSX.read(data, { type: "array" });
-            const sheet = workbook.Sheets[workbook.SheetNames[0]];
-            const jsonData = XLSX.utils.sheet_to_json(sheet);
-
+    fetch("data/cortes-por-seccion.json")
+        .then(response => response.json())
+        .then(jsonData => {
             jsonData.forEach(row => {
                 const modelo = row["Modelo"];
                 const cantidadEmbragues = row["Cantidad de Embragues"];

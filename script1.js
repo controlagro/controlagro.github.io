@@ -6,40 +6,33 @@ document.addEventListener('DOMContentLoaded', function() {
     let datos = [];
 
     function cargarDatos() {
-        const url = 'LP 0225 MONITOR DE SIEMBRA ControlAgro.xlsx'; // Cambia el nombre para cada cotizador
-
-        fetch(url)
-            .then(response => response.arrayBuffer())
+        fetch('data/monitores-siembra.json')
+            .then(response => response.json())
             .then(data => {
-                const workbook = XLSX.read(data, { type: 'array' });
-                const hoja = workbook.Sheets[workbook.SheetNames[0]];
-                datos = XLSX.utils.sheet_to_json(hoja, { header: 1 });
-
+                datos = data;
                 llenarSelects(datos);
                 calcularPrecio();
             })
-            .catch(error => console.error("Error al cargar el archivo .xlsx:", error));
+            .catch(error => console.error("Error al cargar la lista de precios:", error));
     }
 
     function llenarSelects(datos) {
-        datos.forEach((fila, index) => {
-            if (index > 0) {
-                const modelo = fila[0];
-                const sensores = fila[1];
+        datos.forEach((fila) => {
+            const modelo = fila.Modelo;
+            const sensores = fila.Sensores;
 
-                if (!modeloSelect.querySelector(`option[value="${modelo}"]`)) {
-                    const option = document.createElement('option');
-                    option.value = modelo;
-                    option.textContent = modelo;
-                    modeloSelect.appendChild(option);
-                }
+            if (!modeloSelect.querySelector(`option[value="${modelo}"]`)) {
+                const option = document.createElement('option');
+                option.value = modelo;
+                option.textContent = modelo;
+                modeloSelect.appendChild(option);
+            }
 
-                if (!sensoresSelect.querySelector(`option[value="${sensores}"]`)) {
-                    const option = document.createElement('option');
-                    option.value = sensores;
-                    option.textContent = sensores;
-                    sensoresSelect.appendChild(option);
-                }
+            if (!sensoresSelect.querySelector(`option[value="${sensores}"]`)) {
+                const option = document.createElement('option');
+                option.value = sensores;
+                option.textContent = sensores;
+                sensoresSelect.appendChild(option);
             }
         });
     }
@@ -50,8 +43,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
         let precio = 0;
         datos.forEach((fila) => {
-            if (fila[0] === modelo && parseInt(fila[1]) === sensores) {
-                precio = fila[2];
+            if (fila.Modelo === modelo && parseInt(fila.Sensores) === sensores) {
+                precio = fila.Precio;
             }
         });
 
