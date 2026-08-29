@@ -45,10 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function mostrarBadge(data) {
-        const partes = [];
-        if (data.lista) partes.push(`Lista ${data.lista}`);
-        if (data.vigenciaHasta) partes.push(`vigente hasta ${data.vigenciaHasta.toLowerCase()}`);
-        badgeLista.textContent = partes.join(" · ") || "Lista de precios";
+        badgeLista.textContent = data.lista ? `Lista ${data.lista}` : "Lista de precios";
     }
 
     function calcularPrecio() {
