@@ -3,35 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cortes surco por surco</title>
+    <title>Cortes surco por surco - ControlAgro</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="cotizador-container" id="cotizador-container">
-        <!-- Inserta tu logo aquí -->
-        <div class="logo-container">
-            <img src="logo.png" alt="Logo" class="logo">
+    <div class="pagina">
+        <div class="marca">
+            <a href="index.html" class="marca-link" aria-label="Ir al inicio">
+                <img src="logo.png" alt="ControlAgro">
+            </a>
         </div>
-        <h1>Cortes surco por surco (LP 0225)</h1>
-        <form class="cotizador-form">
-            <label for="modelo">Modelo:</label>
-            <select id="modelo"></select>
 
-            <label for="embragues">Cantidad de embragues:</label>
-            <select id="embragues"></select>
+        <a href="index.html" class="volver">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+            Cotizadores
+        </a>
 
-            <button type="button" id="calcular">Calcular precio</button>
-        </form>
-        <div class="resultado">
-            <p><span id="precio">USD 0.00</span></p>
-            <p class="descripcion" id="descripcion-modelo">Seleccione un modelo para ver los detalles.</p>
+        <div class="tarjeta" id="cotizador-container">
+            <h1>Cortes surco por surco</h1>
+            <span class="badge-lista">Lista 0225</span>
+
+            <form class="cotizador-form" onsubmit="return false;">
+                <div class="campo">
+                    <label for="modelo">Modelo</label>
+                    <div class="select-wrap">
+                        <select id="modelo"></select>
+                    </div>
+                </div>
+
+                <div class="campo">
+                    <label for="embragues">Cantidad de embragues</label>
+                    <div class="select-wrap">
+                        <select id="embragues"></select>
+                    </div>
+                </div>
+
+                <button type="button" id="calcular">Calcular precio</button>
+            </form>
+
+            <div class="resultado">
+                <div class="resultado-principal">
+                    <span id="precio">USD 0.00</span>
+                </div>
+                <p class="descripcion" id="descripcion-modelo">Seleccioná un modelo para ver los detalles.</p>
+            </div>
+
+            <button id="shareBtn">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.4-1.5-.9-.8-1.5-1.8-1.6-2.1-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1.1 2.8 1.2 3c.1.2 2.2 3.3 5.3 4.6.7.3 1.3.5 1.8.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 1.9-1.3.2-.7.2-1.2.2-1.3-.1-.2-.3-.2-.6-.4z"/><path d="M12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.6 1.4 5.1L2 22l5.1-1.3c1.5.8 3.1 1.2 4.9 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.3c-1.6 0-3.2-.4-4.5-1.2l-.3-.2-3.4.9.9-3.3-.2-.3C3.7 14.8 3.2 13.4 3.2 12c0-4.9 3.9-8.8 8.8-8.8s8.8 3.9 8.8 8.8-3.9 8.8-8.8 8.8z"/></svg>
+                Compartir por WhatsApp
+            </button>
         </div>
-        <!-- Botón para capturar la pantalla y compartir en WhatsApp -->
-        <button id="shareBtn">Compartir por WhatsApp</button>
+
+        <p class="pie">ControlAgro · Agricultura de precisión</p>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="compartir.js"></script>
     <script src="script4.js"></script>
 </body>
 </html>

@@ -1,0 +1,201 @@
+{
+  "lista": "0626",
+  "vigenciaHasta": "12 DE JUNIO 2026",
+  "moneda": "USD",
+  "secciones": [
+    {
+      "titulo": "Piloto con antena ControlAgro Precisio-Ultra",
+      "items": [
+        {
+          "clave": "precisio_ultra_equipo_anual",
+          "nombre": "Antena ControlAgro Precisio-Ultra (equipo + abono anual, 2,5 cm)",
+          "descripcion": "Equipo piloto automático INTEGRA 6000, pantalla 10 pulg. táctil, con Giro en Cabecera, VOLANTE con motor eléctrico y ANTENA ControlAgro PRECISIO-ULTRA con abono ANUAL (*), de 2,5 cm de PRECISION",
+          "iva": "10,5%",
+          "precios": {
+            "contado": 10291.0,
+            "dias180": 11320.0,
+            "dias360": 12349.0
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Costo de señal (Precisio-Ultra)",
+      "items": [
+        {
+          "clave": "senal_precisio_ultra_anual",
+          "nombre": "Abono anual señal Precisio-Ultra (2,5 cm)",
+          "descripcion": "Abono ANUAL: con corr. ControlAgro Precisio-Ultra de 2,5 cm. (1 año)",
+          "iva": "21%",
+          "precios": {
+            "contado": 665.5
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Repuestos",
+      "items": [
+        {
+          "clave": "kit_antena_precisio_ultra",
+          "nombre": "Kit antena Precisio-Ultra con abono anual (2,5 cm)",
+          "descripcion": "KIT ANTENA ControlAgro Precisio-Ultra con abono de 2,5 cm. por 1 año",
+          "iva": "21%",
+          "precios": {
+            "contado": 2003.0
+          }
+        },
+        {
+          "clave": "instalacion_nordian",
+          "nombre": "Instalación eléctrica antena GPS Nordian a RS-232",
+          "descripcion": "INSTALACION ELECT. p/ANTENA GPS NORDIAN a RS-232 de I-6000 Cod. 220.506",
+          "iva": "21%",
+          "precios": {
+            "contado": 96.8
+          }
+        },
+        {
+          "clave": "instalacion_adaptador_rs232",
+          "nombre": "Instalación eléctrica adaptador RS-232",
+          "descripcion": "INSTALACION ELECT. ADAPTADOR p/RS-232 ENTRADA DE DATOS de I-6000 Cod. 220.504",
+          "iva": "21%",
+          "precios": {
+            "contado": 116.16
+          }
+        },
+        {
+          "clave": "kit_traslado",
+          "nombre": "Kit para trasladar el piloto a un segundo equipo",
+          "descripcion": "KIT PARA PODER TRASLADAR EL PILOTO A UN SEGUNDO TRACTOR, COSECHADORA O PULVERIZADORA.",
+          "iva": "21%",
+          "precios": {
+            "contado": 3025.0
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Piloto con antena RTK (base portátil)",
+      "items": [
+        {
+          "clave": "rtk_base_portatil",
+          "nombre": "Antena con base portátil RTK (2,5 cm)",
+          "descripcion": "Equipo piloto automático INTEGRA 6000, pantalla 10 pulg. táctil, con giro en cabecera, volante con motor eléctrico, y antena con base portatil RTK, con precisión de 2,5 cm",
+          "iva": "10,5%",
+          "precios": {
+            "contado": 10885.0,
+            "dias180": 11974.0,
+            "dias360": 13062.0
+          }
+        },
+        {
+          "clave": "survey_sin_base_rtk",
+          "nombre": "Antena Survey L1, sin base RTK (15 cm)",
+          "descripcion": "Equipo piloto automático INTEGRA 6000, pantalla 10 pulg., con Giro en Cabecera, Antena SURVEY L1 (compatible pero sin base RTK, SIN abonos), volante con motor eléc., con señal libre con precisión de 15 cm",
+          "iva": "10,5%",
+          "precios": {
+            "contado": 8558.0,
+            "dias180": 9414.0,
+            "dias360": 10270.0
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Banderillero INTEGRA 6000",
+      "items": [
+        {
+          "clave": "banderillero",
+          "nombre": "Equipo Banderillero INTEGRA 6000",
+          "descripcion": "Equipo BANDERILLERO con pantalla 10 pulg. táctil mapeador con antena de 10 hertz, apto para agregar futuro Piloto automático con Antena RTK o con Ant. Novatel con Abono, Cortes por Surco o monitor de siembra con dosis variable.",
+          "iva": "10,5%",
+          "precios": {
+            "contado": 3647.0,
+            "dias180": 4011.0
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Piloto con antena Novatel",
+      "items": [
+        {
+          "clave": "novatel_sin_activacion",
+          "nombre": "Antena Novatel L1-L2, señal libre (15 cm)",
+          "descripcion": "Equipo piloto automático INTEGRA 6000, pantalla 10 pulg. táctil, con Giro en Cabecera, volante con motor eléctrico y antena NOVATEL L1-L2 con señal libre de 15 cm",
+          "iva": "10,5%",
+          "precios": {
+            "contado": 11713.0,
+            "dias180": 12884.0,
+            "dias360": 14056.0
+          }
+        },
+        {
+          "clave": "novatel_activacion_sin_abono",
+          "nombre": "Antena Novatel L1-L2, activación sin abono (15 cm)",
+          "descripcion": "Equipo piloto automático INTEGRA 6000, pantalla 10 pulg. táctil, con Giro en Cabecera, volante con motor eléctrico y antena NOVATEL L1-L2 con ACTIVACION, SIN abono, con 15 CM de PRECISION",
+          "iva": "10,5%",
+          "precios": {
+            "contado": 13129.0,
+            "dias180": 14022.0,
+            "dias360": 15297.0
+          }
+        },
+        {
+          "clave": "novatel_activacion_abono_trimestral",
+          "nombre": "Antena Novatel L1-L2, activación + abono trimestral (2,5 cm)",
+          "descripcion": "Equipo piloto automático INTEGRA 6000, pantalla 10 pulg. táctil, con Giro en Cabecera, volante con motor eléctrico y Antena NOVATEL L1-L2 con ACTIVACION y ABONO TRIMESTRAL con 2,5 CM de PRECISION",
+          "iva": "10,5%",
+          "precios": {
+            "contado": 14085.0,
+            "dias180": 14790.0,
+            "dias360": 16135.0
+          }
+        },
+        {
+          "clave": "novatel_activacion_abono_anual",
+          "nombre": "Antena Novatel L1-L2, activación + abono anual (2,5 cm)",
+          "descripcion": "Equipo piloto automático INTEGRA 6000, pantalla 10 pulg. táctil, con Giro en Cabecera, volante con motor eléctrico y antena NOVATEL L1-L2 con ACTIVACION y ABONO ANUAL con 2,5 CM de PRECISION",
+          "iva": "10,5%",
+          "precios": {
+            "contado": 14799.0,
+            "dias180": 15364.0,
+            "dias360": 16761.0
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Costo de señal Terrastar C",
+      "items": [
+        {
+          "clave": "senal_terrastar_anual",
+          "nombre": "Abono anual señal Terrastar C Pro (2,5 cm)",
+          "descripcion": "Abono ANUAL: con corr. TERRASTAR C PRO de 2,5 cm. por 1 año",
+          "iva": "10,5%",
+          "precios": {
+            "contado": 1670.0
+          }
+        },
+        {
+          "clave": "senal_terrastar_trimestral",
+          "nombre": "Abono trimestral señal Terrastar C Pro (2,5 cm)",
+          "descripcion": "Abono TRIMESTRAL: con corr. TERRASTAR C PRO de 2,5 cm. por 3 meses",
+          "iva": "10,5%",
+          "precios": {
+            "contado": 956.0
+          }
+        },
+        {
+          "clave": "activacion_terrastar",
+          "nombre": "Activación antena Novatel para Terrastar C Pro (única vez)",
+          "descripcion": "ACTIVACION de la ANTENA NOVATEL para TERRASTAR C PRO (unica vez)",
+          "iva": "10,5%",
+          "precios": {
+            "contado": 1416.0
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -3,8 +3,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const embraguesSelect = document.getElementById("embragues");
     const calcularBtn = document.getElementById("calcular");
     const precioDisplay = document.getElementById("precio");
-    const shareBtn = document.getElementById("shareBtn");
-    const cotizadorContainer = document.getElementById("cotizador-container");
+
+    const formatearPrecio = (valor) =>
+        new Intl.NumberFormat("es-AR", { minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(valor);
 
     let precios = {};
 
@@ -111,7 +112,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (modelosSinEmbragues.includes(modeloSeleccionado)) {
             const precioBase = precios[modeloSeleccionado].precioBase || 0;
-            precioDisplay.textContent = `USD ${precioBase.toFixed(2)}`;
+            precioDisplay.textContent = `USD ${formatearPrecio(precioBase)}`;
             return;
         }
 
@@ -121,44 +122,8 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         let precioFinal = precios[modeloSeleccionado].preciosPorEmbrague[embragueSeleccionado] || 0;
-        precioDisplay.textContent = `USD ${precioFinal.toFixed(2)}`;
+        precioDisplay.textContent = `USD ${formatearPrecio(precioFinal)}`;
     });
 
-    function capturarPantallaYCompartir() {
-        html2canvas(cotizadorContainer).then(canvas => {
-            canvas.toBlob(blob => {
-                const archivo = new File([blob], "cotizacion.png", { type: "image/png" });
-
-                const fechaActual = new Date();
-                const fechaFormateada = fechaActual.toLocaleDateString('es-ES');
-                const horaFormateada = fechaActual.toLocaleTimeString('es-ES');
-                const textoCompartir = `Cotización generada el ${fechaFormateada} a las ${horaFormateada}`;
-
-                if (navigator.share && navigator.canShare({ files: [archivo] })) {
-                    navigator.share({
-                        title: "Cotización de Equipos",
-                        text: textoCompartir,
-                        files: [archivo]
-                    }).then(() => console.log("¡Cotización compartida exitosamente!"))
-                      .catch(error => console.error("Error al compartir:", error));
-                } else {
-                    const urlImagen = URL.createObjectURL(blob);
-                    const enlaceDescarga = document.createElement('a');
-                    enlaceDescarga.href = urlImagen;
-                    enlaceDescarga.download = 'cotizacion.png';
-                    document.body.appendChild(enlaceDescarga);
-                    enlaceDescarga.click();
-                    document.body.removeChild(enlaceDescarga);
-
-                    const mensajeWhatsApp = encodeURIComponent(`${textoCompartir}\nAdjunto la cotización.`);
-                    const urlWhatsApp = `https://web.whatsapp.com/send?text=${mensajeWhatsApp}`;
-                    window.open(urlWhatsApp, '_blank');
-
-                    alert('La imagen de la cotización se ha descargado. Adjunta manualmente en WhatsApp Web.');
-                }
-            });
-        });
-    }
-
-    shareBtn.addEventListener('click', capturarPantallaYCompartir);
+    initCompartir({ titulo: "Cotización de Equipos" });
 });

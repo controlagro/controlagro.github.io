@@ -1,130 +1,107 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const tipoSelect = document.getElementById('tipo');
-    const precioSpan = document.getElementById('precio');
-    const descripcionP = document.querySelector('.descripcion-principal');
-    const shareBtn = document.getElementById('shareBtn');
-    const cotizadorContainer = document.getElementById('cotizador-container');
+document.addEventListener("DOMContentLoaded", function () {
+    const tipoSelect = document.getElementById("tipo");
+    const calcularBtn = document.getElementById("calcular");
+    const badgeLista = document.getElementById("badge-lista");
+    const resultado = document.getElementById("resultado");
+    const precioEl = document.getElementById("precio");
+    const descripcionEl = document.getElementById("descripcion");
+    const formasPagoEl = document.getElementById("formas-pago");
+    const ivaNotaEl = document.getElementById("iva-nota");
 
-    // Cargar archivo Excel y poblar el desplegable
-    fetch('LP 0426 PILOTOS INTEGRA 6000.xlsx')
-        .then(response => response.arrayBuffer())
-        .then(data => {
-            const workbook = XLSX.read(data, { type: 'array' });
-            const firstSheet = workbook.Sheets[workbook.SheetNames[0]];
-            const rows = XLSX.utils.sheet_to_json(firstSheet, { header: 1 });
+    const ETIQUETAS_PRECIO = {
+        contado: { etiqueta: "Contado", nota: "Precio de lista" },
+        dias180: { etiqueta: "Financiación 0 a 180 días", nota: "En pesos, sin interés" },
+        dias360: { etiqueta: "Financiación 0 a 360 días", nota: "Anticipo 30% + saldo sin interés" },
+    };
 
-            // Poblar el desplegable
-            rows.slice(1).forEach(row => {
-                const option = document.createElement('option');
-                option.value = row[1];  // Precio
-                option.textContent = row[0];  // Tipo de activación y abono
-                tipoSelect.appendChild(option);
-            });
+    const formatearUSD = (valor) =>
+        `USD ${new Intl.NumberFormat("es-AR", { minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(valor)}`;
 
-            // Actualizar la descripción al cargar la página con la primera opción por defecto
-            updateDescripcion(tipoSelect.options[0].textContent);
-        });
+    let itemsPorClave = {};
 
-    // Actualizar descripción y resetear precio según la opción seleccionada
-    tipoSelect.addEventListener('change', function () {
-        updateDescripcion(tipoSelect.options[tipoSelect.selectedIndex].textContent);
-        precioSpan.textContent = 'USD 0.00';  // Restablecer el precio a 0
-    });
-
-    // Función para actualizar la descripción
-    function updateDescripcion(selectedTipo) {
-        let descripcionTexto = '';
-
-        switch (selectedTipo) {
-            case 'ANTENA ControlAgro PRECISIO-ULTRA con abono ANUAL de 2,5 cm de PRECISION':
-                descripcionTexto = 'Equipo piloto automático INTEGRA 6000, pantalla 10 pulg. táctil, con Giro en Cabecera,  VOLANTE con motor eléctrico y ANTENA ControlAgro PRECISIO-ULTRA con abono ANUAL, de 2,5 cm de PRECISION. Instalación e IVA (10,5%) incluidos.';
-                break;
-            case 'Abono ANUAL: con corr. ControlAgro Precisio-Ultra de 2,5 cm.':
-                descripcionTexto = 'Abono ANUAL: con corr. ControlAgro Precisio-Ultra de 2,5 cm.';
-                break;
-            case 'Antena NOVATEL L1-L2 Señal libre de 15 cm':
-                descripcionTexto = 'Equipo piloto automático INTEGRA 6000, pantalla 10 pulg. táctil, con giro en cabecera, volante con motor eléctrico y antena NOVATEL L1-L2. Instalación e IVA (10,5%) incluidos. Contado: 10% de descuento sobre el precio de lista. FINANCIACIÓN: en pesos desde 0 hasta 120 días sin interés, y en dólares ajustables desde 0 hasta 12 meses.';
-                break;
-            case 'Antena NOVATEL L1-L2 ACTIVACIÓN SIN abono 15 CM':
-                descripcionTexto = 'Equipo piloto automático INTEGRA 6000, pantalla 10 pulg. táctil, con giro en cabecera, volante con motor eléctrico y antena NOVATEL L1-L2 con ACTIVACIÓN, SIN abono, con 15 CM de PRECISIÓN. Instalación e IVA (10,5%) incluidos. Contado: 10% de descuento sobre el precio de lista. FINANCIACIÓN: en pesos desde 0 hasta 120 días sin interés, y en dólares ajustables desde 0 hasta 12 meses.';
-                break;
-            case 'Antena NOVATEL L1-L2 ACTIVACIÓN y ABONO TRIMESTRAL 2,5 CM':
-                descripcionTexto = 'Equipo piloto automático INTEGRA 6000, pantalla 10 pulg. táctil, con giro en cabecera, volante con motor eléctrico y antena NOVATEL L1-L2 con ACTIVACIÓN y abono trimestral con 2,5 CM de PRECISIÓN. Instalación e IVA (10,5%) incluidos. Contado: 10% de descuento sobre el precio de lista. FINANCIACIÓN: en pesos desde 0 hasta 120 días sin interés, y en dólares ajustables desde 0 hasta 12 meses.';
-                break;
-            case 'Antena NOVATEL L1-L2 ACTIVACIÓN y ABONO ANUAL 2,5 CM':
-                descripcionTexto = 'Equipo piloto automático INTEGRA 6000, pantalla 10 pulg. táctil, con giro en cabecera, volante con motor eléctrico y antena NOVATEL L1-L2 con ACTIVACIÓN y abono anual con 2,5 CM de PRECISIÓN. Instalación e IVA (10,5%) incluidos. Contado: 10% de descuento sobre el precio de lista. FINANCIACIÓN: en pesos desde 0 hasta 120 días sin interés, y en dólares ajustables desde 0 hasta 12 meses.';
-                break;
-            case 'SURVEY L1 CON base portátil RTK':
-                descripcionTexto = 'Equipo piloto automático INTEGRA 6000, pantalla 10 pulg. táctil, con giro en cabecera, volante con motor eléctrico, y antena con base portátil RTK, con precisión de 2,5 cm. Instalación e IVA (10,5%) incluidos. Contado: 10% de descuento sobre el precio de lista. FINANCIACIÓN: en pesos desde 0 hasta 120 días sin interés, y en dólares ajustables desde 0 hasta 12 meses.';
-                break;
-            case 'SURVEY L1 SIN base portátil RTK':
-                descripcionTexto = 'Equipo piloto automático INTEGRA 6000, pantalla 10 pulg., con giro en cabecera, Antena SURVEY L1 (compatible pero sin base RTK, SIN abonos), volante con motor eléc., con señal libre con precisión de 15 cm. Instalación e IVA (10,5%) incluidos. Contado: 10% de descuento sobre el precio de lista. FINANCIACIÓN: en pesos desde 0 hasta 120 días sin interés, y en dólares ajustables desde 0 hasta 12 meses.';
-                break;
-            default:
-                descripcionTexto = 'El equipo está compuesto por una pantalla táctil de 10 pulgadas, con giro en cabecera, volante con motor eléctrico y antena NOVATEL L1-L2. Instalación e IVA (21%) incluidos. CONTADO.';
-        }
-
-        // Actualizar el contenido de la descripción
-        descripcionP.innerHTML = descripcionTexto;
+    function ocultarResultado() {
+        resultado.classList.add("oculto");
     }
 
-    // Calcular precio
-    document.getElementById('calcular').addEventListener('click', function () {
-        const selectedPrice = tipoSelect.value;
-        precioSpan.textContent = `USD ${parseFloat(selectedPrice).toFixed(2)}`;
-    });
+    function poblarSelect(data) {
+        const placeholder = document.createElement("option");
+        placeholder.value = "";
+        placeholder.textContent = "Seleccionar…";
+        placeholder.disabled = true;
+        placeholder.selected = true;
+        tipoSelect.appendChild(placeholder);
 
-    // Función para capturar y compartir
-    function capturarPantallaYCompartir() {
-        html2canvas(cotizadorContainer).then(canvas => {
-            canvas.toBlob(blob => {
-                const archivo = new File([blob], "cotizacion.png", { type: "image/png" });
+        data.secciones.forEach((seccion) => {
+            const optgroup = document.createElement("optgroup");
+            optgroup.label = seccion.titulo;
 
-                // Obtener fecha y hora actuales
-                const fechaActual = new Date();
-                const opcionesFecha = { year: 'numeric', month: 'long', day: 'numeric' };
-                const opcionesHora = { hour: '2-digit', minute: '2-digit', second: '2-digit' };
-                const fechaFormateada = fechaActual.toLocaleDateString('es-ES', opcionesFecha);
-                const horaFormateada = fechaActual.toLocaleTimeString('es-ES', opcionesHora);
+            seccion.items.forEach((item) => {
+                itemsPorClave[item.clave] = item;
 
-                // Crear el texto con fecha y hora
-                const textoCompartir = `Cotización generada el ${fechaFormateada} a las ${horaFormateada}`;
-
-                if (navigator.share && navigator.canShare && navigator.canShare({ files: [archivo] })) {
-                    // Compartir en dispositivos móviles
-                    navigator.share({
-                        title: "Cotización Equipo INTEGRA 6000",
-                        text: textoCompartir,
-                        files: [archivo]
-                    }).then(() => {
-                        console.log("¡Cotización compartida exitosamente!");
-                    }).catch(error => {
-                        console.error("Error al compartir:", error);
-                    });
-                } else {
-                    // Descargar la imagen en computadoras de escritorio
-                    const urlImagen = URL.createObjectURL(blob);
-
-                    // Crear un enlace temporal para descargar la imagen
-                    const enlaceDescarga = document.createElement('a');
-                    enlaceDescarga.href = urlImagen;
-                    enlaceDescarga.download = 'cotizacion.png';
-                    document.body.appendChild(enlaceDescarga);
-                    enlaceDescarga.click();
-                    document.body.removeChild(enlaceDescarga);
-
-                    // Abrir WhatsApp Web con mensaje predefinido
-                    const mensajeWhatsApp = encodeURIComponent(textoCompartir + "\nAdjunto la cotización.");
-                    const urlWhatsApp = `https://web.whatsapp.com/send?text=${mensajeWhatsApp}`;
-                    window.open(urlWhatsApp, '_blank');
-
-                    // Mostrar una alerta al usuario
-                    alert('La imagen de la cotización se ha descargado. Por favor, adjunta la imagen manualmente en WhatsApp Web.');
-                }
+                const option = document.createElement("option");
+                option.value = item.clave;
+                option.textContent = item.nombre;
+                optgroup.appendChild(option);
             });
+
+            tipoSelect.appendChild(optgroup);
         });
     }
 
-    // Capturar y compartir al hacer clic en el botón
-    shareBtn.addEventListener('click', capturarPantallaYCompartir);
+    function mostrarBadge(data) {
+        const partes = [];
+        if (data.lista) partes.push(`Lista ${data.lista}`);
+        if (data.vigenciaHasta) partes.push(`vigente hasta ${data.vigenciaHasta.toLowerCase()}`);
+        badgeLista.textContent = partes.join(" · ") || "Lista de precios";
+    }
+
+    function calcularPrecio() {
+        const item = itemsPorClave[tipoSelect.value];
+        if (!item) return;
+
+        precioEl.textContent = formatearUSD(item.precios.contado);
+        descripcionEl.textContent = item.descripcion;
+
+        formasPagoEl.innerHTML = "";
+        Object.keys(ETIQUETAS_PRECIO).forEach((clave) => {
+            const valor = item.precios[clave];
+            if (valor === undefined) return;
+
+            const { etiqueta, nota } = ETIQUETAS_PRECIO[clave];
+            const fila = document.createElement("div");
+            fila.className = "fila" + (clave === "contado" ? " destacada" : "");
+            fila.innerHTML = `
+                <span class="etiqueta">${etiqueta}<small>${nota}</small></span>
+                <span class="valor">${formatearUSD(valor)}</span>
+            `;
+            formasPagoEl.appendChild(fila);
+        });
+
+        ivaNotaEl.textContent = `Instalación e IVA (${item.iva}) incluidos.`;
+        resultado.classList.remove("oculto");
+    }
+
+    tipoSelect.addEventListener("change", () => {
+        ocultarResultado();
+        calcularBtn.disabled = !tipoSelect.value;
+    });
+
+    calcularBtn.addEventListener("click", calcularPrecio);
+
+    fetch("data/pilotos-integra-6000.json")
+        .then((response) => {
+            if (!response.ok) throw new Error("No se pudo cargar la lista de precios");
+            return response.json();
+        })
+        .then((data) => {
+            poblarSelect(data);
+            mostrarBadge(data);
+        })
+        .catch((error) => {
+            console.error(error);
+            badgeLista.textContent = "No se pudo cargar la lista de precios";
+            tipoSelect.disabled = true;
+        });
+
+    initCompartir({ titulo: "Cotización Piloto INTEGRA 6000" });
 });

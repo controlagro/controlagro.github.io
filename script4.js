@@ -3,8 +3,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const embraguesSelect = document.getElementById("embragues");
     const calcularBtn = document.getElementById("calcular");
     const precioDisplay = document.getElementById("precio");
-    const shareBtn = document.getElementById("shareBtn");
-    const cotizadorContainer = document.getElementById("cotizador-container");
+
+    const formatearPrecio = (valor) =>
+        new Intl.NumberFormat("es-AR", { minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(valor);
 
     let precios = {};
 
@@ -113,7 +114,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (modelosSinEmbragues.includes(modeloSeleccionado)) {
             const precioBase = precios[modeloSeleccionado].precioBase || 0;
-            precioDisplay.textContent = `USD ${precioBase.toFixed(2)}`;
+            precioDisplay.textContent = `USD ${formatearPrecio(precioBase)}`;
             return;
         }
 
@@ -123,35 +124,8 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         let precioFinal = precios[modeloSeleccionado].preciosPorEmbrague[embragueSeleccionado] || 0;
-        precioDisplay.textContent = `USD ${precioFinal.toFixed(2)}`;
+        precioDisplay.textContent = `USD ${formatearPrecio(precioFinal)}`;
     });
 
-    function capturarPantallaYCompartir() {
-        html2canvas(cotizadorContainer).then(canvas => {
-            canvas.toBlob(blob => {
-                const archivo = new File([blob], "cotizacion.png", { type: "image/png" });
-                const mensajeWhatsApp = encodeURIComponent("Adjunto la cotización generada.");
-                const urlWhatsApp = `https://web.whatsapp.com/send?text=${mensajeWhatsApp}`;
-
-                if (navigator.share && navigator.canShare({ files: [archivo] })) {
-                    navigator.share({
-                        title: "Cotización de Equipos",
-                        text: "Adjunto la cotización generada.",
-                        files: [archivo]
-                    });
-                } else {
-                    const urlImagen = URL.createObjectURL(blob);
-                    const enlaceDescarga = document.createElement('a');
-                    enlaceDescarga.href = urlImagen;
-                    enlaceDescarga.download = 'cotizacion.png';
-                    document.body.appendChild(enlaceDescarga);
-                    enlaceDescarga.click();
-                    document.body.removeChild(enlaceDescarga);
-                    window.open(urlWhatsApp, '_blank');
-                }
-            });
-        });
-    }
-
-    shareBtn.addEventListener('click', capturarPantallaYCompartir);
+    initCompartir({ titulo: "Cotización de Equipos" });
 });

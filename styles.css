@@ -1,184 +1,463 @@
-/* Estilo general de la página */
+/* =========================================================
+   ControlAgro — Cotizadores
+   Sistema de diseño compartido por todas las páginas
+   ========================================================= */
+
+:root {
+  --verde-900: #044023;
+  --verde-800: #065c30;
+  --verde-700: #0a7a3d;
+  --verde-600: #0f9048;
+  --verde-500: #16a34a;
+  --verde-100: #e7f5ec;
+  --verde-50: #f4faf6;
+
+  --whatsapp: #25d366;
+  --whatsapp-dark: #1ebc5a;
+
+  --tinta-900: #16211c;
+  --tinta-700: #3d4a44;
+  --tinta-500: #6b7873;
+  --tinta-300: #a8b3ae;
+  --tinta-100: #e4e9e6;
+
+  --superficie: #ffffff;
+  --fondo: #ffffff;
+
+  --radio-lg: 20px;
+  --radio-md: 12px;
+  --radio-sm: 8px;
+
+  --sombra-card: 0 1px 2px rgba(6, 33, 20, 0.05), 0 12px 32px -12px rgba(6, 33, 20, 0.22);
+  --sombra-btn: 0 6px 16px -6px rgba(15, 144, 72, 0.45);
+
+  --fuente: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f9;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    color: #333;
+  margin: 0;
+  min-height: 100vh;
+  font-family: var(--fuente);
+  color: var(--tinta-900);
+  background: var(--fondo);
+  display: flex;
+  justify-content: center;
+  padding: 32px 16px 56px;
 }
 
-/* Contenedor principal para la home */
-.home-container {
-    background-color: #ffffff;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    max-width: 400px;
-    width: 90%;
-    box-sizing: border-box;
+/* ---------- Estructura general de página ---------- */
+
+.pagina {
+  width: 100%;
+  max-width: 480px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
-/* Título de la home */
-.home-container h1 {
-    font-size: 24px;
-    margin-bottom: 20px;
-    color: #2c3e50;
+.marca {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 0 4px;
 }
 
-/* Enlaces a los cotizadores */
-.cotizador-links {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+.marca img {
+  max-width: 220px;
+  width: 70%;
+  height: auto;
 }
 
-.cotizador-link {
-    background-color: #016533;
-    color: white;
-    padding: 12px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
+.volver {
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--verde-700);
+  text-decoration: none;
+  padding: 6px 10px 6px 4px;
+  border-radius: 999px;
+  transition: background-color 0.15s ease;
 }
 
-.cotizador-link:hover {
-    background-color: #016533;
+.marca-link {
+  display: contents;
 }
 
-/* Estilo para las páginas de cotizadores */
-.cotizador-container {
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
-    width: 90%;
-    box-sizing: border-box;
-    margin: 10px;
+.tarjeta {
+  background: var(--superficie);
+  border-radius: var(--radio-lg);
+  box-shadow: var(--sombra-card);
+  padding: 28px 26px 26px;
 }
 
-/* Título del cotizador */
-.cotizador-container h1 {
-    font-size: 22px;
-    margin-bottom: 20px;
-    color: #2c3e50;
-    text-align: center;
+.tarjeta h1 {
+  font-size: 21px;
+  line-height: 1.25;
+  margin: 0 0 4px;
+  color: var(--verde-900);
+  text-align: center;
+  font-weight: 800;
+  letter-spacing: -0.01em;
 }
 
-/* Estilo del formulario del cotizador */
-.cotizador-form {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
+.subtitulo {
+  text-align: center;
+  color: var(--tinta-500);
+  font-size: 13px;
+  margin: 0 0 22px;
 }
 
-/* Etiquetas del formulario */
-.cotizador-form label {
-    margin-bottom: 5px;
-    font-weight: bold;
-    color: #2c3e50;
+.badge-lista {
+  display: inline-flex;
+  align-self: center;
+  align-items: center;
+  gap: 6px;
+  background: var(--verde-100);
+  color: var(--verde-800);
+  font-size: 12px;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 999px;
+  margin: 2px auto 18px;
 }
 
-/* Estilo de los desplegables */
-.cotizador-form select {
-    margin-bottom: 15px;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #cccccc;
-    border-radius: 5px;
-    background-color: #f8f8f8;
-    color: #2c3e50;
-    width: 100%;
+/* ---------- Home ---------- */
+
+.inicio-links {
+  display: grid;
+  gap: 12px;
 }
 
-/* Estilo del botón calcular */
+.inicio-link {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: var(--superficie);
+  border-radius: var(--radio-md);
+  padding: 16px 18px;
+  text-decoration: none;
+  color: var(--tinta-900);
+  box-shadow: var(--sombra-card);
+  border: 1px solid transparent;
+  transition: transform 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.inicio-link .icono {
+  flex: none;
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background: var(--verde-100);
+  color: var(--verde-700);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inicio-link .icono svg {
+  width: 22px;
+  height: 22px;
+}
+
+.inicio-link .texto {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.inicio-link .texto strong {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.inicio-link .texto span {
+  font-size: 12.5px;
+  color: var(--tinta-500);
+}
+
+.inicio-link .flecha {
+  margin-left: auto;
+  color: var(--tinta-300);
+}
+
+/* ---------- Formulario ---------- */
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+.campo label {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--tinta-700);
+}
+
+.select-wrap {
+  position: relative;
+}
+
+select {
+  width: 100%;
+  appearance: none;
+  -webkit-appearance: none;
+  background-color: var(--verde-50);
+  border: 1.5px solid var(--tinta-100);
+  border-radius: var(--radio-sm);
+  padding: 12px 38px 12px 14px;
+  font-family: inherit;
+  font-size: 15px;
+  color: var(--tinta-900);
+  cursor: pointer;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+select:focus {
+  outline: none;
+  border-color: var(--verde-600);
+  box-shadow: 0 0 0 3px rgba(15, 144, 72, 0.18);
+}
+
+select:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.select-wrap::after {
+  content: "";
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  width: 9px;
+  height: 9px;
+  border-right: 2px solid var(--tinta-500);
+  border-bottom: 2px solid var(--tinta-500);
+  transform: translateY(-70%) rotate(45deg);
+  pointer-events: none;
+}
+
 button#calcular {
-    padding: 12px;
-    background-color: #016533;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-    width: 100%;
+  width: 100%;
+  border: none;
+  border-radius: var(--radio-sm);
+  padding: 14px;
+  margin-top: 4px;
+  background: linear-gradient(135deg, var(--verde-600), var(--verde-800));
+  color: #fff;
+  font-family: inherit;
+  font-size: 15.5px;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  cursor: pointer;
+  box-shadow: var(--sombra-btn);
+  transition: transform 0.12s ease, box-shadow 0.12s ease, filter 0.12s ease;
 }
 
-button#calcular:hover {
-    background-color: #014d2a;
+button#calcular:active {
+  transform: translateY(0);
 }
 
-/* Estilo del resultado del precio */
-.resultado p {
-    font-size: 17px;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 20px;
+button#calcular:disabled {
+  background: var(--tinta-300);
+  box-shadow: none;
+  cursor: not-allowed;
+  transform: none;
+  filter: none;
+}
+
+/* ---------- Resultado ---------- */
+
+.resultado {
+  margin-top: 22px;
+  padding-top: 20px;
+  border-top: 1px dashed var(--tinta-100);
+}
+
+.resultado-principal {
+  text-align: center;
+  margin: 0 0 6px;
 }
 
 #precio {
-    color: #27ae60;
-    font-size: 22px;
+  display: inline-block;
+  font-size: 30px;
+  font-weight: 800;
+  color: var(--verde-700);
+  letter-spacing: -0.01em;
 }
 
-/* Botón de compartir en WhatsApp */
+.descripcion,
+.descripcion-principal {
+  background: var(--verde-50);
+  border: 1px solid var(--verde-100);
+  border-radius: var(--radio-md);
+  padding: 13px 15px;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--tinta-700);
+  margin: 14px 0 0;
+}
+
+.descripcion:empty,
+.descripcion-principal:empty {
+  display: none;
+}
+
+/* Desglose de formas de pago (cotizador de Pilotos) */
+
+.formas-pago {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.formas-pago .fila {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 14px;
+  border-radius: var(--radio-sm);
+  background: var(--verde-50);
+  border: 1px solid var(--verde-100);
+}
+
+.formas-pago .fila.destacada {
+  background: var(--verde-800);
+  border-color: var(--verde-800);
+}
+
+.formas-pago .fila.destacada .etiqueta,
+.formas-pago .fila.destacada .valor {
+  color: #fff;
+}
+
+.formas-pago .etiqueta {
+  font-size: 12.5px;
+  font-weight: 700;
+  color: var(--tinta-700);
+}
+
+.formas-pago .etiqueta small {
+  display: block;
+  font-weight: 500;
+  font-size: 11px;
+  color: var(--tinta-500);
+  margin-top: 1px;
+}
+
+.formas-pago .fila.destacada .etiqueta small {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.formas-pago .valor {
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--verde-800);
+  white-space: nowrap;
+}
+
+.iva-nota {
+  text-align: center;
+  font-size: 11.5px;
+  color: var(--tinta-500);
+  margin: 12px 0 0;
+}
+
+/* ---------- Compartir ---------- */
+
 button#shareBtn {
-    margin-top: 15px;
-    padding: 12px;
-    background-color: #25d366;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-    width: 100%;
+  width: 100%;
+  margin-top: 16px;
+  border: none;
+  border-radius: var(--radio-sm);
+  padding: 13px;
+  background-color: var(--whatsapp);
+  color: #fff;
+  font-family: inherit;
+  font-size: 14.5px;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: background-color 0.15s ease, transform 0.12s ease;
 }
 
-button#shareBtn:hover {
-    background-color: #1ebc5a;
+button#shareBtn svg {
+  width: 17px;
+  height: 17px;
 }
 
-/* Detalle adicional para una estética más pulida */
-.logo-container {
-    margin-bottom: 20px;
-    text-align: center; /* Asegura que el logo esté centrado */
+.pie {
+  text-align: center;
+  font-size: 11.5px;
+  color: var(--tinta-300);
+  margin-top: 4px;
 }
 
-.logo {
-    max-width: 100%;
-    height: auto;
+/* ---------- Utilidades ---------- */
+
+.oculto {
+  display: none !important;
 }
 
-/* Media Queries para pantallas pequeñas */
+/* Los efectos :hover sólo se aplican con mouse real. En touch (celular /
+   tablet) un elemento con :hover necesita DOS toques en iOS Safari: el
+   primero sólo dispara el estado hover, recién el segundo hace el click.
+   Por eso todo :hover vive acá adentro, así en touch no existe la regla
+   y el primer toque navega/clickea normalmente. */
+@media (hover: hover) and (pointer: fine) {
+  .volver:hover {
+    background-color: var(--verde-100);
+  }
+
+  .inicio-link:hover {
+    transform: translateY(-2px);
+    border-color: var(--verde-500);
+  }
+
+  select:hover {
+    border-color: var(--verde-500);
+  }
+
+  button#calcular:hover:not(:disabled) {
+    filter: brightness(1.06);
+    transform: translateY(-1px);
+  }
+
+  button#shareBtn:hover {
+    background-color: var(--whatsapp-dark);
+    transform: translateY(-1px);
+  }
+}
+
 @media (max-width: 480px) {
-    .cotizador-container {
-        padding: 15px;
-    }
-    .cotizador-container h1 {
-        font-size: 20px;
-    }
-    button#calcular {
-        font-size: 14px;
-        padding: 10px;
-    }
-    button#shareBtn {
-        font-size: 14px;
-        padding: 10px;
-    }
-    #precio {
-        font-size: 22px;
-    }
-    .logo {
-        max-width: 80%; /* Ajuste para dispositivos móviles */
-    }
+  body {
+    padding: 20px 12px 40px;
+  }
+
+  .tarjeta {
+    padding: 22px 18px 20px;
+  }
+
+  .tarjeta h1 {
+    font-size: 19px;
+  }
+
+  #precio {
+    font-size: 26px;
+  }
 }
