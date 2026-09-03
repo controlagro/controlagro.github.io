@@ -39,16 +39,31 @@ SECTION_KEYWORDS = [
     (re.compile(r"BANDERILLERO"), "Banderillero INTEGRA 6000"),
     (re.compile(r"SEÑAL TERRESTAR|SEÑAL TERRASTAR|SEÑAL TERRESTAR C"), "Costo de señal Terrastar C"),
     (re.compile(r"ANTENA NOVATEL"), "Piloto con antena Novatel"),
-    (re.compile(r"COSTO DE\s*SEÑAL"), "Costo de señal (Precisio-Ultra)"),
+    (re.compile(r"COSTO DE\s*SEÑAL"), "Costo de señal (Ultra)"),
     (re.compile(r"REPUESTOS"), "Repuestos"),
-    (re.compile(r"GIRO en CABECERA.*PRECISIO-ULTRA|PRECISIO-ULTRA"), "Piloto con antena ControlAgro Precisio-Ultra"),
+    (re.compile(r"GIRO en CABECERA.*PRECISIO-ULTRA|PRECISIO-ULTRA"), "Piloto con antena ControlAgro Ultra"),
+]
+
+# Orden final de las secciones en el desplegable: primero los pilotos
+# (equipos), después los abonos de señal, y por último los repuestos —
+# a pedido del cliente. Los títulos de abonos/repuestos ya nombran la
+# antena a la que corresponden (Ultra / Terrastar) para que se entienda
+# la relación aunque no estén pegados al piloto correspondiente.
+ORDEN_SECCIONES = [
+    "Piloto con antena ControlAgro Ultra",
+    "Piloto con antena RTK (base portátil)",
+    "Banderillero INTEGRA 6000",
+    "Piloto con antena Novatel",
+    "Costo de señal (Ultra)",
+    "Costo de señal Terrastar C",
+    "Repuestos",
 ]
 
 # claves conocidas -> nombre corto prolijo para el desplegable
 CLAVE_A_NOMBRE = {
-    "precisio_ultra_equipo_anual": "Antena ControlAgro Precisio-Ultra (equipo + abono anual, 2,5 cm)",
-    "senal_precisio_ultra_anual": "Abono anual señal Precisio-Ultra (2,5 cm)",
-    "kit_antena_precisio_ultra": "Kit antena Precisio-Ultra con abono anual (2,5 cm)",
+    "precisio_ultra_equipo_anual": "Antena ControlAgro Ultra (equipo + abono anual, 2,5 cm)",
+    "senal_precisio_ultra_anual": "Abono anual señal Ultra (2,5 cm)",
+    "kit_antena_precisio_ultra": "Kit antena Ultra con abono anual (2,5 cm)",
     "instalacion_nordian": "Instalación eléctrica antena GPS Nordian a RS-232",
     "instalacion_adaptador_rs232": "Instalación eléctrica adaptador RS-232",
     "rtk_base_portatil": "Antena con base portátil RTK (2,5 cm)",
@@ -104,6 +119,14 @@ def clean_text(cell):
     if cell is None:
         return ""
     return re.sub(r"\s+", " ", cell.replace("\n", " ")).strip()
+
+
+def quitar_precisio(texto):
+    """El cliente pidió sacar la palabra 'Precisio' de todo lo visible en el
+    cotizador (el PDF la usa como parte de 'PRECISIO-ULTRA'). Sólo saca ese
+    prefijo con el guion, así no toca la palabra 'PRECISION' (de precisión
+    del GPS) que aparece en otras descripciones."""
+    return re.sub(r"PRECISIO-", "", texto, flags=re.I)
 
 
 def parse_price(cell):
@@ -225,14 +248,19 @@ def extract_items(pdf_path):
                         for i in range(min(len(con_iva), len(etiquetas)))
                     }
 
+                    # derive_clave necesita el texto tal cual sale del PDF
+                    # (matchea "PRECISIO-ULTRA" literal); la limpieza de la
+                    # palabra "Precisio" se aplica recién para lo que se
+                    # muestra en el cotizador.
                     clave = derive_clave(descripcion) or slugify_fallback(descripcion, claves_usadas)
                     claves_usadas.add(clave)
-                    nombre = CLAVE_A_NOMBRE.get(clave, descripcion[:70])
+                    descripcion_limpia = quitar_precisio(descripcion)
+                    nombre = CLAVE_A_NOMBRE.get(clave, descripcion_limpia[:70])
 
                     item = {
                         "clave": clave,
                         "nombre": nombre,
-                        "descripcion": descripcion,
+                        "descripcion": descripcion_limpia,
                         "iva": current_iva,
                         "precios": precios,
                     }
@@ -242,13 +270,20 @@ def extract_items(pdf_path):
                         orden_secciones.append(current_section)
                     secciones[current_section].append(item)
 
+    # Orden fijo (pilotos, después abonos, después repuestos) en vez del
+    # orden en que aparecen en el PDF. Si el PDF trae alguna sección que no
+    # está en ORDEN_SECCIONES (p.ej. un producto nuevo), se agrega al final
+    # en vez de perderse, para no descartar precios silenciosamente.
+    titulos_ordenados = [t for t in ORDEN_SECCIONES if t in secciones]
+    titulos_ordenados += [t for t in orden_secciones if t not in ORDEN_SECCIONES]
+
     return {
         "lista": lista_num,
         "vigenciaHasta": vigencia,
         "moneda": "USD",
         "secciones": [
             {"titulo": nombre_seccion, "items": secciones[nombre_seccion]}
-            for nombre_seccion in orden_secciones
+            for nombre_seccion in titulos_ordenados
         ],
     }
 

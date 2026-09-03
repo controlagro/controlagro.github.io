@@ -4,72 +4,17 @@
   "moneda": "USD",
   "secciones": [
     {
-      "titulo": "Piloto con antena ControlAgro Precisio-Ultra",
+      "titulo": "Piloto con antena ControlAgro Ultra",
       "items": [
         {
           "clave": "precisio_ultra_equipo_anual",
-          "nombre": "Antena ControlAgro Precisio-Ultra (equipo + abono anual, 2,5 cm)",
-          "descripcion": "Equipo piloto automático INTEGRA 6000, pantalla 10 pulg. táctil, con Giro en Cabecera, VOLANTE con motor eléctrico y ANTENA ControlAgro PRECISIO-ULTRA con abono ANUAL (*), de 2,5 cm de PRECISION",
+          "nombre": "Antena ControlAgro Ultra (equipo + abono anual, 2,5 cm)",
+          "descripcion": "Equipo piloto automático INTEGRA 6000, pantalla 10 pulg. táctil, con Giro en Cabecera, VOLANTE con motor eléctrico y ANTENA ControlAgro ULTRA con abono ANUAL (*), de 2,5 cm de PRECISION",
           "iva": "10,5%",
           "precios": {
             "contado": 10291.0,
             "dias180": 11320.0,
             "dias360": 12349.0
-          }
-        }
-      ]
-    },
-    {
-      "titulo": "Costo de señal (Precisio-Ultra)",
-      "items": [
-        {
-          "clave": "senal_precisio_ultra_anual",
-          "nombre": "Abono anual señal Precisio-Ultra (2,5 cm)",
-          "descripcion": "Abono ANUAL: con corr. ControlAgro Precisio-Ultra de 2,5 cm. (1 año)",
-          "iva": "21%",
-          "precios": {
-            "contado": 665.5
-          }
-        }
-      ]
-    },
-    {
-      "titulo": "Repuestos",
-      "items": [
-        {
-          "clave": "kit_antena_precisio_ultra",
-          "nombre": "Kit antena Precisio-Ultra con abono anual (2,5 cm)",
-          "descripcion": "KIT ANTENA ControlAgro Precisio-Ultra con abono de 2,5 cm. por 1 año",
-          "iva": "21%",
-          "precios": {
-            "contado": 2003.0
-          }
-        },
-        {
-          "clave": "instalacion_nordian",
-          "nombre": "Instalación eléctrica antena GPS Nordian a RS-232",
-          "descripcion": "INSTALACION ELECT. p/ANTENA GPS NORDIAN a RS-232 de I-6000 Cod. 220.506",
-          "iva": "21%",
-          "precios": {
-            "contado": 96.8
-          }
-        },
-        {
-          "clave": "instalacion_adaptador_rs232",
-          "nombre": "Instalación eléctrica adaptador RS-232",
-          "descripcion": "INSTALACION ELECT. ADAPTADOR p/RS-232 ENTRADA DE DATOS de I-6000 Cod. 220.504",
-          "iva": "21%",
-          "precios": {
-            "contado": 116.16
-          }
-        },
-        {
-          "clave": "kit_traslado",
-          "nombre": "Kit para trasladar el piloto a un segundo equipo",
-          "descripcion": "KIT PARA PODER TRASLADAR EL PILOTO A UN SEGUNDO TRACTOR, COSECHADORA O PULVERIZADORA.",
-          "iva": "21%",
-          "precios": {
-            "contado": 3025.0
           }
         }
       ]
@@ -166,6 +111,20 @@
       ]
     },
     {
+      "titulo": "Costo de señal (Ultra)",
+      "items": [
+        {
+          "clave": "senal_precisio_ultra_anual",
+          "nombre": "Abono anual señal Ultra (2,5 cm)",
+          "descripcion": "Abono ANUAL: con corr. ControlAgro Ultra de 2,5 cm. (1 año)",
+          "iva": "21%",
+          "precios": {
+            "contado": 665.5
+          }
+        }
+      ]
+    },
+    {
       "titulo": "Costo de señal Terrastar C",
       "items": [
         {
@@ -193,6 +152,47 @@
           "iva": "10,5%",
           "precios": {
             "contado": 1416.0
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Repuestos",
+      "items": [
+        {
+          "clave": "kit_antena_precisio_ultra",
+          "nombre": "Kit antena Ultra con abono anual (2,5 cm)",
+          "descripcion": "KIT ANTENA ControlAgro Ultra con abono de 2,5 cm. por 1 año",
+          "iva": "21%",
+          "precios": {
+            "contado": 2003.0
+          }
+        },
+        {
+          "clave": "instalacion_nordian",
+          "nombre": "Instalación eléctrica antena GPS Nordian a RS-232",
+          "descripcion": "INSTALACION ELECT. p/ANTENA GPS NORDIAN a RS-232 de I-6000 Cod. 220.506",
+          "iva": "21%",
+          "precios": {
+            "contado": 96.8
+          }
+        },
+        {
+          "clave": "instalacion_adaptador_rs232",
+          "nombre": "Instalación eléctrica adaptador RS-232",
+          "descripcion": "INSTALACION ELECT. ADAPTADOR p/RS-232 ENTRADA DE DATOS de I-6000 Cod. 220.504",
+          "iva": "21%",
+          "precios": {
+            "contado": 116.16
+          }
+        },
+        {
+          "clave": "kit_traslado",
+          "nombre": "Kit para trasladar el piloto a un segundo equipo",
+          "descripcion": "KIT PARA PODER TRASLADAR EL PILOTO A UN SEGUNDO TRACTOR, COSECHADORA O PULVERIZADORA.",
+          "iva": "21%",
+          "precios": {
+            "contado": 3025.0
           }
         }
       ]
