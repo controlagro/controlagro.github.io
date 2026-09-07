@@ -7,13 +7,29 @@ document.addEventListener("DOMContentLoaded", function () {
 
     let precios = {};
 
+    // Condiciones comerciales dictadas por el cliente: mismo texto para
+    // todos los equipos TEKMATIC, y mismo texto (con otro encabezado) para
+    // todos los equipos a GATILLO. Se muestran como HTML (negritas + saltos
+    // de línea) dentro de la misma caja de descripción de siempre.
+    const CONDICIONES_TEKMATIC = `IVA INCLUIDO DEL 10,5%.<br>
+<strong>CONTADO</strong>: 10% DESCUENTO con CHEQUE/TRANSFERENCIA dentro de 15 días de fecha factura.<br>
+<strong>FINANCIACIÓN 180 días en PESOS</strong>, <strong>7</strong> CHEQUES a 0, 30, 60, 90, 120, 150, y 180 dias, SIN INTERES.<br>
+<strong>FINANCIACIÓN 360 dias:</strong><br>
+<strong>con ANTICIPO 30%</strong>, y SALDO EN <strong>12</strong> CHEQUES, DESDE 30, 60,..., 330, y 360 DIAS.`;
+
+    const CONDICIONES_GATILLO = `INSTALACIÓN E IVA DEL 10,5% INCLUIDOS.<br>
+<strong>CONTADO</strong>: 10% DESCUENTO con CHEQUE/TRANSFERENCIA dentro de 15 días de fecha factura.<br>
+<strong>FINANCIACIÓN 180 días en PESOS</strong>, <strong>7</strong> CHEQUES a 0, 30, 60, 90, 120, 150, y 180 dias, SIN INTERES.<br>
+<strong>FINANCIACIÓN 360 dias:</strong><br>
+<strong>con ANTICIPO 30%</strong>, y SALDO EN <strong>12</strong> CHEQUES, DESDE 30, 60,..., 330, y 360 DIAS.`;
+
     const descripcionesPorModelo = {
-        "INTEGRA 6000 CON TEKMATIC SIN ANTENA": "EQUIPOS con CORTE SURCO POR SURCO con EMBRAGUES TEKMATIC EPS-5. Instalación e IVA (10,5%) incluidos. Contado: 10% de descuento sobre el precio de lista. FINANCIACIÓN: en pesos desde 0 hasta 120 días sin interés, y en dólares ajustables desde 0 hasta 12 meses.",
-        "INTEGRA 6000 CON TEKMATIC CON ANTENA": "EQUIPOS con CORTE SURCO POR SURCO con EMBRAGUES TEKMATIC EPS-5. Instalación e IVA (10,5%) incluidos. Contado: 10% de descuento sobre el precio de lista. FINANCIACIÓN: en pesos desde 0 hasta 120 días sin interés, y en dólares ajustables desde 0 hasta 12 meses.",
-        "INTEGRA 6000 CON GATILLO SIN ANTENA": "EQUIPOS con CORTE SURCO POR SURCO con EMBRAGUES A GATILLO. Instalación e IVA (10,5%) incluidos. Contado: 10% de descuento sobre el precio de lista. FINANCIACIÓN: en pesos desde 0 hasta 120 días sin interés, y en dólares ajustables desde 0 hasta 12 meses.",
-        "INTEGRA 6000 CON GATILLO CON ANTENA": "EQUIPOS con CORTE SURCO POR SURCO con EMBRAGUES A GATILLO. Instalación e IVA (10,5%) incluidos. Contado: 10% de descuento sobre el precio de lista. FINANCIACIÓN: en pesos desde 0 hasta 120 días sin interés, y en dólares ajustables desde 0 hasta 12 meses.",
-        "SOLO SEMBRADORA con CORTE TEKMATIC": "EQUIPOS con CORTE SURCO POR SURCO con EMBRAGUES TEKMATIC EPS-5. Instalación e IVA (10,5%) incluidos. Contado: 10% de descuento sobre el precio de lista. FINANCIACIÓN: en pesos desde 0 hasta 120 días sin interés, y en dólares ajustables desde 0 hasta 12 meses.",
-        "SOLO SEMBRADORA con CORTE a GATILLO": "EQUIPOS con CORTE SURCO POR SURCO con EMBRAGUES A GATILLO. Instalación e IVA (10,5%) incluidos. Contado: 10% de descuento sobre el precio de lista. FINANCIACIÓN: en pesos desde 0 hasta 120 días sin interés, y en dólares ajustables desde 0 hasta 12 meses.",
+        "INTEGRA 6000 CON TEKMATIC SIN ANTENA": CONDICIONES_TEKMATIC,
+        "INTEGRA 6000 CON TEKMATIC CON ANTENA": CONDICIONES_TEKMATIC,
+        "INTEGRA 6000 CON GATILLO SIN ANTENA": CONDICIONES_GATILLO,
+        "INTEGRA 6000 CON GATILLO CON ANTENA": CONDICIONES_GATILLO,
+        "SOLO SEMBRADORA con CORTE TEKMATIC": CONDICIONES_TEKMATIC,
+        "SOLO SEMBRADORA con CORTE a GATILLO": CONDICIONES_GATILLO,
         "ABONO SEÑAL TERRASTAR C PRO 2,5 CM POR 1 AÑO": "Instalación e IVA (21%) incluidos. CONTADO.",
         "ABONO SEÑAL TERRASTAR C PRO 2,5 CM POR 3 MESES": "Instalación e IVA (21%) incluidos. CONTADO.",
         "ACTIVACION ANTENA PARA TERRASTAR C PRO (por única vez)": "Instalación e IVA (21%) incluidos. CONTADO."
@@ -73,7 +89,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const modeloSeleccionado = modeloSelect.value;
         embraguesSelect.innerHTML = "";
 
-        descripcionElemento.textContent = descripcionesPorModelo[modeloSeleccionado] || "";
+        descripcionElemento.innerHTML = descripcionesPorModelo[modeloSeleccionado] || "";
 
         if (modelosSinEmbragues.includes(modeloSeleccionado)) {
             campoEmbragues.classList.add("oculto");
